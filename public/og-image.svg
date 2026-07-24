@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Grid Decoration -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#cbd5e1" stroke-width="0.8" opacity="0.4" />
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="150" r="300" fill="#6366f1" opacity="0.1" filter="blur(60px)" />
+  <circle cx="1000" cy="450" r="350" fill="#a855f7" opacity="0.1" filter="blur(60px)" />
+
+  <!-- Card Frame -->
+  <rect x="80" y="70" width="1040" height="490" rx="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)" />
+
+  <!-- Brand Icon Badge -->
+  <rect x="140" y="130" width="80" height="80" rx="24" fill="url(#brand)" />
+  <path d="M168 156L152 170L168 184" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M192 156L208 170L192 184" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="184" y1="152" x2="176" y2="188" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Badge Pill -->
+  <rect x="240" y="152" width="180" height="36" rx="18" fill="#e0e7ff" />
+  <text x="330" y="175" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#4338ca" text-anchor="middle">1,890+ PORTFOLIOS</text>
+
+  <!-- Title -->
+  <text x="140" y="275" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" fill="#0f172a" letter-spacing="-1">Awesome Developer Portfolios</text>
+
+  <!-- Subtitle -->
+  <text x="140" y="335" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="500" fill="#64748b">A curated showcase of developer websites, personal portfolios, and UI inspirations.</text>
+
+  <!-- Categories / Tags Row -->
+  <g transform="translate(140, 395)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="150" height="42" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="75" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">AI &amp; Data Science</text>
+
+    <!-- Tag 2 -->
+    <rect x="165" y="0" width="120" height="42" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="225" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">Full Stack</text>
+
+    <!-- Tag 3 -->
+    <rect x="300" y="0" width="160" height="42" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="380" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">Software Engineer</text>
+
+    <!-- Tag 4 -->
+    <rect x="475" y="0" width="120" height="42" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="535" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">Frontend</text>
+
+    <!-- Tag 5 -->
+    <rect x="610" y="0" width="150" height="42" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="685" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#334155" text-anchor="middle">Mobile App Dev</text>
+  </g>
+
+  <!-- Footer Info -->
+  <line x1="140" y1="480" x2="1020" y2="480" stroke="#f1f5f9" stroke-width="2" />
+  <text x="140" y="515" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#475569">balavenkatesh3322 / awesome-developer-porfolio</text>
+  <text x="1020" y="515" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#4f46e5" text-anchor="end">Live Previews &amp; GitHub PR Contributions</text>
+</svg>

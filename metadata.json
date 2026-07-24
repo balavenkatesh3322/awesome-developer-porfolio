@@ -1,6 +1,6 @@
 {
-  "name": "Developer Portfolio Showcase",
-  "description": "A curated showcase of developer portfolios from Emma Bostian's developer-portfolios repository with live website previews, tech stack filters, portfolio evaluation tools, and GitHub Pages deployment configuration.",
+  "name": "Awesome Developer Portfolios",
+  "description": "A curated directory of 1,890+ developer portfolios, personal sites, and engineering showcases featuring live website previews, tech stack filters, bookmarks, and GitHub contribution guidelines.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
