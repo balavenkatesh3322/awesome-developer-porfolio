@@ -40,15 +40,26 @@ export const POPULAR_TAGS = [
 
 export const ALPHABET = '#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
-export function getScreenshotUrl(url: string): string {
-  // Use thum.io for quick website screenshot thumbnail with width 600
-  // Clean URL to prevent double protocols
-  const cleanUrl = url.replace(/^https?:\/\//, '');
-  return `https://image.thum.io/get/width/600/crop/800/noanimate/https://${cleanUrl}`;
+export function getScreenshotUrl(url: string, width: number = 1000): string {
+  // WordPress mshots service provides fast, crisp website screenshots
+  return `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=${width}`;
 }
 
 export function getMicrolinkScreenshot(url: string): string {
   return `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&embed=screenshot.url`;
+}
+
+export function getThumScreenshot(url: string, width: number = 800): string {
+  const cleanUrl = url.replace(/^https?:\/\//, '');
+  return `https://image.thum.io/get/width/${width}/crop/800/noanimate/https://${cleanUrl}`;
+}
+
+export function getScreenshotFallbackSources(url: string): string[] {
+  return [
+    getScreenshotUrl(url, 1000),
+    getMicrolinkScreenshot(url),
+    getThumScreenshot(url, 800)
+  ];
 }
 
 export function getFaviconUrl(url: string): string {

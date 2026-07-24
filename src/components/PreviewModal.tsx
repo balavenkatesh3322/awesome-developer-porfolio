@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Portfolio, DeviceType, CommentItem } from '../types';
-import { getRatings, saveRating, getScreenshotUrl } from '../lib/portfolios';
+import { getRatings, saveRating, getFaviconUrl } from '../lib/portfolios';
 import {
   X,
   ExternalLink,
@@ -58,7 +58,6 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
   onAddComment
 }) => {
   const [device, setDevice] = useState<DeviceType>('desktop');
-  const [useScreenshotMode, setUseScreenshotMode] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -80,7 +79,6 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
   useEffect(() => {
     if (portfolio) {
       setIframeLoaded(false);
-      setUseScreenshotMode(false);
       setMobileTab('preview');
       const savedRatings = getRatings();
       if (savedRatings[portfolio.id]) {
@@ -129,117 +127,144 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
   const getDeviceWidthClass = () => {
     switch (device) {
       case 'mobile':
-        return 'w-full max-w-[375px] h-full sm:h-[667px] shadow-2xl rounded-2xl border-2 sm:border-4 border-slate-900 mx-auto';
+        return 'w-full max-w-[375px] h-full sm:h-[667px] shadow-2xl rounded-[36px] border-[6px] sm:border-[8px] border-slate-900 mx-auto relative overflow-hidden bg-slate-950';
       case 'tablet':
-        return 'w-full max-w-[768px] h-full sm:h-[800px] shadow-2xl rounded-xl border-2 sm:border-4 border-slate-900 mx-auto';
+        return 'w-full max-w-[768px] h-full sm:h-[800px] shadow-2xl rounded-2xl border-[6px] sm:border-[8px] border-slate-900 mx-auto relative overflow-hidden bg-slate-900';
       default:
-        return 'w-full h-full rounded-b-xl';
+        return 'w-full h-full rounded-b-2xl';
     }
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-md flex items-center justify-center p-1.5 sm:p-4 overflow-hidden animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 bg-slate-900/75 backdrop-blur-xl flex items-center justify-center p-1.5 sm:p-4 overflow-hidden animate-in fade-in duration-200">
       
-      {/* Modal Card Box */}
-      <div className="bg-white border border-slate-200/90 w-full max-w-6xl h-[96vh] sm:h-[92vh] rounded-2xl sm:rounded-3xl flex flex-col shadow-2xl overflow-hidden text-slate-900">
+      {/* iOS iPhone Glass Style Modal Card */}
+      <div className="bg-white/90 backdrop-blur-2xl border border-white/80 w-full max-w-6xl h-[97vh] sm:h-[93vh] rounded-[28px] sm:rounded-[36px] flex flex-col shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden text-slate-900 relative">
         
-        {/* Header Toolbar */}
-        <div className="bg-slate-50 border-b border-slate-200 p-2.5 sm:p-4 flex items-center justify-between gap-2 shrink-0">
+        {/* Top Header: iOS Glass Bar with Prominent "Open Website" URL Capsule */}
+        <div className="bg-slate-50/90 backdrop-blur-xl border-b border-slate-200/80 p-2.5 sm:p-3.5 flex flex-col sm:flex-row items-center justify-between gap-2.5 shrink-0 z-20">
           
-          <div className="flex items-center gap-2 min-w-0">
-            <button
-              onClick={() => onToggleBookmark(portfolio.id)}
-              className={`p-2 rounded-xl border transition-all shrink-0 ${
-                isBookmarked
-                  ? 'bg-amber-100 text-amber-800 border-amber-300'
-                  : 'bg-white hover:bg-slate-100 text-slate-600 border-slate-200'
-              }`}
-              title="Bookmark Portfolio"
-            >
-              <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-amber-500 text-amber-600' : ''}`} />
-            </button>
+          {/* Left Brand & Portfolio Info */}
+          <div className="flex items-center gap-2 w-full sm:w-auto justify-between sm:justify-start min-w-0">
+            <div className="flex items-center gap-2 min-w-0">
+              <button
+                onClick={() => onToggleBookmark(portfolio.id)}
+                className={`p-2 rounded-2xl border transition-all shrink-0 cursor-pointer ${
+                  isBookmarked
+                    ? 'bg-amber-100 text-amber-800 border-amber-300 shadow-2xs'
+                    : 'bg-white/80 hover:bg-slate-100 text-slate-600 border-slate-200'
+                }`}
+                title="Bookmark Portfolio"
+              >
+                <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-amber-500 text-amber-600' : ''}`} />
+              </button>
 
-            <button
-              onClick={() => onToggleLike && onToggleLike(portfolio.id)}
-              className={`px-2.5 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1 transition-all shrink-0 ${
-                isLiked
-                  ? 'bg-pink-100 text-pink-800 border-pink-300'
-                  : 'bg-white hover:bg-pink-50 text-slate-700 hover:text-pink-600 border-slate-200'
-              }`}
-              title="Like Portfolio"
-            >
-              <Heart className={`w-3.5 h-3.5 ${isLiked ? 'fill-pink-500 text-pink-600' : ''}`} />
-              <span className="hidden sm:inline">{likesCount} Likes</span>
-              <span className="sm:hidden">{likesCount}</span>
-            </button>
+              <button
+                onClick={() => onToggleLike && onToggleLike(portfolio.id)}
+                className={`px-2.5 py-1.5 rounded-2xl border text-xs font-bold flex items-center gap-1 transition-all shrink-0 cursor-pointer ${
+                  isLiked
+                    ? 'bg-pink-100 text-pink-800 border-pink-300 shadow-2xs'
+                    : 'bg-white/80 hover:bg-pink-50 text-slate-700 hover:text-pink-600 border-slate-200'
+                }`}
+                title="Like Portfolio"
+              >
+                <Heart className={`w-3.5 h-3.5 ${isLiked ? 'fill-pink-500 text-pink-600' : ''}`} />
+                <span className="hidden sm:inline">{likesCount}</span>
+              </button>
 
-            <div className="min-w-0">
-              <div className="flex items-center gap-1.5 flex-wrap">
-                <h2 className="text-xs sm:text-sm font-extrabold text-slate-900 truncate max-w-[140px] sm:max-w-none">
-                  {portfolio.name}
-                </h2>
-                {isNew ? (
-                  <span className="text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-emerald-500 text-white shadow-2xs flex items-center gap-0.5 shrink-0">
-                    <Sparkles className="w-2.5 h-2.5" /> NEW
-                  </span>
-                ) : isTrending ? (
-                  <span className="text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-amber-500 text-white shadow-2xs flex items-center gap-0.5 shrink-0">
-                    <Flame className="w-2.5 h-2.5 fill-amber-200" /> HOT
-                  </span>
-                ) : null}
-                <span className="text-[9px] sm:text-[10px] px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold shrink-0 hidden sm:inline">
-                  {portfolio.category}
-                </span>
+              <div className="min-w-0">
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  <h2 className="text-xs sm:text-sm font-black text-slate-900 truncate max-w-[120px] sm:max-w-[180px]">
+                    {portfolio.name}
+                  </h2>
+                  {isNew && (
+                    <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded-full bg-emerald-500 text-white flex items-center gap-0.5 shrink-0">
+                      <Sparkles className="w-2.5 h-2.5" /> NEW
+                    </span>
+                  )}
+                </div>
+                <p className="text-[10px] sm:text-xs text-indigo-600 font-extrabold truncate">{portfolio.role}</p>
               </div>
-              <p className="text-[11px] sm:text-xs text-slate-500 font-medium truncate">{portfolio.role}</p>
             </div>
+
+            {/* Mobile Close Button */}
+            <button
+              onClick={onClose}
+              className="sm:hidden p-1.5 rounded-2xl bg-slate-200/80 hover:bg-slate-300 text-slate-800 cursor-pointer"
+              title="Close modal"
+            >
+              <X className="w-4 h-4" />
+            </button>
           </div>
 
-          {/* Controls & Close */}
-          <div className="flex items-center gap-1.5 shrink-0">
+          {/* Center: Top iPhone Safari Glass Address Bar & Open Website Button */}
+          <div className="w-full sm:max-w-md mx-auto flex items-center bg-slate-200/70 backdrop-blur-md hover:bg-slate-200/90 border border-slate-300/80 rounded-2xl sm:rounded-full p-1.5 transition-all shadow-inner group">
+            <div className="flex items-center gap-1.5 pl-2.5 flex-1 min-w-0">
+              <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-200/80 px-1.5 py-0.5 rounded-md flex items-center gap-0.5 shrink-0">
+                🔒 HTTPS
+              </span>
+              <span className="text-xs font-bold text-slate-700 truncate tracking-tight">
+                {portfolio.url.replace(/^https?:\/\//, '')}
+              </span>
+            </div>
+
+            {/* High-Contrast "Open Website" Callout CTA */}
+            <a
+              href={portfolio.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3.5 py-1.5 rounded-xl sm:rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white text-xs font-black flex items-center gap-1.5 shadow-md shadow-indigo-500/25 transition-all active:scale-95 shrink-0 cursor-pointer"
+              title="Open website in new browser window"
+            >
+              <span>Open Website</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+          {/* Right Controls: Device Switcher & Share & Close */}
+          <div className="hidden sm:flex items-center gap-1.5 shrink-0">
             {/* Desktop Device View Switcher */}
-            <div className="hidden md:flex items-center gap-1 bg-white border border-slate-200 rounded-xl p-1 shadow-2xs">
+            <div className="flex items-center gap-1 bg-white/80 border border-slate-200/80 rounded-2xl p-1 shadow-2xs">
               <button
                 onClick={() => setDevice('desktop')}
-                className={`p-1.5 rounded-lg text-xs font-bold flex items-center gap-1 transition-all ${
-                  device === 'desktop' ? 'bg-indigo-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                className={`p-1.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-all cursor-pointer ${
+                  device === 'desktop' ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 <Monitor className="w-3.5 h-3.5" />
-                <span>Desktop</span>
+                <span className="hidden md:inline">Desktop</span>
               </button>
               <button
                 onClick={() => setDevice('tablet')}
-                className={`p-1.5 rounded-lg text-xs font-bold flex items-center gap-1 transition-all ${
-                  device === 'tablet' ? 'bg-indigo-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                className={`p-1.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-all cursor-pointer ${
+                  device === 'tablet' ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 <Tablet className="w-3.5 h-3.5" />
-                <span>Tablet</span>
+                <span className="hidden md:inline">Tablet</span>
               </button>
               <button
                 onClick={() => setDevice('mobile')}
-                className={`p-1.5 rounded-lg text-xs font-bold flex items-center gap-1 transition-all ${
-                  device === 'mobile' ? 'bg-indigo-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                className={`p-1.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-all cursor-pointer ${
+                  device === 'mobile' ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 <Smartphone className="w-3.5 h-3.5" />
-                <span>Mobile</span>
+                <span className="hidden md:inline">Mobile</span>
               </button>
             </div>
 
             <button
               onClick={handleCopyLink}
-              className="p-2 rounded-xl bg-white hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-all shadow-2xs"
+              className="p-2 rounded-2xl bg-white/80 hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-all shadow-2xs cursor-pointer"
               title="Share portfolio link"
             >
               <Share2 className="w-4 h-4 text-indigo-600" />
-              <span className="hidden sm:inline">{copied ? 'Copied!' : 'Share'}</span>
             </button>
 
             <button
               onClick={onClose}
-              className="p-2 rounded-xl bg-slate-200/80 hover:bg-slate-300 text-slate-800 transition-colors cursor-pointer"
+              className="p-2 rounded-2xl bg-slate-200/80 hover:bg-slate-300 text-slate-800 transition-colors cursor-pointer"
               title="Close modal"
             >
               <X className="w-5 h-5" />
@@ -286,14 +311,12 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
             
             {/* Toolbar Mode Switch & Prev/Next Nav */}
             <div className="w-full flex items-center justify-between text-xs text-slate-600 mb-2 px-1 sm:px-2 flex-wrap gap-2">
-              <div className="flex items-center gap-2 text-[11px] sm:text-xs">
-                <span>View Mode:</span>
-                <button
-                  onClick={() => setUseScreenshotMode(!useScreenshotMode)}
-                  className="text-indigo-600 hover:text-indigo-800 font-extrabold underline transition-colors"
-                >
-                  {useScreenshotMode ? 'Switch to Live Iframe' : 'Switch to Screenshot View'}
-                </button>
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200/90 text-xs font-black shadow-2xs">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span>Live Interactive Preview</span>
               </div>
 
               {/* Mobile Viewports Selector (Inline on mobile) */}
@@ -339,41 +362,40 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
             {/* Frame Viewport Box */}
             <div className={`relative transition-all duration-300 bg-white flex flex-col overflow-hidden ${getDeviceWidthClass()}`}>
               
-              {!useScreenshotMode ? (
-                <>
-                  {!iframeLoaded && (
-                    <div className="absolute inset-0 bg-slate-50 flex flex-col items-center justify-center p-6 text-center text-slate-700 z-10">
-                      <div className="w-9 h-9 border-3 border-indigo-600 border-t-transparent rounded-full animate-spin mb-3" />
-                      <p className="text-xs sm:text-sm font-bold text-slate-900">Connecting to live website...</p>
-                      <p className="text-[11px] sm:text-xs text-slate-500 max-w-sm mt-1">
-                        If the developer&apos;s site blocks embedded frames, you can switch to high-res screenshot view below.
-                      </p>
-                      <button
-                        onClick={() => setUseScreenshotMode(true)}
-                        className="mt-3 px-3.5 py-1.5 bg-white hover:bg-slate-100 text-indigo-700 text-xs font-bold rounded-xl border border-slate-200 shadow-xs cursor-pointer"
-                      >
-                        Load Screenshot View
-                      </button>
-                    </div>
-                  )}
-
-                  <iframe
-                    src={portfolio.url}
-                    title={`${portfolio.name} live portfolio`}
-                    onLoad={() => setIframeLoaded(true)}
-                    className="w-full h-full border-none"
-                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
-                  />
-                </>
-              ) : (
-                <div className="w-full h-full overflow-y-auto bg-slate-100 flex flex-col">
-                  <img
-                    src={getScreenshotUrl(portfolio.url)}
-                    alt={`${portfolio.name} screenshot`}
-                    className="w-full h-auto min-h-full object-cover object-top"
-                  />
+              {/* iPhone Dynamic Island notch overlay */}
+              {device === 'mobile' && (
+                <div className="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-30 flex items-center justify-between px-3 pointer-events-none shadow-md border border-slate-800/80">
+                  <div className="w-2.5 h-2.5 rounded-full bg-slate-900 border border-slate-800" />
+                  <div className="w-2 h-2 rounded-full bg-indigo-500/80 animate-pulse" />
                 </div>
               )}
+              
+              {!iframeLoaded && (
+                <div className="absolute inset-0 bg-slate-50 flex flex-col items-center justify-center p-6 text-center text-slate-700 z-10">
+                  <div className="w-9 h-9 border-3 border-indigo-600 border-t-transparent rounded-full animate-spin mb-3" />
+                  <p className="text-xs sm:text-sm font-bold text-slate-900">Connecting to live website...</p>
+                  <p className="text-[11px] sm:text-xs text-slate-500 max-w-sm mt-1">
+                    Loading live interactive developer portfolio frame.
+                  </p>
+                  <a
+                    href={portfolio.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-xl shadow-xs flex items-center gap-1.5 cursor-pointer"
+                  >
+                    <span>Open Live Site Directly</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              )}
+
+              <iframe
+                src={portfolio.url}
+                title={`${portfolio.name} live portfolio`}
+                onLoad={() => setIframeLoaded(true)}
+                className="w-full h-full border-none"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+              />
 
             </div>
 

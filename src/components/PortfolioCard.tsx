@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Portfolio, ViewMode } from '../types';
-import { getFaviconUrl, getScreenshotUrl } from '../lib/portfolios';
+import { getFaviconUrl, getScreenshotFallbackSources } from '../lib/portfolios';
 import { ExternalLink, Bookmark, Eye, Star, Heart, MessageSquare, Sparkles, Flame } from 'lucide-react';
 
 interface PortfolioCardProps {
@@ -30,9 +30,19 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
 }) => {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
+  const [srcIndex, setSrcIndex] = useState(0);
 
-  const screenshotUrl = getScreenshotUrl(portfolio.url);
+  const fallbackSources = getScreenshotFallbackSources(portfolio.url);
+  const currentScreenshotUrl = fallbackSources[srcIndex] || fallbackSources[0];
   const faviconUrl = getFaviconUrl(portfolio.url);
+
+  const handleImgError = () => {
+    if (srcIndex < fallbackSources.length - 1) {
+      setSrcIndex((prev) => prev + 1);
+    } else {
+      setImgError(true);
+    }
+  };
 
   // Computed Rating Value and Badges
   const ratingVal = userRating?.rating
@@ -193,11 +203,11 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
               </div>
             )}
             <img
-              src={screenshotUrl}
+              src={currentScreenshotUrl}
               alt={`${portfolio.name} portfolio preview`}
               loading="lazy"
               onLoad={() => setImgLoaded(true)}
-              onError={() => setImgError(true)}
+              onError={handleImgError}
               className={`w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105 ${
                 imgLoaded ? 'opacity-100' : 'opacity-0'
               }`}

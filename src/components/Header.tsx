@@ -39,9 +39,6 @@ export const Header: React.FC<HeaderProps> = ({
                   <h1 className="text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-slate-900 truncate">
                     Awesome Developer Portfolios
                   </h1>
-                  <span className="text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 shrink-0">
-                    {totalCount.toLocaleString()} Curated
-                  </span>
                 </div>
                 <p className="text-[11px] sm:text-xs text-emerald-600 font-bold tracking-tight truncate hidden sm:block">
                   Explore top developer websites &amp; submit your portfolio!

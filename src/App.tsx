@@ -8,6 +8,8 @@ import {
 } from './lib/portfolios';
 import { getSocialData, toggleLike, addComment } from './lib/socialStore';
 import { Header } from './components/Header';
+import { HeroSection } from './components/HeroSection';
+import { SpotlightSection } from './components/SpotlightSection';
 import { AlphabetBar } from './components/AlphabetBar';
 import { FilterBar } from './components/FilterBar';
 import { PortfolioCard } from './components/PortfolioCard';
@@ -212,26 +214,48 @@ export default function App() {
         onOpenSubmitModal={() => setIsSubmitModalOpen(true)}
       />
 
-      {/* Alphabet Quick Jump Bar */}
-      <AlphabetBar
-        selectedLetter={filters.letter}
-        onSelectLetter={(letter) => handleUpdateFilters({ letter })}
+      {/* Hero Showcase Banner Header (100% Marketing & Engagement Focus) */}
+      <HeroSection
+        totalCount={ALL_PORTFOLIOS.length}
+        filteredCount={filteredPortfolios.length}
+        onExploreClick={() => {
+          document.getElementById('catalog-section')?.scrollIntoView({ behavior: 'smooth' });
+        }}
       />
 
-      {/* Filter & View Mode Controls */}
-      <FilterBar
-        filters={filters}
-        onUpdateFilters={handleUpdateFilters}
-        viewMode={viewMode}
-        onViewModeChange={setViewMode}
-        filteredCount={filteredPortfolios.length}
-        totalCount={ALL_PORTFOLIOS.length}
-        onResetFilters={handleResetFilters}
-      />
+      {/* Directory Showcase Catalog Section */}
+      <div id="catalog-section" className="bg-slate-50/40 border-t border-slate-200/80">
+        
+        {/* Filter & View Mode Controls */}
+        <FilterBar
+          filters={filters}
+          onUpdateFilters={handleUpdateFilters}
+          viewMode={viewMode}
+          onViewModeChange={setViewMode}
+          filteredCount={filteredPortfolios.length}
+          totalCount={ALL_PORTFOLIOS.length}
+          onResetFilters={handleResetFilters}
+        />
+
+        {/* Alphabet Quick Jump Bar - Starts inside Catalog Section */}
+        <AlphabetBar
+          selectedLetter={filters.letter}
+          onSelectLetter={(letter) => handleUpdateFilters({ letter })}
+        />
+
+      </div>
 
       {/* Main Showcase Stage */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 relative">
         
+        {/* Curated Weekly Spotlight Showcase Reel */}
+        {!filters.onlyBookmarks && filters.category === 'All' && !filters.searchQuery && filters.letter === '' && (
+          <SpotlightSection
+            portfolios={ALL_PORTFOLIOS}
+            onSelectPortfolio={setSelectedPortfolio}
+          />
+        )}
+
         {/* Active Filters Summary Banner */}
         {filters.onlyBookmarks && (
           <div className="mb-6 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 flex items-center justify-between shadow-sm">
