@@ -1,6 +1,12 @@
 # 🚀 Awesome Developer Portfolios
 
 <p align="center">
+  <a href="https://balavenkatesh3322.github.io/awesome-developer-porfolio/">
+    <img src="public/banners.png" alt="Awesome Developer Portfolios Banner" width="100%" style="border-radius: 16px;" />
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/github/stars/balavenkatesh3322/awesome-developer-porfolio?style=for-the-badge&logo=github&color=indigo" alt="GitHub Stars" />
   <img src="https://img.shields.io/github/forks/balavenkatesh3322/awesome-developer-porfolio?style=for-the-badge&logo=github&color=purple" alt="GitHub Forks" />
   <img src="https://img.shields.io/github/issues-pr/balavenkatesh3322/awesome-developer-porfolio?style=for-the-badge&logo=git&color=emerald" alt="PRs Welcome" />
@@ -10,7 +16,6 @@
 
 <p align="center">
   <strong>A curated collection of 1,899+ world-class developer portfolios, personal websites, and design inspirations.</strong><br/>
-  Built with React 19, Vite, Tailwind CSS, and a glassmorphic interactive showcase application.
 </p>
 
 ---
@@ -40,7 +45,7 @@ We welcome and encourage submissions! Get your website seen by thousands of deve
 1. **Fork this repository** by clicking the **Fork** button at the top right of this page.
 2. Clone your forked repo locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/awesome-developer-porfolio.git
+   git clone https://github.com/balavenkatesh3322/awesome-developer-porfolio.git
    ```
 3. Locate the relevant category file under `src/data/categories/`:
    - `ai_data_science.json` - AI & Data Science
@@ -105,21 +110,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## 🚀 Continuous Deployment (GitHub Actions)
-
-This repository includes a pre-configured GitHub Actions workflow in `.github/workflows/deploy.yml`. 
-
-Whenever code is pushed or merged into the `main` branch:
-1. GitHub Actions automatically checks out the repository.
-2. Installs dependencies and executes `npm run build`.
-3. Deploys the generated bundle to **GitHub Pages**.
-
-To enable GitHub Pages in your repository settings:
-1. Go to **Settings** > **Pages**.
-2. Set **Source** to **GitHub Actions**.
 
 ---
 

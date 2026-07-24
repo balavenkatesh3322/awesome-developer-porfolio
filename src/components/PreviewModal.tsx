@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Portfolio, DeviceType } from '../types';
-import { getMicrolinkScreenshot, getScreenshotUrl, getRatings, saveRating } from '../lib/portfolios';
+import { Portfolio, DeviceType, CommentItem } from '../types';
+import { getRatings, saveRating, getScreenshotUrl } from '../lib/portfolios';
 import {
   X,
   ExternalLink,
@@ -11,13 +11,19 @@ import {
   ChevronRight,
   Star,
   Bookmark,
-  RefreshCw,
   Share2,
-  AlertTriangle,
   Check,
-  Code,
-  Layers,
-  Sparkles
+  Heart,
+  MessageSquare,
+  Mail,
+  Phone,
+  Send,
+  Bell,
+  CheckCircle2,
+  Sparkles,
+  Flame,
+  Briefcase,
+  Code2
 } from 'lucide-react';
 
 interface PreviewModalProps {
@@ -29,6 +35,11 @@ interface PreviewModalProps {
   hasPrev?: boolean;
   isBookmarked: boolean;
   onToggleBookmark: (id: number) => void;
+  likesCount?: number;
+  isLiked?: boolean;
+  onToggleLike?: (id: number) => void;
+  comments?: CommentItem[];
+  onAddComment?: (authorName: string, authorEmail: string, text: string) => void;
 }
 
 export const PreviewModal: React.FC<PreviewModalProps> = ({
@@ -39,7 +50,12 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
   hasNext,
   hasPrev,
   isBookmarked,
-  onToggleBookmark
+  onToggleBookmark,
+  likesCount = 0,
+  isLiked = false,
+  onToggleLike,
+  comments = [],
+  onAddComment
 }) => {
   const [device, setDevice] = useState<DeviceType>('desktop');
   const [useScreenshotMode, setUseScreenshotMode] = useState(false);
@@ -50,6 +66,13 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
   const [rating, setRating] = useState<number>(0);
   const [notes, setNotes] = useState<string>('');
   const [notesSaved, setNotesSaved] = useState(false);
+
+  // Comment Input State
+  const [authorName, setAuthorName] = useState('');
+  const [authorEmail, setAuthorEmail] = useState('');
+  const [commentText, setCommentText] = useState('');
+  const [commentSubmitted, setCommentSubmitted] = useState(false);
+  const [rightPanelTab, setRightPanelTab] = useState<'comments' | 'evaluation'>('comments');
 
   useEffect(() => {
     if (portfolio) {
@@ -64,6 +87,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
         setNotes('');
       }
       setNotesSaved(false);
+      setCommentSubmitted(false);
     }
   }, [portfolio]);
 
@@ -80,6 +104,23 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  const handlePostComment = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!commentText.trim()) return;
+    if (onAddComment) {
+      onAddComment(authorName, authorEmail, commentText);
+      setCommentText('');
+      setCommentSubmitted(true);
+      setTimeout(() => setCommentSubmitted(false), 4000);
+    }
+  };
+
+  const ownerEmail = portfolio.email?.trim() || '';
+  const ownerPhone = portfolio.phone?.trim() || '';
+
+  const isNew = portfolio.id > 115 || portfolio.id % 3 === 0;
+  const isTrending = portfolio.featured || portfolio.id % 5 === 0;
 
   const getDeviceWidthClass = () => {
     switch (device) {
@@ -98,64 +139,16 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
       {/* Modal Card Box */}
       <div className="bg-white border border-slate-200/80 w-full max-w-6xl h-[92vh] rounded-3xl flex flex-col shadow-2xl overflow-hidden text-slate-900">
         
-        {/* Top Header Bar */}
-        <div className="bg-slate-50 border-b border-slate-200 px-4 py-3 flex items-center justify-between gap-4 shrink-0">
+        {/* Header Toolbar */}
+        <div className="bg-slate-50 border-b border-slate-200 p-3 sm:p-4 flex flex-wrap items-center justify-between gap-3 shrink-0">
           
-          {/* Portfolio Info */}
-          <div className="flex items-center gap-3 min-w-0">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center font-bold text-sm text-white shrink-0 shadow-md">
-              {portfolio.initials}
-            </div>
-            <div className="min-w-0">
-              <div className="flex items-center gap-2">
-                <h2 className="text-sm font-extrabold text-slate-900 truncate">{portfolio.name}</h2>
-                <span className="text-[10px] px-2 py-0.5 rounded font-semibold bg-slate-200/80 text-slate-800 border border-slate-300">
-                  {portfolio.hostPlatform}
-                </span>
-              </div>
-              <p className="text-xs text-slate-500 truncate font-medium">{portfolio.role} • {portfolio.url}</p>
-            </div>
-          </div>
-
-          {/* Viewport Switcher Controls */}
-          <div className="hidden md:flex items-center bg-slate-200/80 border border-slate-300 rounded-lg p-0.5">
-            <button
-              onClick={() => setDevice('desktop')}
-              className={`px-2.5 py-1 text-xs font-semibold rounded-md flex items-center gap-1 transition-all ${
-                device === 'desktop' ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <Monitor className="w-3.5 h-3.5" />
-              <span>Desktop</span>
-            </button>
-            <button
-              onClick={() => setDevice('tablet')}
-              className={`px-2.5 py-1 text-xs font-semibold rounded-md flex items-center gap-1 transition-all ${
-                device === 'tablet' ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <Tablet className="w-3.5 h-3.5" />
-              <span>Tablet</span>
-            </button>
-            <button
-              onClick={() => setDevice('mobile')}
-              className={`px-2.5 py-1 text-xs font-semibold rounded-md flex items-center gap-1 transition-all ${
-                device === 'mobile' ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <Smartphone className="w-3.5 h-3.5" />
-              <span>Mobile</span>
-            </button>
-          </div>
-
-          {/* Right Action Icons */}
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-3">
             <button
               onClick={() => onToggleBookmark(portfolio.id)}
-              className={`p-2 rounded-lg transition-colors ${
+              className={`p-2 rounded-xl border transition-all ${
                 isBookmarked
-                  ? 'bg-amber-100 text-amber-800 border border-amber-300'
-                  : 'bg-slate-200/80 hover:bg-slate-300/80 text-slate-700'
+                  ? 'bg-amber-100 text-amber-800 border-amber-300'
+                  : 'bg-white hover:bg-slate-100 text-slate-600 border-slate-200'
               }`}
               title="Bookmark Portfolio"
             >
@@ -163,27 +156,83 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
             </button>
 
             <button
-              onClick={handleCopyLink}
-              className="p-2 rounded-lg bg-slate-200/80 hover:bg-slate-300/80 text-slate-700 transition-colors"
-              title="Copy link"
+              onClick={() => onToggleLike && onToggleLike(portfolio.id)}
+              className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all ${
+                isLiked
+                  ? 'bg-pink-100 text-pink-800 border-pink-300'
+                  : 'bg-white hover:bg-pink-50 text-slate-700 hover:text-pink-600 border-slate-200'
+              }`}
+              title="Like Portfolio"
             >
-              {copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Share2 className="w-4 h-4" />}
+              <Heart className={`w-4 h-4 ${isLiked ? 'fill-pink-500 text-pink-600' : ''}`} />
+              <span>{likesCount} Likes</span>
             </button>
 
-            <a
-              href={portfolio.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors shadow-sm"
+            <div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h2 className="text-sm font-extrabold text-slate-900">
+                  {portfolio.name}
+                </h2>
+                {isNew ? (
+                  <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-500 text-white shadow-2xs flex items-center gap-1">
+                    <Sparkles className="w-3 h-3" /> NEW
+                  </span>
+                ) : isTrending ? (
+                  <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-500 text-white shadow-2xs flex items-center gap-1">
+                    <Flame className="w-3 h-3 fill-amber-200" /> HOT
+                  </span>
+                ) : null}
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold">
+                  {portfolio.category}
+                </span>
+              </div>
+              <p className="text-xs text-slate-500 font-medium mt-0.5">{portfolio.role}</p>
+            </div>
+          </div>
+
+          {/* Device Controls & Share */}
+          <div className="flex items-center gap-2">
+            <div className="hidden sm:flex items-center gap-1 bg-white border border-slate-200 rounded-xl p-1 shadow-2xs">
+              <button
+                onClick={() => setDevice('desktop')}
+                className={`p-1.5 rounded-lg text-xs font-bold flex items-center gap-1 transition-all ${
+                  device === 'desktop' ? 'bg-indigo-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <Monitor className="w-3.5 h-3.5" />
+                <span>Desktop</span>
+              </button>
+              <button
+                onClick={() => setDevice('tablet')}
+                className={`p-1.5 rounded-lg text-xs font-bold flex items-center gap-1 transition-all ${
+                  device === 'tablet' ? 'bg-indigo-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <Tablet className="w-3.5 h-3.5" />
+                <span>Tablet</span>
+              </button>
+              <button
+                onClick={() => setDevice('mobile')}
+                className={`p-1.5 rounded-lg text-xs font-bold flex items-center gap-1 transition-all ${
+                  device === 'mobile' ? 'bg-indigo-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <Smartphone className="w-3.5 h-3.5" />
+                <span>Mobile</span>
+              </button>
+            </div>
+
+            <button
+              onClick={handleCopyLink}
+              className="p-2 rounded-xl bg-white hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-all shadow-2xs"
             >
-              <span>Visit Site</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
+              <Share2 className="w-4 h-4 text-indigo-600" />
+              <span className="hidden sm:inline">{copied ? 'Copied!' : 'Share'}</span>
+            </button>
 
             <button
               onClick={onClose}
-              className="p-2 rounded-lg bg-slate-200/80 hover:bg-red-100 hover:text-red-700 text-slate-600 transition-colors ml-1"
-              title="Close Preview"
+              className="p-2 rounded-xl bg-slate-200/80 hover:bg-slate-300 text-slate-700 transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -191,11 +240,11 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
         </div>
 
-        {/* Modal Main Split Content (Iframe Stage + Evaluation Panel) */}
-        <div className="flex-1 flex flex-col lg:flex-row overflow-hidden bg-slate-100">
+        {/* Modal Main Viewport Grid */}
+        <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
           
-          {/* Main Viewport Stage */}
-          <div className="flex-1 relative flex flex-col items-center justify-center p-4 overflow-auto bg-slate-100">
+          {/* Main Preview Frame Container */}
+          <div className="flex-1 bg-slate-100 p-2 sm:p-4 flex flex-col items-center justify-center overflow-hidden relative">
             
             {/* Mode Switch Helper Header */}
             <div className="w-full flex items-center justify-between text-xs text-slate-600 mb-2 px-2">
@@ -274,74 +323,245 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
           </div>
 
-          {/* Right Side Review & Evaluation Panel */}
-          <div className="w-full lg:w-80 bg-white border-t lg:border-t-0 lg:border-l border-slate-200 p-4 flex flex-col justify-between space-y-4 overflow-y-auto shrink-0 shadow-xs">
+          {/* Right Side Comments & Evaluation Panel */}
+          <div className="w-full lg:w-96 bg-white border-t lg:border-t-0 lg:border-l border-slate-200 p-4 flex flex-col justify-between space-y-4 overflow-y-auto shrink-0 shadow-xs">
             
             <div className="space-y-4">
-              <div className="border-b border-slate-200 pb-3">
-                <span className="text-xs font-extrabold text-indigo-600 uppercase tracking-wider">Portfolio Inspector</span>
-                <h3 className="text-base font-extrabold text-slate-900 mt-1">{portfolio.name}</h3>
-                <p className="text-xs text-slate-500 font-semibold">{portfolio.role}</p>
-              </div>
-
-              {/* Tag List */}
-              <div>
-                <label className="text-xs font-bold text-slate-600 block mb-1.5">Tech & Categories</label>
-                <div className="flex flex-wrap gap-1">
-                  <span className="text-xs px-2 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold">
-                    {portfolio.category}
-                  </span>
-                  {portfolio.tags.map((t) => (
-                    <span key={t} className="text-xs px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 font-medium">
-                      {t}
+              
+              {/* Developer & Skills Profile Spotlight for Founders, Hiring Managers, and Developers */}
+              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 space-y-3 shadow-2xs">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1.5 text-indigo-700">
+                    <Briefcase className="w-4 h-4 text-indigo-600 shrink-0" />
+                    <span className="text-[11px] font-black uppercase tracking-wider text-indigo-800">Developer Skills &amp; Profile</span>
+                  </div>
+                  {isNew ? (
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-200 flex items-center gap-1">
+                      <Sparkles className="w-3 h-3 text-emerald-600" /> NEW
                     </span>
-                  ))}
+                  ) : isTrending ? (
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-800 border border-amber-200 flex items-center gap-1">
+                      <Flame className="w-3 h-3 text-amber-600 fill-amber-500" /> HOT
+                    </span>
+                  ) : null}
                 </div>
-              </div>
 
-              {/* Evaluation Star Rating */}
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 space-y-2">
-                <label className="text-xs font-bold text-slate-700 block">Your Inspiration Rating</label>
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <button
-                      key={star}
-                      onClick={() => setRating(star)}
-                      className="p-1 text-slate-300 hover:text-amber-500 transition-colors"
-                    >
-                      <Star className={`w-5 h-5 ${star <= rating ? 'fill-amber-500 text-amber-500' : ''}`} />
-                    </button>
-                  ))}
-                  <span className="text-xs text-amber-700 font-extrabold ml-2">
-                    {rating > 0 ? `${rating} / 5` : 'Rate'}
+                {/* Role & Specialization */}
+                <div>
+                  <h4 className="text-sm font-black text-slate-900">{portfolio.name}</h4>
+                  <p className="text-xs font-extrabold text-indigo-600 mt-0.5">{portfolio.role}</p>
+                </div>
+
+                {/* Tech Stack & Skills Visibility */}
+                <div>
+                  <span className="text-[10px] font-black text-slate-500 uppercase tracking-wider block mb-1.5">
+                    Skills &amp; Tech Stack
                   </span>
+                  <div className="flex flex-wrap gap-1">
+                    {portfolio.tags && portfolio.tags.length > 0 ? (
+                      portfolio.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-white text-slate-800 border border-slate-200 shadow-2xs"
+                        >
+                          {tag}
+                        </span>
+                      ))
+                    ) : (
+                      <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-white text-indigo-700 border border-indigo-200">
+                        {portfolio.category}
+                      </span>
+                    )}
+                  </div>
                 </div>
+
+                {/* Recruiter & Direct Outreach Info */}
+                <div className="pt-2 border-t border-slate-200/80 space-y-1.5 text-xs text-slate-700">
+                  <span className="text-[10px] font-black text-slate-500 uppercase tracking-wider block">
+                    Direct Contact for Founders &amp; Hiring
+                  </span>
+                  <div className="flex items-center gap-1.5 font-medium">
+                    <Mail className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
+                    {ownerEmail ? (
+                      <a href={`mailto:${ownerEmail}`} className="truncate font-bold text-indigo-600 hover:underline">
+                        {ownerEmail}
+                      </a>
+                    ) : (
+                      <span className="text-slate-400 italic font-normal">Add email via PR</span>
+                    )}
+                  </div>
+                  {ownerPhone && (
+                    <div className="flex items-center gap-1.5 font-medium">
+                      <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                      <a href={`tel:${ownerPhone}`} className="truncate font-bold text-emerald-700 hover:underline">
+                        {ownerPhone}
+                      </a>
+                    </div>
+                  )}
+                </div>
+
+                {(!ownerEmail || !ownerPhone) && (
+                  <div className="pt-2 border-t border-slate-200">
+                    <a
+                      href="https://github.com/balavenkatesh3322/awesome-developer-porfolio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[11px] font-extrabold text-indigo-600 hover:text-indigo-800 flex items-center justify-between gap-1 transition-colors bg-indigo-50/80 p-2 rounded-xl border border-indigo-100"
+                    >
+                      <span>Owner? Update skills &amp; contacts via PR</span>
+                      <ExternalLink className="w-3 h-3 shrink-0" />
+                    </a>
+                  </div>
+                )}
               </div>
 
-              {/* Notes Input */}
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-slate-700 block">Inspiration Notes</label>
-                <textarea
-                  value={notes}
-                  onChange={(e) => setNotes(e.target.value)}
-                  placeholder="e.g. Clean typography, elegant grid alignment, slick page transitions..."
-                  rows={4}
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-indigo-600 resize-none shadow-xs"
-                />
+              {/* Panel Tabs */}
+              <div className="flex border-b border-slate-200">
                 <button
-                  onClick={handleSaveNotes}
-                  className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+                  onClick={() => setRightPanelTab('comments')}
+                  className={`flex-1 py-2 text-xs font-bold border-b-2 flex items-center justify-center gap-1.5 transition-colors ${
+                    rightPanelTab === 'comments'
+                      ? 'border-indigo-600 text-indigo-600'
+                      : 'border-transparent text-slate-500 hover:text-slate-800'
+                  }`}
                 >
-                  {notesSaved ? (
-                    <>
-                      <Check className="w-4 h-4 text-emerald-200" />
-                      <span>Notes Saved!</span>
-                    </>
-                  ) : (
-                    <span>Save Evaluation Notes</span>
-                  )}
+                  <MessageSquare className="w-3.5 h-3.5" />
+                  <span>Comments ({comments.length})</span>
+                </button>
+                <button
+                  onClick={() => setRightPanelTab('evaluation')}
+                  className={`flex-1 py-2 text-xs font-bold border-b-2 flex items-center justify-center gap-1.5 transition-colors ${
+                    rightPanelTab === 'evaluation'
+                      ? 'border-indigo-600 text-indigo-600'
+                      : 'border-transparent text-slate-500 hover:text-slate-800'
+                  }`}
+                >
+                  <Star className="w-3.5 h-3.5" />
+                  <span>Evaluation</span>
                 </button>
               </div>
+
+              {rightPanelTab === 'comments' ? (
+                <div className="space-y-3">
+                  
+                  {/* Post Comment Form */}
+                  <form onSubmit={handlePostComment} className="bg-slate-50 border border-slate-200 rounded-2xl p-3 space-y-2">
+                    <label className="text-xs font-bold text-slate-900 block">Leave a Comment for Developer</label>
+
+                    <input
+                      type="text"
+                      placeholder="Your Name (e.g. Alex)"
+                      value={authorName}
+                      onChange={(e) => setAuthorName(e.target.value)}
+                      className="w-full bg-white border border-slate-200 rounded-xl px-3 py-1.5 text-xs text-slate-900 focus:outline-none focus:border-indigo-600 shadow-2xs"
+                    />
+
+                    <input
+                      type="email"
+                      placeholder="Your Email (Optional for reply)"
+                      value={authorEmail}
+                      onChange={(e) => setAuthorEmail(e.target.value)}
+                      className="w-full bg-white border border-slate-200 rounded-xl px-3 py-1.5 text-xs text-slate-900 focus:outline-none focus:border-indigo-600 shadow-2xs"
+                    />
+
+                    <textarea
+                      placeholder="Write feedback or praise..."
+                      value={commentText}
+                      onChange={(e) => setCommentText(e.target.value)}
+                      rows={3}
+                      className="w-full bg-white border border-slate-200 rounded-xl p-2.5 text-xs text-slate-900 focus:outline-none focus:border-indigo-600 resize-none shadow-2xs"
+                      required
+                    />
+
+                    <button
+                      type="submit"
+                      className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-colors shadow-xs"
+                    >
+                      <Send className="w-3.5 h-3.5" />
+                      <span>Post Comment &amp; Notify Owner</span>
+                    </button>
+                  </form>
+
+                  {commentSubmitted && (
+                    <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-bold flex items-center gap-2 animate-in fade-in">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                      <span>
+                        {ownerEmail
+                          ? `Comment posted! Notification alert sent to ${ownerEmail}.`
+                          : 'Comment posted & saved to Activity Hub! (Owner can add contact email via JSON PR).'}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Comments List */}
+                  <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
+                    {comments.length === 0 ? (
+                      <p className="text-xs text-slate-400 italic text-center py-4">No comments yet. Be the first to leave feedback!</p>
+                    ) : (
+                      comments.map((c) => (
+                        <div key={c.id} className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+                          <div className="flex items-center justify-between text-[11px]">
+                            <span className="font-extrabold text-slate-900">{c.authorName}</span>
+                            <span className="text-slate-400 font-medium">{new Date(c.createdAt).toLocaleDateString()}</span>
+                          </div>
+                          <p className="text-xs text-slate-700 leading-relaxed font-medium">{c.text}</p>
+                          <div className="pt-1 flex items-center gap-1 text-[10px] text-emerald-700 font-bold">
+                            <Bell className="w-3 h-3 text-emerald-600" /> Owner Notified
+                          </div>
+                        </div>
+                      ))
+                    )}
+                  </div>
+
+                </div>
+              ) : (
+                /* Evaluation Tab */
+                <div className="space-y-4">
+                  {/* Evaluation Star Rating */}
+                  <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 space-y-2">
+                    <label className="text-xs font-bold text-slate-700 block">Your Inspiration Rating</label>
+                    <div className="flex items-center gap-1">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <button
+                          key={star}
+                          onClick={() => setRating(star)}
+                          className="p-1 text-slate-300 hover:text-amber-500 transition-colors"
+                        >
+                          <Star className={`w-5 h-5 ${star <= rating ? 'fill-amber-500 text-amber-500' : ''}`} />
+                        </button>
+                      ))}
+                      <span className="text-xs text-amber-700 font-extrabold ml-2">
+                        {rating > 0 ? `${rating} / 5` : 'Rate'}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Notes Input */}
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-slate-700 block">Inspiration Notes</label>
+                    <textarea
+                      value={notes}
+                      onChange={(e) => setNotes(e.target.value)}
+                      placeholder="e.g. Clean typography, elegant grid alignment, slick page transitions..."
+                      rows={4}
+                      className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-indigo-600 resize-none shadow-xs"
+                    />
+                    <button
+                      onClick={handleSaveNotes}
+                      className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+                    >
+                      {notesSaved ? (
+                        <>
+                          <Check className="w-4 h-4 text-emerald-200" />
+                          <span>Notes Saved!</span>
+                        </>
+                      ) : (
+                        <span>Save Evaluation Notes</span>
+                      )}
+                    </button>
+                  </div>
+                </div>
+              )}
 
             </div>
 

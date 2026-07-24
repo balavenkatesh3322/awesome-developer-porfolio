@@ -3,7 +3,8 @@ import {
   Code2,
   Github,
   Search,
-  Star
+  PlusCircle,
+  Share2
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -11,12 +12,14 @@ interface HeaderProps {
   filteredCount: number;
   searchQuery: string;
   onSearchChange: (q: string) => void;
+  onOpenSubmitModal?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   totalCount,
   searchQuery,
   onSearchChange,
+  onOpenSubmitModal
 }) => {
   return (
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 text-slate-900 shadow-sm transition-all">
@@ -46,16 +49,25 @@ export const Header: React.FC<HeaderProps> = ({
               </div>
             </div>
 
-            {/* Mobile GitHub Button */}
+            {/* Mobile Actions */}
             <div className="flex items-center gap-2 md:hidden">
+              {onOpenSubmitModal && (
+                <button
+                  onClick={onOpenSubmitModal}
+                  className="px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold flex items-center gap-1.5 shadow-md transition-all active:scale-95"
+                >
+                  <PlusCircle className="w-4 h-4" />
+                  <span>Share Portfolio</span>
+                </button>
+              )}
               <a
                 href="https://github.com/balavenkatesh3322/awesome-developer-porfolio"
                 target="_blank"
                 rel="noreferrer"
-                className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold flex items-center gap-1.5 shadow-md transition-all"
+                className="p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-all"
+                title="GitHub Repository"
               >
                 <Github className="w-4 h-4" />
-                <span>GitHub</span>
               </a>
             </div>
           </div>
@@ -83,18 +95,26 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Action Buttons (Desktop) */}
-          <div className="hidden md:flex items-center gap-2">
-            {/* GitHub Repository Link Button */}
+          <div className="hidden md:flex items-center gap-2.5">
+            {onOpenSubmitModal && (
+              <button
+                onClick={onOpenSubmitModal}
+                className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all shadow-md hover:shadow-indigo-500/25 border border-indigo-500 hover:scale-[1.02] cursor-pointer"
+                title="Share or submit your developer portfolio"
+              >
+                <PlusCircle className="w-4 h-4" />
+                <span>Share Your Portfolio</span>
+              </button>
+            )}
+
             <a
               href="https://github.com/balavenkatesh3322/awesome-developer-porfolio"
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold flex items-center gap-2 transition-all shadow-md hover:shadow-lg border border-slate-800 hover:scale-[1.02]"
-              title="Visit repository on GitHub & contribute"
+              className="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200/80 text-xs font-bold flex items-center gap-1.5 transition-all"
+              title="View on GitHub"
             >
               <Github className="w-4 h-4" />
-              <span>Star on GitHub</span>
-              <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
             </a>
           </div>
 

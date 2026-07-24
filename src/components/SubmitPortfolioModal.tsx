@@ -10,6 +10,8 @@ export const SubmitPortfolioModal: React.FC<SubmitPortfolioModalProps> = ({ isOp
   const [name, setName] = useState('');
   const [url, setUrl] = useState('');
   const [role, setRole] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [copiedTemplate, setCopiedTemplate] = useState(false);
 
   if (!isOpen) return null;
@@ -19,6 +21,8 @@ export const SubmitPortfolioModal: React.FC<SubmitPortfolioModalProps> = ({ isOp
   "name": "${name || 'Your Name'}",
   "url": "${url || 'https://your-portfolio.com'}",
   "role": "${role || 'Software Engineer'}",
+  "email": "${email || ''}",
+  "phone": "${phone || ''}",
   "hostPlatform": "Vercel",
   "category": "Full Stack",
   "tags": ["React", "TypeScript", "Node.js"],
@@ -102,6 +106,34 @@ export const SubmitPortfolioModal: React.FC<SubmitPortfolioModalProps> = ({ isOp
                 placeholder="e.g. Senior Full Stack & AI Engineer"
                 className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 focus:outline-none focus:bg-white focus:border-indigo-600 shadow-xs"
               />
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label className="text-xs font-bold text-slate-700 block mb-1">
+                  Contact Email <span className="text-slate-400 font-normal">(Optional, for notification alerts)</span>
+                </label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="e.g. alex@example.com"
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 focus:outline-none focus:bg-white focus:border-indigo-600 shadow-xs"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-bold text-slate-700 block mb-1">
+                  Contact Phone / SMS <span className="text-slate-400 font-normal">(Optional)</span>
+                </label>
+                <input
+                  type="text"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  placeholder="e.g. +1-555-0192"
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 focus:outline-none focus:bg-white focus:border-indigo-600 shadow-xs"
+                />
+              </div>
             </div>
           </div>
 

@@ -1,11 +1,12 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Portfolio, FilterState, ViewMode } from './types';
+import { Portfolio, FilterState, ViewMode, SocialDataState } from './types';
 import {
   ALL_PORTFOLIOS,
   getBookmarks,
   toggleBookmark as toggleBookmarkStorage,
   getRatings
 } from './lib/portfolios';
+import { getSocialData, toggleLike, addComment } from './lib/socialStore';
 import { Header } from './components/Header';
 import { AlphabetBar } from './components/AlphabetBar';
 import { FilterBar } from './components/FilterBar';
@@ -13,6 +14,7 @@ import { PortfolioCard } from './components/PortfolioCard';
 import { PreviewModal } from './components/PreviewModal';
 import { GitHubPagesModal } from './components/GitHubPagesModal';
 import { SubmitPortfolioModal } from './components/SubmitPortfolioModal';
+import { ActivityHubModal } from './components/ActivityHubModal';
 import { Sparkles, RefreshCw, Bookmark, Search, Code2, Heart, ArrowUp, MessageSquare, Github } from 'lucide-react';
 
 const INITIAL_PAGE_SIZE = 36;
@@ -38,16 +40,21 @@ export default function App() {
   const [bookmarks, setBookmarks] = useState<number[]>([]);
   const [ratings, setRatings] = useState<Record<number, { rating: number; notes: string }>>({});
 
+  // Social Data State (Option A Option - stored in localStorage JSON & viewable in ActivityHub)
+  const [socialData, setSocialData] = useState<SocialDataState>(getSocialData());
+
   // Modals & Active Portfolio State
   const [selectedPortfolio, setSelectedPortfolio] = useState<Portfolio | null>(null);
   const [isDeployGuideOpen, setIsDeployGuideOpen] = useState(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+  const [isActivityHubOpen, setIsActivityHubOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // Initialize Bookmarks and Ratings on Mount
+  // Initialize Bookmarks, Ratings & Social Data on Mount
   useEffect(() => {
     setBookmarks(getBookmarks());
     setRatings(getRatings());
+    setSocialData(getSocialData());
 
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -59,6 +66,20 @@ export default function App() {
   const handleToggleBookmark = (id: number) => {
     const updated = toggleBookmarkStorage(id);
     setBookmarks(updated);
+  };
+
+  const handleToggleLike = (id: number) => {
+    const updated = toggleLike(id);
+    setSocialData(updated);
+  };
+
+  const handleAddComment = (portfolioId: number, authorName: string, authorEmail: string, text: string) => {
+    const portfolio = ALL_PORTFOLIOS.find((p) => p.id === portfolioId);
+    const ownerEmail = portfolio?.email?.trim() || '';
+    const ownerPhone = portfolio?.phone?.trim() || '';
+
+    const updated = addComment(portfolioId, authorName, authorEmail, text, ownerEmail, ownerPhone);
+    setSocialData(updated);
   };
 
   const handleUpdateFilters = (updates: Partial<FilterState>) => {
@@ -188,6 +209,7 @@ export default function App() {
         filteredCount={filteredPortfolios.length}
         searchQuery={filters.searchQuery}
         onSearchChange={(q) => handleUpdateFilters({ searchQuery: q })}
+        onOpenSubmitModal={() => setIsSubmitModalOpen(true)}
       />
 
       {/* Alphabet Quick Jump Bar */}
@@ -249,6 +271,10 @@ export default function App() {
                 onSelectPortfolio={setSelectedPortfolio}
                 userRating={ratings[portfolio.id]}
                 viewMode={viewMode}
+                likesCount={socialData.likes[portfolio.id] || 0}
+                isLiked={!!socialData.userLikes[portfolio.id]}
+                onToggleLike={handleToggleLike}
+                commentsCount={(socialData.comments[portfolio.id] || []).length}
               />
             ))}
           </div>
@@ -389,8 +415,19 @@ export default function App() {
           hasPrev={selectedIndex > 0}
           isBookmarked={bookmarks.includes(selectedPortfolio.id)}
           onToggleBookmark={handleToggleBookmark}
+          likesCount={socialData.likes[selectedPortfolio.id] || 0}
+          isLiked={!!socialData.userLikes[selectedPortfolio.id]}
+          onToggleLike={handleToggleLike}
+          comments={socialData.comments[selectedPortfolio.id] || []}
+          onAddComment={(name, email, text) => handleAddComment(selectedPortfolio.id, name, email, text)}
         />
       )}
+
+      {/* Real-time Activity Hub & Notification Inspector Modal */}
+      <ActivityHubModal
+        isOpen={isActivityHubOpen}
+        onClose={() => setIsActivityHubOpen(false)}
+      />
 
       {/* GitHub Pages Deploy Guide Modal */}
       <GitHubPagesModal

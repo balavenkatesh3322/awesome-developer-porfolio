@@ -9,6 +9,27 @@ export interface Portfolio {
   initials: string;
   firstLetter: string;
   featured?: boolean;
+  email?: string;
+  phone?: string;
+  likesCount?: number;
+  commentsCount?: number;
+}
+
+export interface CommentItem {
+  id: string;
+  portfolioId: number;
+  authorName: string;
+  authorEmail?: string;
+  text: string;
+  createdAt: string;
+  notified?: boolean;
+  portfolioName?: string;
+}
+
+export interface SocialDataState {
+  likes: Record<number, number>; // portfolioId -> total count
+  userLikes: Record<number, boolean>; // portfolioId -> true if user liked
+  comments: Record<number, CommentItem[]>; // portfolioId -> array of comments
 }
 
 export type ViewMode = 'grid' | 'compact' | 'table';
