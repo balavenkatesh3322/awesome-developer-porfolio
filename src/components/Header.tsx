@@ -3,8 +3,8 @@ import {
   Code2,
   Github,
   Search,
-  PlusCircle,
-  Share2
+  GitFork,
+  ExternalLink
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -16,11 +16,11 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  totalCount,
   searchQuery,
-  onSearchChange,
-  onOpenSubmitModal
+  onSearchChange
 }) => {
+  const FORK_REPO_URL = "https://github.com/balavenkatesh3322/awesome-developer-porfolio/fork";
+
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-xl border-b border-slate-200/90 text-slate-900 shadow-xs transition-all">
       <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-2.5 sm:py-3.5">
@@ -41,23 +41,23 @@ export const Header: React.FC<HeaderProps> = ({
                   </h1>
                 </div>
                 <p className="text-[11px] sm:text-xs text-emerald-600 font-bold tracking-tight truncate hidden sm:block">
-                  Explore top developer websites &amp; submit your portfolio!
+                  Explore top developer websites &amp; submit your portfolio via Pull Request!
                 </p>
               </div>
             </div>
 
             {/* Mobile Actions */}
             <div className="flex items-center gap-1.5 md:hidden shrink-0">
-              {onOpenSubmitModal && (
-                <button
-                  onClick={onOpenSubmitModal}
-                  className="px-2.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-[11px] font-extrabold flex items-center gap-1 shadow-md transition-all active:scale-95"
-                  title="Share Portfolio"
-                >
-                  <PlusCircle className="w-3.5 h-3.5" />
-                  <span>Share</span>
-                </button>
-              )}
+              <a
+                href={FORK_REPO_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="px-2.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-[11px] font-extrabold flex items-center gap-1 shadow-md transition-all active:scale-95"
+                title="Fork Repository on GitHub to Raise PR"
+              >
+                <GitFork className="w-3.5 h-3.5" />
+                <span>Share</span>
+              </a>
               <a
                 href="https://github.com/balavenkatesh3322/awesome-developer-porfolio"
                 target="_blank"
@@ -94,16 +94,17 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Action Buttons (Desktop) */}
           <div className="hidden md:flex items-center gap-2.5">
-            {onOpenSubmitModal && (
-              <button
-                onClick={onOpenSubmitModal}
-                className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all shadow-md hover:shadow-indigo-500/25 border border-indigo-500 hover:scale-[1.02] cursor-pointer"
-                title="Share or submit your developer portfolio"
-              >
-                <PlusCircle className="w-4 h-4" />
-                <span>Share Your Portfolio</span>
-              </button>
-            )}
+            <a
+              href={FORK_REPO_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all shadow-md hover:shadow-indigo-500/25 border border-indigo-500 hover:scale-[1.02] cursor-pointer"
+              title="Fork repository on GitHub to raise a Pull Request and list your portfolio"
+            >
+              <GitFork className="w-4 h-4" />
+              <span>Share Your Portfolio</span>
+              <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+            </a>
 
             <a
               href="https://github.com/balavenkatesh3322/awesome-developer-porfolio"

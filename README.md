@@ -131,6 +131,51 @@ By providing your `email` and/or `phone` in your portfolio JSON entry:
 
 ---
 
+## 🗺️ Product Roadmap
+
+We are constantly building and evolving **Awesome Developer Portfolios** to empower developers worldwide. Here is what we're building and where you can help contribute:
+
+### 🌟 Phase 1: Interactive Engagement & Social Proof (Completed & Active)
+- [x] **❤️ Real-time Like Engine**: Click-to-heart portfolios with persistent local & global engagement counters.
+- [x] **💬 Developer Feedback & Comments**: Leave reviews, recruiter notes, and constructive feedback directly on portfolio viewports.
+- [x] **🔖 Save & Bookmark Collections**: Save favorite portfolios to your personal bookmarks with local state synchronization.
+- [x] **✨ Interactive Random Spotlight Jump**: Attention-grabbing spring jump animation that randomly highlights standout portfolios for discovery.
+- [x] **📱 Multi-Device Live Inspector**: Desktop, Tablet, and iPhone frame viewports with live iframe loading.
+
+---
+
+### 🚀 Phase 2: Community & Developer Ecosystem (In Progress & Open for PRs)
+- [ ] **🔥 Top-Liked & Trending Leaderboards**: Sort catalog by most liked, highest bookmarked, or most commented portfolios of the week.
+- [ ] **🤖 GitHub Actions Auto-Validation Bot**: Automated workflow to verify portfolio URL status, SSL certificates, and response times on PR submission.
+- [ ] **🏆 Community Badges & Verification**: Verified Senior Engineer, AI Pioneer, UI/UX Artisan, and Open Source Contributor badges.
+- [ ] **📊 Developer Analytics Dashboard**: Viewers count, live preview clicks, and referral tracking for portfolio owners.
+- [ ] **📤 Export & Share Collections**: Export saved portfolio bookmarks as Markdown lists or JSON for portfolio reviews.
+
+---
+
+### 🔮 Phase 3: AI-Powered Showcase & Matchmaking (Upcoming)
+- [ ] **🤖 AI Portfolio Critique & Recommendations**: AI assistant offering instant UI/UX feedback and resume/portfolio improvements.
+- [ ] **🎯 Recruiter & Founder Matchmaker**: Direct inquiry forms for recruiters to connect with featured developers based on tech stacks.
+- [ ] **🎨 Custom Theme Engine**: Customizable dark/light ambient themes and customizable grid display density options.
+
+---
+
+## 🤝 Call for Contributions — Join the Open Source Movement!
+
+**Awesome Developer Portfolios** is built by developers, for developers. We believe every engineer deserves a platform to showcase their craft, inspire others, and land dream opportunities.
+
+Whether you are a seasoned open-source veteran or making your very first open-source contribution, **we invite you to join us!**
+
+### 💡 Ways You Can Contribute:
+
+1. **Submit Your Portfolio**: Fork the repo, add your site entry in `src/data/categories/`, and raise a Pull Request!
+2. **Build Roadmap Features**: Pick any unfulfilled task from our Roadmap above (e.g. enhanced Like/Comment/Save backend, analytics, search improvements) and send a PR.
+3. **Refine UI & Animations**: Enhance Framer Motion animations, layout micro-interactions, responsive CSS, or typography pairings.
+4. **Fix Bugs & Improve Code**: Report issues, optimize bundle performance, or refine TypeScript interfaces.
+5. **Spread the Word**: Star this repository ⭐, share it on Twitter/X, LinkedIn, Reddit, or Dev.to!
+
+---
+
 ## 🛠️ Local Development
 
 Want to run the showcase application on your local machine or build upon it?

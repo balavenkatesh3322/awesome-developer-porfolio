@@ -166,13 +166,13 @@ export const SubmitPortfolioModal: React.FC<SubmitPortfolioModalProps> = ({ isOp
           </button>
 
           <a
-            href="https://github.com/balavenkatesh3322/awesome-developer-porfolio"
+            href="https://github.com/balavenkatesh3322/awesome-developer-porfolio/fork"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold flex items-center gap-2 transition-all shadow-md"
+            className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all shadow-md shadow-indigo-500/20"
           >
             <Github className="w-4 h-4" />
-            <span>Open GitHub Repository</span>
+            <span>Fork Repo &amp; Raise PR on GitHub</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
