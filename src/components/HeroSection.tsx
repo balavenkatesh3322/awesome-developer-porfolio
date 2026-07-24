@@ -4,7 +4,10 @@ import {
   ArrowDown,
   Layers,
   Award,
-  CheckCircle2
+  CheckCircle2,
+  Sparkles,
+  TrendingUp,
+  Globe
 } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -26,6 +29,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreClick
 }) => {
   const [roleIndex, setRoleIndex] = useState(0);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -34,68 +38,81 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     return () => clearInterval(timer);
   }, []);
 
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const { clientX, clientY, currentTarget } = e;
+    const { left, top, width, height } = currentTarget.getBoundingClientRect();
+    const x = (clientX - left) / width - 0.5;
+    const y = (clientY - top) / height - 0.5;
+    setMousePos({ x, y });
+  };
+
   return (
-    <section className="relative overflow-hidden bg-white border-b border-slate-200/80 pt-8 sm:pt-12 pb-10 sm:pb-14 px-4 sm:px-6 lg:px-8 shadow-2xs">
+    <section 
+      onMouseMove={handleMouseMove}
+      className="relative overflow-hidden bg-white border-b border-slate-200/80 pt-8 sm:pt-14 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 shadow-2xs group"
+    >
       
-      {/* Animated Light Mesh Glowing Orbs Background */}
+      {/* Interactive Ambient Gradient Glow Mesh with Parallax */}
       <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
-        {/* Animated Gradient Blob 1 */}
+        {/* Parallax Gradient Blob 1 */}
         <motion.div
           animate={{
-            x: [0, 40, -30, 0],
-            y: [0, -30, 20, 0],
-            scale: [1, 1.15, 0.95, 1],
+            x: [mousePos.x * 30, mousePos.x * -20, mousePos.x * 30],
+            y: [mousePos.y * 30, mousePos.y * -20, mousePos.y * 30],
+            scale: [1, 1.15, 1],
           }}
           transition={{
-            duration: 16,
+            duration: 8,
             repeat: Infinity,
+            repeatType: 'mirror',
             ease: "easeInOut"
           }}
-          className="absolute -top-32 left-1/4 w-[500px] h-[350px] bg-gradient-to-r from-indigo-200/40 via-purple-200/30 to-sky-200/40 rounded-full blur-3xl opacity-70"
+          className="absolute -top-32 left-1/4 w-[550px] h-[380px] bg-gradient-to-r from-indigo-300/30 via-purple-300/25 to-sky-200/30 rounded-full blur-3xl opacity-75"
         />
 
-        {/* Animated Gradient Blob 2 */}
+        {/* Parallax Gradient Blob 2 */}
         <motion.div
           animate={{
-            x: [0, -50, 40, 0],
-            y: [0, 40, -20, 0],
-            scale: [1, 0.9, 1.1, 1],
+            x: [mousePos.x * -40, mousePos.x * 25, mousePos.x * -40],
+            y: [mousePos.y * -40, mousePos.y * 25, mousePos.y * -40],
+            scale: [1, 0.9, 1],
           }}
           transition={{
-            duration: 20,
+            duration: 10,
             repeat: Infinity,
+            repeatType: 'mirror',
             ease: "easeInOut"
           }}
-          className="absolute -top-20 right-1/4 w-[450px] h-[300px] bg-gradient-to-r from-violet-200/40 via-pink-200/30 to-amber-200/30 rounded-full blur-3xl opacity-60"
+          className="absolute -top-20 right-1/4 w-[480px] h-[320px] bg-gradient-to-r from-violet-300/30 via-pink-300/25 to-amber-200/25 rounded-full blur-3xl opacity-65"
         />
 
-        {/* Fine Architectural Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40" />
+        {/* Fine Architectural Grid Pattern with Radial Gradient Mask */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_65%_55%_at_50%_0%,#000_70%,transparent_100%)] opacity-35" />
       </div>
 
-      <div className="max-w-7xl mx-auto space-y-8">
+      <div className="max-w-7xl mx-auto space-y-10">
         
-        {/* Top Badges, Headline & Action Buttons Grid */}
+        {/* Headline & Action Hero Section */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="space-y-4 max-w-2xl"
           >
-            {/* Title with Animated Rotating Role Pill */}
+            {/* Title with Animated Rotating Role Pill & Dynamic Gradient Sweep */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.12]">
               Showcase Your Work &amp; Get Discovered <br className="hidden sm:inline" />
-              <span className="inline-block relative">
+              <span className="inline-block relative mt-1">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={roleIndex}
-                    initial={{ opacity: 0, y: 12, filter: 'blur(4px)' }}
-                    animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                    exit={{ opacity: 0, y: -12, filter: 'blur(4px)' }}
-                    transition={{ duration: 0.35 }}
-                    className="bg-gradient-to-r from-indigo-600 via-indigo-700 to-violet-700 bg-clip-text text-transparent block sm:inline"
+                    initial={{ opacity: 0, y: 16, filter: 'blur(6px)', scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 }}
+                    exit={{ opacity: 0, y: -16, filter: 'blur(6px)', scale: 0.98 }}
+                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                    className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-700 bg-clip-text text-transparent block sm:inline font-black"
                   >
                     {HIGHLIGHT_ROLES[roleIndex]}
                   </motion.span>
@@ -103,7 +120,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </span>
             </h1>
 
-            {/* Description */}
+            {/* Description with Clean Typographic Hierarchy */}
             <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-xl">
               Submit your developer portfolio to reach thousands of tech recruiters, founders, and fellow engineers. Get featured, stand out from the crowd, and level up your career.
             </p>
@@ -111,84 +128,119 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Marketing Metrics & Primary CTA */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-end justify-center gap-4 shrink-0"
           >
             
-            {/* Live Metrics Card */}
-            <div className="grid grid-cols-3 gap-3 bg-slate-50/90 backdrop-blur-md border border-slate-200/90 rounded-2xl p-3 shadow-2xs text-center w-full sm:w-auto min-w-[280px]">
+            {/* Live Metrics Card with Animated Glass Frame */}
+            <motion.div 
+              whileHover={{ y: -2 }}
+              className="grid grid-cols-3 gap-3 bg-white/80 backdrop-blur-md border border-slate-200/90 rounded-2xl p-3.5 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all text-center w-full sm:w-auto min-w-[295px] relative overflow-hidden group/metrics"
+            >
+              {/* Shimmer Light Beam Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-100/30 to-transparent -translate-x-full group-hover/metrics:animate-[shimmer_1.5s_ease-in-out]" />
+
               <div className="px-3 py-1">
-                <span className="text-base font-black text-slate-900 block">{totalCount.toLocaleString()}</span>
+                <span className="text-lg font-black text-slate-900 block tracking-tight">{totalCount.toLocaleString()}</span>
                 <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Live Sites</span>
               </div>
-              <div className="px-3 py-1 border-x border-slate-200">
-                <span className="text-base font-black text-indigo-600 block">100%</span>
+              <div className="px-3 py-1 border-x border-slate-200/80">
+                <span className="text-lg font-black text-indigo-600 block tracking-tight">100%</span>
                 <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Curated</span>
               </div>
               <div className="px-3 py-1">
-                <span className="text-base font-black text-emerald-600 block">Instant</span>
+                <span className="text-lg font-black text-emerald-600 block tracking-tight">Instant</span>
                 <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Previews</span>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Primary CTA Button */}
+            {/* Primary Magnetic CTA Button */}
             <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
+              whileHover={{ scale: 1.04, y: -2 }}
+              whileTap={{ scale: 0.96 }}
               onClick={onExploreClick}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white text-sm font-black flex items-center justify-center gap-2.5 shadow-md shadow-indigo-500/25 transition-all cursor-pointer"
+              className="relative group/btn w-full sm:w-auto px-7 py-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-700 to-violet-700 hover:from-indigo-700 hover:to-violet-800 text-white text-sm font-black flex items-center justify-center gap-3 shadow-lg shadow-indigo-500/25 transition-all cursor-pointer overflow-hidden"
             >
-              <span>Explore Catalog</span>
-              <ArrowDown className="w-4 h-4 animate-bounce" />
+              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300" />
+              <span className="relative z-10">Explore Directory Catalog</span>
+              <ArrowDown className="w-4 h-4 relative z-10 animate-bounce text-indigo-100" />
             </motion.button>
 
           </motion.div>
 
         </div>
 
-        {/* Marketing Trust Value Proposition Grid */}
+        {/* Interactive Trust Value Proposition Grid with Hover Lift & Accent Glows */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-slate-100"
+          transition={{ duration: 0.6, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-slate-200/60"
         >
-          <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/60">
-            <div className="w-9 h-9 rounded-xl bg-indigo-100 border border-indigo-200/80 flex items-center justify-center text-indigo-700 shrink-0">
-              <Award className="w-4 h-4 text-indigo-600" />
+          {/* Card 1 */}
+          <motion.div
+            whileHover={{ y: -4, scale: 1.01 }}
+            transition={{ duration: 0.2 }}
+            className="group/card flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-indigo-300/80 hover:shadow-md hover:shadow-indigo-500/5 transition-all duration-200 cursor-default"
+          >
+            <div className="w-10 h-10 rounded-xl bg-indigo-100 border border-indigo-200/90 flex items-center justify-center text-indigo-700 shrink-0 group-hover/card:bg-indigo-600 group-hover/card:text-white transition-colors duration-200 shadow-2xs">
+              <Award className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-xs font-black text-slate-900">100% Curated Websites</h3>
-              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">Hand-evaluated by senior engineers &amp; designers for quality, UI polish, and speed.</p>
+              <h3 className="text-xs font-black text-slate-900 group-hover/card:text-indigo-600 transition-colors">
+                100% Curated Websites
+              </h3>
+              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">
+                Hand-evaluated by senior engineers &amp; designers for quality, UI polish, and speed.
+              </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/60">
-            <div className="w-9 h-9 rounded-xl bg-purple-100 border border-purple-200/80 flex items-center justify-center text-purple-700 shrink-0">
-              <Layers className="w-4 h-4 text-purple-600" />
+          {/* Card 2 */}
+          <motion.div
+            whileHover={{ y: -4, scale: 1.01 }}
+            transition={{ duration: 0.2 }}
+            className="group/card flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-purple-300/80 hover:shadow-md hover:shadow-purple-500/5 transition-all duration-200 cursor-default"
+          >
+            <div className="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200/90 flex items-center justify-center text-purple-700 shrink-0 group-hover/card:bg-purple-600 group-hover/card:text-white transition-colors duration-200 shadow-2xs">
+              <Layers className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-xs font-black text-slate-900">Multi-Device Live Previews</h3>
-              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">Test real-time desktop, tablet, and mobile layouts in an iPhone glass window.</p>
+              <h3 className="text-xs font-black text-slate-900 group-hover/card:text-purple-600 transition-colors">
+                Multi-Device Live Previews
+              </h3>
+              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">
+                Test real-time desktop, tablet, and mobile layouts in an interactive frame.
+              </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/60">
-            <div className="w-9 h-9 rounded-xl bg-emerald-100 border border-emerald-200/80 flex items-center justify-center text-emerald-700 shrink-0">
-              <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+          {/* Card 3 */}
+          <motion.div
+            whileHover={{ y: -4, scale: 1.01 }}
+            transition={{ duration: 0.2 }}
+            className="group/card flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-emerald-300/80 hover:shadow-md hover:shadow-emerald-500/5 transition-all duration-200 cursor-default"
+          >
+            <div className="w-10 h-10 rounded-xl bg-emerald-100 border border-emerald-200/90 flex items-center justify-center text-emerald-700 shrink-0 group-hover/card:bg-emerald-600 group-hover/card:text-white transition-colors duration-200 shadow-2xs">
+              <CheckCircle2 className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-xs font-black text-slate-900">Social Proof &amp; Benchmarking</h3>
-              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">Like, bookmark, review, and comment on standout developer portfolios.</p>
+              <h3 className="text-xs font-black text-slate-900 group-hover/card:text-emerald-600 transition-colors">
+                Social Proof &amp; Benchmarking
+              </h3>
+              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">
+                Like, bookmark, review, and comment on standout developer portfolios.
+              </p>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
 
       </div>
     </section>
   );
 };
+
 
 

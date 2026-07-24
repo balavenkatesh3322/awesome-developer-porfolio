@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Portfolio, FilterState, ViewMode, SocialDataState } from './types';
 import {
   ALL_PORTFOLIOS,
@@ -45,12 +46,14 @@ export default function App() {
   // Social Data State (Option A Option - stored in localStorage JSON & viewable in ActivityHub)
   const [socialData, setSocialData] = useState<SocialDataState>(getSocialData());
 
-  // Modals & Active Portfolio State
+  // Modals, Scroll & Random Spotlight Jump State
   const [selectedPortfolio, setSelectedPortfolio] = useState<Portfolio | null>(null);
   const [isDeployGuideOpen, setIsDeployGuideOpen] = useState(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [isActivityHubOpen, setIsActivityHubOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [highlightedCardId, setHighlightedCardId] = useState<number | null>(null);
+  const [autoJumpEnabled, setAutoJumpEnabled] = useState<boolean>(true);
 
   // Initialize Bookmarks, Ratings & Social Data on Mount
   useEffect(() => {
@@ -169,6 +172,26 @@ export default function App() {
     return filteredPortfolios.slice(0, visibleCount);
   }, [filteredPortfolios, visibleCount]);
 
+  // Trigger Random Card Jump Animation
+  const triggerRandomJump = () => {
+    if (visiblePortfolios.length === 0) return;
+    const randomIndex = Math.floor(Math.random() * visiblePortfolios.length);
+    const targetId = visiblePortfolios[randomIndex].id;
+    setHighlightedCardId(targetId);
+    setTimeout(() => {
+      setHighlightedCardId((curr) => (curr === targetId ? null : curr));
+    }, 2500);
+  };
+
+  // Periodic Random Jump Attention Effect
+  useEffect(() => {
+    if (!autoJumpEnabled || visiblePortfolios.length === 0) return;
+    const interval = setInterval(() => {
+      triggerRandomJump();
+    }, 8500);
+    return () => clearInterval(interval);
+  }, [autoJumpEnabled, visiblePortfolios]);
+
   // Active Portfolio Index for Prev/Next navigation inside PreviewModal
   const selectedIndex = useMemo(() => {
     if (!selectedPortfolio) return -1;
@@ -235,6 +258,9 @@ export default function App() {
           filteredCount={filteredPortfolios.length}
           totalCount={ALL_PORTFOLIOS.length}
           onResetFilters={handleResetFilters}
+          onTriggerJump={triggerRandomJump}
+          autoJumpEnabled={autoJumpEnabled}
+          onToggleAutoJump={() => setAutoJumpEnabled(!autoJumpEnabled)}
         />
 
         {/* Alphabet Quick Jump Bar - Starts inside Catalog Section */}
@@ -279,29 +305,34 @@ export default function App() {
 
         {/* Portfolio Showcase Grid / List */}
         {visiblePortfolios.length > 0 ? (
-          <div
+          <motion.div
+            layout
             className={
               viewMode === 'grid'
                 ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5.5'
                 : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5'
             }
           >
-            {visiblePortfolios.map((portfolio) => (
-              <PortfolioCard
-                key={portfolio.id}
-                portfolio={portfolio}
-                isBookmarked={bookmarks.includes(portfolio.id)}
-                onToggleBookmark={handleToggleBookmark}
-                onSelectPortfolio={setSelectedPortfolio}
-                userRating={ratings[portfolio.id]}
-                viewMode={viewMode}
-                likesCount={socialData.likes[portfolio.id] || 0}
-                isLiked={!!socialData.userLikes[portfolio.id]}
-                onToggleLike={handleToggleLike}
-                commentsCount={(socialData.comments[portfolio.id] || []).length}
-              />
-            ))}
-          </div>
+            <AnimatePresence mode="popLayout">
+              {visiblePortfolios.map((portfolio, idx) => (
+                <PortfolioCard
+                  key={portfolio.id}
+                  index={idx}
+                  portfolio={portfolio}
+                  isHighlighted={highlightedCardId === portfolio.id}
+                  isBookmarked={bookmarks.includes(portfolio.id)}
+                  onToggleBookmark={handleToggleBookmark}
+                  onSelectPortfolio={setSelectedPortfolio}
+                  userRating={ratings[portfolio.id]}
+                  viewMode={viewMode}
+                  likesCount={socialData.likes[portfolio.id] || 0}
+                  isLiked={!!socialData.userLikes[portfolio.id]}
+                  onToggleLike={handleToggleLike}
+                  commentsCount={(socialData.comments[portfolio.id] || []).length}
+                />
+              ))}
+            </AnimatePresence>
+          </motion.div>
         ) : (
           /* Empty Search State */
           <div className="py-20 text-center max-w-md mx-auto space-y-4 bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">

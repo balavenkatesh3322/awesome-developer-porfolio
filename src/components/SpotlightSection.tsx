@@ -52,27 +52,27 @@ export const SpotlightSection: React.FC<SpotlightSectionProps> = ({
           return (
             <motion.div
               key={portfolio.id}
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: idx * 0.08 }}
-              whileHover={{ y: -4, transition: { duration: 0.2 } }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-20px' }}
+              transition={{ duration: 0.45, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              whileHover={{ y: -6, transition: { duration: 0.2 } }}
               onClick={() => onSelectPortfolio(portfolio)}
-              className="group bg-white border border-slate-200/90 rounded-2xl p-3 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-200 cursor-pointer flex flex-col justify-between"
+              className="group bg-white border border-slate-200/90 rounded-2xl p-3.5 hover:border-indigo-500/80 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
               <div className="space-y-2.5">
-                {/* Thumbnail */}
+                {/* Thumbnail with Subtle Hover Zoom */}
                 <div className="relative aspect-[16/10] bg-slate-100 rounded-xl overflow-hidden border border-slate-200/80">
                   <img
                     src={screenshotUrl}
                     alt={portfolio.name}
                     loading="lazy"
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover object-top group-hover:scale-108 transition-transform duration-500"
                     onError={(e) => {
-                      // Fallback placeholder gradient if screenshot fails
                       (e.target as HTMLElement).style.display = 'none';
                     }}
                   />
-                  <div className="absolute top-2 left-2 bg-slate-900/85 backdrop-blur-md text-white text-[9px] font-extrabold px-2 py-0.5 rounded-full flex items-center gap-1 shadow-2xs">
+                  <div className="absolute top-2 left-2 bg-slate-900/85 backdrop-blur-md text-white text-[9px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 shadow-2xs">
                     <Sparkles className="w-2.5 h-2.5 text-amber-400" /> Featured
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export const SpotlightSection: React.FC<SpotlightSectionProps> = ({
                 <span className="flex items-center gap-1">
                   <Eye className="w-3 h-3 text-indigo-600" /> Live Preview
                 </span>
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
               </div>
             </motion.div>
           );

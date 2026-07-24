@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { Portfolio, ViewMode } from '../types';
 import { getFaviconUrl, getScreenshotFallbackSources } from '../lib/portfolios';
 import { ExternalLink, Bookmark, Eye, Star, Heart, MessageSquare, Sparkles, Flame } from 'lucide-react';
@@ -14,6 +15,8 @@ interface PortfolioCardProps {
   isLiked?: boolean;
   onToggleLike?: (id: number) => void;
   commentsCount?: number;
+  index?: number;
+  isHighlighted?: boolean;
 }
 
 export const PortfolioCard: React.FC<PortfolioCardProps> = ({
@@ -26,7 +29,9 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
   likesCount = 0,
   isLiked = false,
   onToggleLike,
-  commentsCount = 0
+  commentsCount = 0,
+  index = 0,
+  isHighlighted = false
 }) => {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -72,7 +77,49 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
   if (viewMode === 'compact') {
     return (
-      <div className="bg-white border border-slate-200/90 hover:border-indigo-500/60 rounded-2xl p-3 flex items-center justify-between gap-3 group transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-0.5">
+      <motion.div
+        layout
+        initial={{ opacity: 0, y: 16, scale: 0.98 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, margin: '-20px' }}
+        animate={
+          isHighlighted
+            ? {
+                y: [0, -18, -4, -10, 0],
+                scale: [1, 1.04, 1.01, 1.02, 1],
+              }
+            : {}
+        }
+        transition={
+          isHighlighted
+            ? {
+                duration: 0.8,
+                ease: [0.175, 0.885, 0.32, 1.275],
+              }
+            : {
+                duration: 0.35,
+                delay: Math.min((index % 6) * 0.04, 0.2),
+                ease: [0.16, 1, 0.3, 1]
+              }
+        }
+        whileHover={{ y: -3, transition: { duration: 0.2 } }}
+        className={`bg-white border rounded-2xl p-3 flex items-center justify-between gap-3 group transition-all duration-300 shadow-sm relative ${
+          isHighlighted
+            ? 'border-indigo-500 ring-4 ring-indigo-500/40 shadow-xl shadow-indigo-500/20 z-30'
+            : 'border-slate-200/90 hover:border-indigo-500/60 hover:shadow-lg hover:shadow-indigo-500/10'
+        }`}
+      >
+        {isHighlighted && (
+          <motion.div
+            initial={{ opacity: 0, y: 8, scale: 0.7 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -8 }}
+            className="absolute -top-3 left-6 z-30 bg-gradient-to-r from-amber-500 via-indigo-600 to-purple-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-lg border border-white flex items-center gap-1 whitespace-nowrap animate-pulse"
+          >
+            <Sparkles className="w-3 h-3 text-yellow-300" />
+            <span>Spotlight</span>
+          </motion.div>
+        )}
         <div
           onClick={() => onSelectPortfolio(portfolio)}
           className="flex items-center gap-3 min-w-0 cursor-pointer flex-1"
@@ -182,12 +229,55 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
-      </div>
+      </motion.div>
     );
   }
 
   return (
-    <div className="bg-white border border-slate-200/90 hover:border-indigo-500/60 rounded-2xl overflow-hidden group flex flex-col transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1">
+    <motion.div
+      layout
+      initial={{ opacity: 0, y: 28, scale: 0.96 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: '-40px' }}
+      animate={
+        isHighlighted
+          ? {
+              y: [0, -22, -4, -14, 0],
+              scale: [1, 1.05, 1.01, 1.03, 1],
+              rotate: [0, -1.5, 1.5, -1, 0],
+            }
+          : {}
+      }
+      transition={
+        isHighlighted
+          ? {
+              duration: 0.9,
+              ease: [0.175, 0.885, 0.32, 1.275],
+            }
+          : {
+              duration: 0.45,
+              delay: Math.min((index % 4) * 0.06, 0.24),
+              ease: [0.16, 1, 0.3, 1]
+            }
+      }
+      whileHover={{ y: -6, scale: 1.01, transition: { duration: 0.2, ease: "easeOut" } }}
+      className={`bg-white border rounded-2xl overflow-hidden group flex flex-col transition-all duration-300 shadow-sm relative ${
+        isHighlighted
+          ? 'border-indigo-500 ring-4 ring-indigo-500/40 shadow-2xl shadow-indigo-500/25 z-30'
+          : 'border-slate-200/90 hover:border-indigo-500/80 hover:shadow-xl hover:shadow-indigo-500/12'
+      }`}
+    >
+      {isHighlighted && (
+        <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.6 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -10, scale: 0.6 }}
+          className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-30 bg-gradient-to-r from-amber-500 via-indigo-600 to-purple-600 text-white text-[10px] font-black px-3.5 py-1 rounded-full shadow-xl border-2 border-white flex items-center gap-1.5 whitespace-nowrap animate-bounce pointer-events-none"
+        >
+          <Sparkles className="w-3.5 h-3.5 text-yellow-300" />
+          <span>🔥 Random Spotlight Jump!</span>
+        </motion.div>
+      )}
       
       {/* Live Screenshot Thumbnail Container */}
       <div
@@ -371,6 +461,6 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
       </div>
 
-    </div>
+    </motion.div>
   );
 };
