@@ -11,7 +11,7 @@ export const AlphabetBar: React.FC<AlphabetBarProps> = ({
   onSelectLetter
 }) => {
   return (
-    <div className="bg-slate-100/90 backdrop-blur-md border-b border-slate-200/80 py-2.5 px-4 overflow-x-auto scrollbar-none transition-all">
+    <div className="bg-slate-100/90 backdrop-blur-md border-b border-slate-200/80 py-2 px-3 sm:px-4 overflow-x-auto scrollbar-none transition-all touch-pan-x">
       <div className="max-w-7xl mx-auto flex items-center justify-between min-w-max gap-1">
         <span className="text-xs font-bold uppercase tracking-wider text-slate-500 mr-2 flex items-center gap-1">
           Jump:

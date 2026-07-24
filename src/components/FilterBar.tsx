@@ -35,12 +35,12 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     filters.onlyBookmarks;
 
   return (
-    <div className="bg-white/90 backdrop-blur-xl border-b border-slate-200/80 py-3.5 px-4 sm:px-6 shadow-sm transition-all relative z-20">
-      <div className="max-w-7xl mx-auto space-y-3.5">
+    <div className="bg-white/95 backdrop-blur-xl border-b border-slate-200/80 py-2.5 sm:py-3.5 px-3 sm:px-6 shadow-xs transition-all relative z-20">
+      <div className="max-w-7xl mx-auto space-y-2.5 sm:space-y-3.5">
         
         {/* Row 1: Category Scrollable Bar */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-100">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 shrink-0 mr-1">
+        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-slate-100 touch-pan-x">
+          <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-slate-500 shrink-0 mr-0.5 sm:mr-1">
             Category:
           </span>
           {CATEGORIES.map((cat) => {
@@ -49,9 +49,9 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               <button
                 key={cat}
                 onClick={() => onUpdateFilters({ category: cat })}
-                className={`px-3.5 py-1.5 text-xs font-bold rounded-xl whitespace-nowrap transition-all shrink-0 ${
+                className={`px-3 py-1.5 text-xs font-bold rounded-xl whitespace-nowrap transition-all shrink-0 cursor-pointer ${
                   active
-                    ? 'bg-indigo-600 text-white shadow-sm shadow-indigo-600/20 border border-indigo-600'
+                    ? 'bg-indigo-600 text-white shadow-xs shadow-indigo-600/20 border border-indigo-600'
                     : 'bg-slate-100/80 text-slate-700 hover:bg-slate-200/80 hover:text-slate-900 border border-slate-200/60'
                 }`}
               >
@@ -62,18 +62,18 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         </div>
 
         {/* Row 2: Dropdown Controls Grid / Flex */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3 text-xs">
           
           {/* Dropdown Filters Group */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 w-full md:w-auto flex-1 max-w-3xl">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-2.5 w-full md:w-auto flex-1 max-w-3xl">
             
             {/* Host Platform Filter Dropdown */}
-            <div className="relative flex items-center bg-slate-50 border border-slate-200 rounded-xl focus-within:border-indigo-600 focus-within:ring-2 focus-within:ring-indigo-500/20 transition-all shadow-sm">
-              <Layers className="w-4 h-4 text-indigo-600 ml-3 shrink-0 pointer-events-none" />
+            <div className="relative flex items-center bg-slate-50 border border-slate-200 rounded-xl focus-within:border-indigo-600 focus-within:ring-2 focus-within:ring-indigo-500/20 transition-all shadow-2xs">
+              <Layers className="w-4 h-4 text-indigo-600 ml-2.5 sm:ml-3 shrink-0 pointer-events-none" />
               <select
                 value={filters.platform}
                 onChange={(e) => onUpdateFilters({ platform: e.target.value })}
-                className="bg-transparent text-slate-800 focus:outline-none cursor-pointer pl-2 pr-8 py-2 text-xs font-bold appearance-none w-full truncate"
+                className="bg-transparent text-slate-800 focus:outline-none cursor-pointer pl-2 pr-7 py-2 text-xs font-bold appearance-none w-full truncate"
                 aria-label="Filter by Platform"
               >
                 <option value="All" className="bg-white text-slate-900 font-semibold">All Platforms</option>
@@ -81,16 +81,16 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                   <option key={p} value={p} className="bg-white text-slate-900 font-semibold">{p}</option>
                 ))}
               </select>
-              <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute right-3 pointer-events-none" />
+              <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute right-2.5 pointer-events-none" />
             </div>
 
             {/* Tech Tag / Skills Filter Dropdown */}
-            <div className="relative flex items-center bg-slate-50 border border-slate-200 rounded-xl focus-within:border-indigo-600 focus-within:ring-2 focus-within:ring-indigo-500/20 transition-all shadow-sm">
-              <Tag className="w-4 h-4 text-purple-600 ml-3 shrink-0 pointer-events-none" />
+            <div className="relative flex items-center bg-slate-50 border border-slate-200 rounded-xl focus-within:border-indigo-600 focus-within:ring-2 focus-within:ring-indigo-500/20 transition-all shadow-2xs">
+              <Tag className="w-4 h-4 text-purple-600 ml-2.5 sm:ml-3 shrink-0 pointer-events-none" />
               <select
                 value={filters.tag}
                 onChange={(e) => onUpdateFilters({ tag: e.target.value })}
-                className="bg-transparent text-slate-800 focus:outline-none cursor-pointer pl-2 pr-8 py-2 text-xs font-bold appearance-none w-full truncate"
+                className="bg-transparent text-slate-800 focus:outline-none cursor-pointer pl-2 pr-7 py-2 text-xs font-bold appearance-none w-full truncate"
                 aria-label="Filter by Skill or Tag"
               >
                 <option value="All" className="bg-white text-slate-900 font-semibold">All Skills / Tags</option>
@@ -98,16 +98,16 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                   <option key={t} value={t} className="bg-white text-slate-900 font-semibold">{t}</option>
                 ))}
               </select>
-              <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute right-3 pointer-events-none" />
+              <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute right-2.5 pointer-events-none" />
             </div>
 
             {/* Sort Dropdown */}
-            <div className="relative flex items-center bg-slate-50 border border-slate-200 rounded-xl focus-within:border-indigo-600 focus-within:ring-2 focus-within:ring-indigo-500/20 transition-all shadow-sm">
-              <ArrowUpDown className="w-4 h-4 text-amber-600 ml-3 shrink-0 pointer-events-none" />
+            <div className="relative flex items-center bg-slate-50 border border-slate-200 rounded-xl focus-within:border-indigo-600 focus-within:ring-2 focus-within:ring-indigo-500/20 transition-all shadow-2xs">
+              <ArrowUpDown className="w-4 h-4 text-amber-600 ml-2.5 sm:ml-3 shrink-0 pointer-events-none" />
               <select
                 value={filters.sortBy}
                 onChange={(e) => onUpdateFilters({ sortBy: e.target.value as any })}
-                className="bg-transparent text-slate-800 focus:outline-none cursor-pointer pl-2 pr-8 py-2 text-xs font-bold appearance-none w-full truncate"
+                className="bg-transparent text-slate-800 focus:outline-none cursor-pointer pl-2 pr-7 py-2 text-xs font-bold appearance-none w-full truncate"
                 aria-label="Sort order"
               >
                 <option value="featured" className="bg-white text-slate-900 font-semibold">Featured First</option>
@@ -115,7 +115,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 <option value="name-desc" className="bg-white text-slate-900 font-semibold">Name (Z to A)</option>
                 <option value="random" className="bg-white text-slate-900 font-semibold">Random Order</option>
               </select>
-              <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute right-3 pointer-events-none" />
+              <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute right-2.5 pointer-events-none" />
             </div>
 
           </div>

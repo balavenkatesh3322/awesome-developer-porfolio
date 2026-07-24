@@ -62,6 +62,9 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [copied, setCopied] = useState(false);
 
+  // Mobile View Tab State (< lg screens)
+  const [mobileTab, setMobileTab] = useState<'preview' | 'details'>('preview');
+
   // User Rating State
   const [rating, setRating] = useState<number>(0);
   const [notes, setNotes] = useState<string>('');
@@ -78,6 +81,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
     if (portfolio) {
       setIframeLoaded(false);
       setUseScreenshotMode(false);
+      setMobileTab('preview');
       const savedRatings = getRatings();
       if (savedRatings[portfolio.id]) {
         setRating(savedRatings[portfolio.id].rating);
@@ -125,27 +129,27 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
   const getDeviceWidthClass = () => {
     switch (device) {
       case 'mobile':
-        return 'w-[375px] h-[667px] shadow-2xl rounded-2xl border-4 border-slate-900';
+        return 'w-full max-w-[375px] h-full sm:h-[667px] shadow-2xl rounded-2xl border-2 sm:border-4 border-slate-900 mx-auto';
       case 'tablet':
-        return 'w-[768px] h-[800px] shadow-2xl rounded-xl border-4 border-slate-900';
+        return 'w-full max-w-[768px] h-full sm:h-[800px] shadow-2xl rounded-xl border-2 sm:border-4 border-slate-900 mx-auto';
       default:
         return 'w-full h-full rounded-b-xl';
     }
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 overflow-hidden animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-md flex items-center justify-center p-1.5 sm:p-4 overflow-hidden animate-in fade-in duration-200">
       
       {/* Modal Card Box */}
-      <div className="bg-white border border-slate-200/80 w-full max-w-6xl h-[92vh] rounded-3xl flex flex-col shadow-2xl overflow-hidden text-slate-900">
+      <div className="bg-white border border-slate-200/90 w-full max-w-6xl h-[96vh] sm:h-[92vh] rounded-2xl sm:rounded-3xl flex flex-col shadow-2xl overflow-hidden text-slate-900">
         
         {/* Header Toolbar */}
-        <div className="bg-slate-50 border-b border-slate-200 p-3 sm:p-4 flex flex-wrap items-center justify-between gap-3 shrink-0">
+        <div className="bg-slate-50 border-b border-slate-200 p-2.5 sm:p-4 flex items-center justify-between gap-2 shrink-0">
           
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 min-w-0">
             <button
               onClick={() => onToggleBookmark(portfolio.id)}
-              className={`p-2 rounded-xl border transition-all ${
+              className={`p-2 rounded-xl border transition-all shrink-0 ${
                 isBookmarked
                   ? 'bg-amber-100 text-amber-800 border-amber-300'
                   : 'bg-white hover:bg-slate-100 text-slate-600 border-slate-200'
@@ -157,42 +161,44 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
             <button
               onClick={() => onToggleLike && onToggleLike(portfolio.id)}
-              className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all ${
+              className={`px-2.5 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1 transition-all shrink-0 ${
                 isLiked
                   ? 'bg-pink-100 text-pink-800 border-pink-300'
                   : 'bg-white hover:bg-pink-50 text-slate-700 hover:text-pink-600 border-slate-200'
               }`}
               title="Like Portfolio"
             >
-              <Heart className={`w-4 h-4 ${isLiked ? 'fill-pink-500 text-pink-600' : ''}`} />
-              <span>{likesCount} Likes</span>
+              <Heart className={`w-3.5 h-3.5 ${isLiked ? 'fill-pink-500 text-pink-600' : ''}`} />
+              <span className="hidden sm:inline">{likesCount} Likes</span>
+              <span className="sm:hidden">{likesCount}</span>
             </button>
 
-            <div>
-              <div className="flex items-center gap-2 flex-wrap">
-                <h2 className="text-sm font-extrabold text-slate-900">
+            <div className="min-w-0">
+              <div className="flex items-center gap-1.5 flex-wrap">
+                <h2 className="text-xs sm:text-sm font-extrabold text-slate-900 truncate max-w-[140px] sm:max-w-none">
                   {portfolio.name}
                 </h2>
                 {isNew ? (
-                  <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-500 text-white shadow-2xs flex items-center gap-1">
-                    <Sparkles className="w-3 h-3" /> NEW
+                  <span className="text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-emerald-500 text-white shadow-2xs flex items-center gap-0.5 shrink-0">
+                    <Sparkles className="w-2.5 h-2.5" /> NEW
                   </span>
                 ) : isTrending ? (
-                  <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-500 text-white shadow-2xs flex items-center gap-1">
-                    <Flame className="w-3 h-3 fill-amber-200" /> HOT
+                  <span className="text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-amber-500 text-white shadow-2xs flex items-center gap-0.5 shrink-0">
+                    <Flame className="w-2.5 h-2.5 fill-amber-200" /> HOT
                   </span>
                 ) : null}
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold">
+                <span className="text-[9px] sm:text-[10px] px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 font-bold shrink-0 hidden sm:inline">
                   {portfolio.category}
                 </span>
               </div>
-              <p className="text-xs text-slate-500 font-medium mt-0.5">{portfolio.role}</p>
+              <p className="text-[11px] sm:text-xs text-slate-500 font-medium truncate">{portfolio.role}</p>
             </div>
           </div>
 
-          {/* Device Controls & Share */}
-          <div className="flex items-center gap-2">
-            <div className="hidden sm:flex items-center gap-1 bg-white border border-slate-200 rounded-xl p-1 shadow-2xs">
+          {/* Controls & Close */}
+          <div className="flex items-center gap-1.5 shrink-0">
+            {/* Desktop Device View Switcher */}
+            <div className="hidden md:flex items-center gap-1 bg-white border border-slate-200 rounded-xl p-1 shadow-2xs">
               <button
                 onClick={() => setDevice('desktop')}
                 className={`p-1.5 rounded-lg text-xs font-bold flex items-center gap-1 transition-all ${
@@ -225,6 +231,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
             <button
               onClick={handleCopyLink}
               className="p-2 rounded-xl bg-white hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-all shadow-2xs"
+              title="Share portfolio link"
             >
               <Share2 className="w-4 h-4 text-indigo-600" />
               <span className="hidden sm:inline">{copied ? 'Copied!' : 'Share'}</span>
@@ -232,7 +239,8 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
             <button
               onClick={onClose}
-              className="p-2 rounded-xl bg-slate-200/80 hover:bg-slate-300 text-slate-700 transition-colors"
+              className="p-2 rounded-xl bg-slate-200/80 hover:bg-slate-300 text-slate-800 transition-colors cursor-pointer"
+              title="Close modal"
             >
               <X className="w-5 h-5" />
             </button>
@@ -240,16 +248,46 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
         </div>
 
-        {/* Modal Main Viewport Grid */}
-        <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
+        {/* Mobile Main Tab Switcher (< lg breakpoint) */}
+        <div className="flex lg:hidden bg-slate-100 border-b border-slate-200 p-1 shrink-0">
+          <button
+            onClick={() => setMobileTab('preview')}
+            className={`flex-1 py-2 text-xs font-extrabold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
+              mobileTab === 'preview'
+                ? 'bg-indigo-600 text-white shadow-sm'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            <Monitor className="w-3.5 h-3.5" />
+            <span>🌐 Website Live Preview</span>
+          </button>
+          <button
+            onClick={() => setMobileTab('details')}
+            className={`flex-1 py-2 text-xs font-extrabold rounded-xl flex items-center justify-center gap-1.5 transition-all ${
+              mobileTab === 'details'
+                ? 'bg-indigo-600 text-white shadow-sm'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            <Briefcase className="w-3.5 h-3.5" />
+            <span>👤 Profile &amp; Comments ({comments.length})</span>
+          </button>
+        </div>
+
+        {/* Modal Main Viewport Container */}
+        <div className="flex-1 flex flex-col lg:flex-row overflow-hidden relative">
           
           {/* Main Preview Frame Container */}
-          <div className="flex-1 bg-slate-100 p-2 sm:p-4 flex flex-col items-center justify-center overflow-hidden relative">
+          <div
+            className={`flex-1 bg-slate-100 p-2 sm:p-4 flex flex-col items-center justify-center overflow-hidden relative ${
+              mobileTab === 'preview' ? 'flex' : 'hidden lg:flex'
+            }`}
+          >
             
-            {/* Mode Switch Helper Header */}
-            <div className="w-full flex items-center justify-between text-xs text-slate-600 mb-2 px-2">
-              <div className="flex items-center gap-2">
-                <span>Rendering Mode:</span>
+            {/* Toolbar Mode Switch & Prev/Next Nav */}
+            <div className="w-full flex items-center justify-between text-xs text-slate-600 mb-2 px-1 sm:px-2 flex-wrap gap-2">
+              <div className="flex items-center gap-2 text-[11px] sm:text-xs">
+                <span>View Mode:</span>
                 <button
                   onClick={() => setUseScreenshotMode(!useScreenshotMode)}
                   className="text-indigo-600 hover:text-indigo-800 font-extrabold underline transition-colors"
@@ -258,12 +296,30 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
                 </button>
               </div>
 
+              {/* Mobile Viewports Selector (Inline on mobile) */}
+              <div className="flex sm:hidden items-center gap-1 bg-white border border-slate-200 rounded-lg p-0.5">
+                <button
+                  onClick={() => setDevice('desktop')}
+                  className={`p-1 rounded text-[10px] font-bold ${device === 'desktop' ? 'bg-indigo-600 text-white' : 'text-slate-600'}`}
+                  title="Desktop View"
+                >
+                  <Monitor className="w-3 h-3" />
+                </button>
+                <button
+                  onClick={() => setDevice('mobile')}
+                  className={`p-1 rounded text-[10px] font-bold ${device === 'mobile' ? 'bg-indigo-600 text-white' : 'text-slate-600'}`}
+                  title="Mobile View"
+                >
+                  <Smartphone className="w-3 h-3" />
+                </button>
+              </div>
+
               {hasPrev || hasNext ? (
                 <div className="flex items-center gap-1">
                   <button
                     onClick={onPrev}
                     disabled={!hasPrev}
-                    className="p-1.5 rounded-lg bg-white border border-slate-200 hover:bg-slate-200 disabled:opacity-40 text-slate-800 font-bold shadow-xs"
+                    className="p-1.5 rounded-lg bg-white border border-slate-200 hover:bg-slate-200 disabled:opacity-40 text-slate-800 font-bold shadow-xs cursor-pointer"
                     title="Previous Portfolio"
                   >
                     <ChevronLeft className="w-4 h-4" />
@@ -271,7 +327,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
                   <button
                     onClick={onNext}
                     disabled={!hasNext}
-                    className="p-1.5 rounded-lg bg-white border border-slate-200 hover:bg-slate-200 disabled:opacity-40 text-slate-800 font-bold shadow-xs"
+                    className="p-1.5 rounded-lg bg-white border border-slate-200 hover:bg-slate-200 disabled:opacity-40 text-slate-800 font-bold shadow-xs cursor-pointer"
                     title="Next Portfolio"
                   >
                     <ChevronRight className="w-4 h-4" />
@@ -280,21 +336,21 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
               ) : null}
             </div>
 
-            {/* Frame Viewport */}
+            {/* Frame Viewport Box */}
             <div className={`relative transition-all duration-300 bg-white flex flex-col overflow-hidden ${getDeviceWidthClass()}`}>
               
               {!useScreenshotMode ? (
                 <>
                   {!iframeLoaded && (
                     <div className="absolute inset-0 bg-slate-50 flex flex-col items-center justify-center p-6 text-center text-slate-700 z-10">
-                      <div className="w-10 h-10 border-3 border-indigo-600 border-t-transparent rounded-full animate-spin mb-3" />
-                      <p className="text-sm font-bold text-slate-900">Connecting to live website...</p>
-                      <p className="text-xs text-slate-500 max-w-sm mt-1">
-                        If the developer&apos;s site blocks embedded frames (X-Frame-Options), you can switch to high-res screenshot view below.
+                      <div className="w-9 h-9 border-3 border-indigo-600 border-t-transparent rounded-full animate-spin mb-3" />
+                      <p className="text-xs sm:text-sm font-bold text-slate-900">Connecting to live website...</p>
+                      <p className="text-[11px] sm:text-xs text-slate-500 max-w-sm mt-1">
+                        If the developer&apos;s site blocks embedded frames, you can switch to high-res screenshot view below.
                       </p>
                       <button
                         onClick={() => setUseScreenshotMode(true)}
-                        className="mt-4 px-4 py-2 bg-white hover:bg-slate-100 text-indigo-700 text-xs font-bold rounded-xl border border-slate-200 shadow-sm"
+                        className="mt-3 px-3.5 py-1.5 bg-white hover:bg-slate-100 text-indigo-700 text-xs font-bold rounded-xl border border-slate-200 shadow-xs cursor-pointer"
                       >
                         Load Screenshot View
                       </button>
@@ -321,14 +377,31 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
             </div>
 
+            {/* Mobile Direct Site External Link Bar */}
+            <div className="w-full mt-2 lg:hidden">
+              <a
+                href={portfolio.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm transition-colors"
+              >
+                <span>Open Site in Browser</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
+
           </div>
 
           {/* Right Side Comments & Evaluation Panel */}
-          <div className="w-full lg:w-96 bg-white border-t lg:border-t-0 lg:border-l border-slate-200 p-4 flex flex-col justify-between space-y-4 overflow-y-auto shrink-0 shadow-xs">
+          <div
+            className={`w-full lg:w-96 bg-white border-t lg:border-t-0 lg:border-l border-slate-200 p-3.5 sm:p-4 flex flex-col justify-between space-y-4 overflow-y-auto shrink-0 shadow-xs ${
+              mobileTab === 'details' ? 'flex h-full' : 'hidden lg:flex'
+            }`}
+          >
             
             <div className="space-y-4">
               
-              {/* Developer & Skills Profile Spotlight for Founders, Hiring Managers, and Developers */}
+              {/* Developer & Skills Profile Spotlight */}
               <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 space-y-3 shadow-2xs">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1.5 text-indigo-700">
@@ -419,7 +492,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
               <div className="flex border-b border-slate-200">
                 <button
                   onClick={() => setRightPanelTab('comments')}
-                  className={`flex-1 py-2 text-xs font-bold border-b-2 flex items-center justify-center gap-1.5 transition-colors ${
+                  className={`flex-1 py-2 text-xs font-bold border-b-2 flex items-center justify-center gap-1.5 transition-colors cursor-pointer ${
                     rightPanelTab === 'comments'
                       ? 'border-indigo-600 text-indigo-600'
                       : 'border-transparent text-slate-500 hover:text-slate-800'
@@ -430,7 +503,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
                 </button>
                 <button
                   onClick={() => setRightPanelTab('evaluation')}
-                  className={`flex-1 py-2 text-xs font-bold border-b-2 flex items-center justify-center gap-1.5 transition-colors ${
+                  className={`flex-1 py-2 text-xs font-bold border-b-2 flex items-center justify-center gap-1.5 transition-colors cursor-pointer ${
                     rightPanelTab === 'evaluation'
                       ? 'border-indigo-600 text-indigo-600'
                       : 'border-transparent text-slate-500 hover:text-slate-800'
@@ -475,7 +548,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
                     <button
                       type="submit"
-                      className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-colors shadow-xs"
+                      className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-colors shadow-xs cursor-pointer"
                     >
                       <Send className="w-3.5 h-3.5" />
                       <span>Post Comment &amp; Notify Owner</span>
@@ -488,7 +561,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
                       <span>
                         {ownerEmail
                           ? `Comment posted! Notification alert sent to ${ownerEmail}.`
-                          : 'Comment posted & saved to Activity Hub! (Owner can add contact email via JSON PR).'}
+                          : 'Comment posted & saved to Activity Hub!'}
                       </span>
                     </div>
                   )}
@@ -525,7 +598,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
                         <button
                           key={star}
                           onClick={() => setRating(star)}
-                          className="p-1 text-slate-300 hover:text-amber-500 transition-colors"
+                          className="p-1 text-slate-300 hover:text-amber-500 transition-colors cursor-pointer"
                         >
                           <Star className={`w-5 h-5 ${star <= rating ? 'fill-amber-500 text-amber-500' : ''}`} />
                         </button>
@@ -548,7 +621,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
                     />
                     <button
                       onClick={handleSaveNotes}
-                      className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+                      className="w-full py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm cursor-pointer"
                     >
                       {notesSaved ? (
                         <>
@@ -566,7 +639,7 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
             </div>
 
             {/* Direct Visit Link Footer */}
-            <div className="pt-3 border-t border-slate-200">
+            <div className="pt-3 border-t border-slate-200 hidden lg:block">
               <a
                 href={portfolio.url}
                 target="_blank"

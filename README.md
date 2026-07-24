@@ -7,6 +7,12 @@
 </p>
 
 <p align="center">
+  <a href="https://balavenkatesh3322.github.io/awesome-developer-porfolio/">
+    <img src="https://img.shields.io/badge/🌐_VIEW_LIVE_WEBSITE-EXPLORE_1,899+_PORTFOLIOS-4f46e5?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0f172a" height="42" alt="View Live Website" />
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/github/stars/balavenkatesh3322/awesome-developer-porfolio?style=for-the-badge&logo=github&color=indigo" alt="GitHub Stars" />
   <img src="https://img.shields.io/github/forks/balavenkatesh3322/awesome-developer-porfolio?style=for-the-badge&logo=github&color=purple" alt="GitHub Forks" />
   <img src="https://img.shields.io/github/issues-pr/balavenkatesh3322/awesome-developer-porfolio?style=for-the-badge&logo=git&color=emerald" alt="PRs Welcome" />
@@ -20,9 +26,29 @@
 
 ---
 
-## 🌐 Live Demo & Web App
+<div align="center">
 
-👉 **[View the Live Web Application](https://balavenkatesh3322.github.io/awesome-developer-porfolio/)**
+## 🌐 LIVE SHOWCASE WEBSITE
+
+### 🚀 **Browse 1,899+ Developer Portfolios with Live Responsive Previews**
+
+<p>Click below to open the interactive live web application in your browser:</p>
+
+<a href="https://balavenkatesh3322.github.io/awesome-developer-porfolio/">
+  <img src="https://img.shields.io/badge/👉_CLICK_HERE_TO_VIEW_WEBSITE-balavenkatesh3322.github.io%2Fawesome--developer--porfolio-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=1e1b4b" height="52" alt="Click Here To View Website" />
+</a>
+
+<br /><br />
+
+<a href="https://balavenkatesh3322.github.io/awesome-developer-porfolio/">
+  <img src="https://img.shields.io/badge/⚡_OPEN_LIVE_WEB_APP-10b981?style=for-the-badge&logo=githubpages&logoColor=white" height="40" alt="Open Live Web App" />
+</a>
+&nbsp;&nbsp;
+<a href="https://balavenkatesh3322.github.io/awesome-developer-porfolio/">
+  <img src="https://img.shields.io/badge/✨_SUBMIT_YOUR_PORTFOLIO-8b5cf6?style=for-the-badge&logo=sparkles&logoColor=white" height="40" alt="Submit Your Portfolio" />
+</a>
+
+</div>
 
 ---
 
@@ -36,14 +62,27 @@
 
 ---
 
-## ➕ How to Get Your Portfolio Featured
+## ➕ How to Submit & Feature Your Portfolio
 
-We welcome and encourage submissions! Get your website seen by thousands of developers and recruiters worldwide.
+We welcome and encourage developer submissions from around the globe! Gain visibility among founders, recruiters, hiring managers, and fellow engineers.
 
-### Open a GitHub Pull Request
+### ⚡ Method 1: Interactive Web App (Fastest)
+
+1. Open the **[Live Web Application](https://balavenkatesh3322.github.io/awesome-developer-porfolio/)**.
+2. Click the **"Share Your Portfolio"** button in the top navigation header.
+3. Enter your details:
+   - **Full Name** & **Portfolio URL**
+   - **Primary Role** (e.g. *Full Stack Developer*, *AI Engineer*)
+   - **Category & Skill Tags** (e.g. *React*, *TypeScript*, *Python*)
+   - **Contact Email & Phone** *(Essential for real-time notification alerts!)*
+4. Click **"Copy JSON Entry"** to copy the pre-formatted code block, then click **"Open Pull Request on GitHub"** to submit directly!
+
+---
+
+### 📩 Method 2: Manual GitHub Pull Request
 
 1. **Fork this repository** by clicking the **Fork** button at the top right of this page.
-2. Clone your forked repo locally:
+2. Clone your forked repository locally:
    ```bash
    git clone https://github.com/balavenkatesh3322/awesome-developer-porfolio.git
    ```
@@ -55,20 +94,17 @@ We welcome and encourage submissions! Get your website seen by thousands of deve
    - `mobile_app_dev.json` - Mobile App Dev
    - `ui_ux_design.json` - UI/UX & Design
    - `backend_cloud.json` - Backend & Cloud
-4. Append your portfolio entry to the respective JSON array:
+4. Add your portfolio object to the respective JSON array:
    ```json
    {
-     "id": 0,
-     "name": "Your Name",
-     "url": "https://your-portfolio.com",
-     "role": "AI & Data Science Engineer",
-     "hostPlatform": "GitHub Pages",
-     "category": "AI / Data Science",
-     "tags": [
-       "AI / Data Science",
-       "AI/ML",
-       "Python"
-     ],
+     "id": 1900,
+     "name": "Your Full Name",
+     "url": "https://your-portfolio-domain.com",
+     "role": "Full Stack Engineer",
+     "category": "Full Stack",
+     "tags": ["React", "TypeScript", "Node.js", "Python"],
+     "email": "your.email@example.com",
+     "phone": "+1234567890",
      "initials": "YN",
      "firstLetter": "Y",
      "featured": true
@@ -77,10 +113,21 @@ We welcome and encourage submissions! Get your website seen by thousands of deve
 5. Commit your changes and push to your fork:
    ```bash
    git add .
-   git commit -m "feat: add portfolio for [Your Name]"
+   git commit -m "feat: add portfolio and notifications for [Your Name]"
    git push origin main
    ```
 6. Open a **Pull Request** against the `main` branch of `balavenkatesh3322/awesome-developer-porfolio`.
+
+---
+
+## 🔔 How Real-Time Notifications Work for Developers
+
+By providing your `email` and/or `phone` in your portfolio JSON entry:
+
+- **Instant Comment Alerts**: Whenever a hiring manager, recruiter, or community member leaves a comment or feedback on your portfolio modal, a direct notification alert is automatically dispatched to your inbox/phone.
+- **Appreciation & Likes**: Track viewer appreciation and engagement metrics in real time.
+- **Direct Founder & Recruiter Outreach**: Enable one-click direct email/call actions right from your portfolio modal card.
+- **Privacy First**: Email and phone details are strictly used for developer engagement and direct outreach.
 
 ---
 

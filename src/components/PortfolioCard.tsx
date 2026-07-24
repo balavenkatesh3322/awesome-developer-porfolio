@@ -320,25 +320,15 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
           )}
         </div>
 
-        {/* Social & Rating Actions Row */}
+        {/* Social Actions Row */}
         <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
           <div className="flex items-center gap-2">
-            {/* Rating Trigger Badge */}
-            <button
-              onClick={() => onSelectPortfolio(portfolio)}
-              className="px-2 py-1 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200/90 text-xs font-black flex items-center gap-1 transition-all shadow-2xs"
-              title="Click to open website preview"
-            >
-              <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-              <span>{ratingVal}</span>
-            </button>
-
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 if (onToggleLike) onToggleLike(portfolio.id);
               }}
-              className={`px-2 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-all border ${
+              className={`px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-all border cursor-pointer ${
                 isLiked
                   ? 'bg-pink-50 text-pink-700 border-pink-200 shadow-2xs'
                   : 'bg-slate-50 hover:bg-pink-50 text-slate-600 hover:text-pink-600 border-slate-200'
@@ -351,7 +341,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
             <button
               onClick={() => onSelectPortfolio(portfolio)}
-              className="px-2 py-1.5 rounded-xl bg-slate-50 hover:bg-indigo-50 text-slate-600 hover:text-indigo-600 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-all"
+              className="px-2.5 py-1.5 rounded-xl bg-slate-50 hover:bg-indigo-50 text-slate-600 hover:text-indigo-600 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-all cursor-pointer"
               title="View & Post Comments"
             >
               <MessageSquare className="w-3.5 h-3.5 text-indigo-600" />
@@ -361,7 +351,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
           <button
             onClick={() => onSelectPortfolio(portfolio)}
-            className="text-indigo-600 hover:text-indigo-700 font-extrabold flex items-center gap-1 transition-colors bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-xl border border-indigo-100"
+            className="text-indigo-600 hover:text-indigo-700 font-extrabold flex items-center gap-1 transition-colors bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-xl border border-indigo-100 cursor-pointer"
             title="Open website preview modal"
           >
             <Eye className="w-3.5 h-3.5" />
