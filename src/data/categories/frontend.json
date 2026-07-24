@@ -1,0 +1,2759 @@
+[
+  {
+    "id": 4,
+    "name": "Aabu Sayed",
+    "url": "https://aabu-sayed-portfolio.vercel.app",
+    "role": "Software Engineer & Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 10,
+    "name": "Aakhand Tajmirul",
+    "url": "https://www.tajmirul.site",
+    "role": "Frontend Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AT",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 14,
+    "name": "Aarav Sharma",
+    "url": "https://aarav-sharma-liart.vercel.app",
+    "role": "Founder at Wensity | Sr. design engineer | UI/UX developer in Rune",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Senior"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 24,
+    "name": "Aayush Mishra",
+    "url": "https://aayush-mishra.xyz",
+    "role": "Front-End Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 35,
+    "name": "Abdul Mannan",
+    "url": "https://mannan.io",
+    "role": "Senior Front-end Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Senior"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 49,
+    "name": "Abdullah Waheed",
+    "url": "https://abdullahw-portfolio.vercel.app",
+    "role": "Front-End Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AW",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 55,
+    "name": "Abhijit Mondal",
+    "url": "https://abhijitmondal.info",
+    "role": "Full Stack Web Developer | React, Next.js, Python",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 62,
+    "name": "Abhisek Panda",
+    "url": "https://abhisekpanda072.vercel.app",
+    "role": "Front-End Developer | MERN Stack Developer | Freelancer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Freelance"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 74,
+    "name": "Abraham Bankole",
+    "url": "https://abrahambankole.dev",
+    "role": "Software Engineer | Full Stack Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 77,
+    "name": "Achyut Katiyar",
+    "url": "https://www.achyutkatiyar.com",
+    "role": "Full Stack Developer| UI/UX Desginer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 83,
+    "name": "Adham Dannaway",
+    "url": "https://www.adhamdannaway.com",
+    "role": "Ux/Ui Designer & Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 122,
+    "name": "Ahmed Abdelhafiez",
+    "url": "https://nevo.is-a.dev",
+    "role": "Front-End Web Developer",
+    "hostPlatform": "is-a.dev",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 123,
+    "name": "Ahmed Allali",
+    "url": "https://portfolio-ahmed-allalis-projects.vercel.app",
+    "role": "Front-End Developer | ahallali.duckdns.org",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 162,
+    "name": "Ali Ahtisham",
+    "url": "https://aliahtisham.pro",
+    "role": "Professional Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 164,
+    "name": "Ali Saleem",
+    "url": "https://alisaleem252.com",
+    "role": "Web Developer & Web Programmer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 170,
+    "name": "Almaz Bisenbaev",
+    "url": "https://almazb.vercel.app",
+    "role": "Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 172,
+    "name": "Althruist",
+    "url": "https://althruist.fyi",
+    "role": "Game Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AL",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 195,
+    "name": "Anandhu Sajan",
+    "url": "https://anandhusajan.com",
+    "role": "Full Stack Developer | Cybersecurity & Network Forensics Specialist | UI/UX | NextJs • React Native • WordPress • Creative Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 208,
+    "name": "Andrii Ponomarienko",
+    "url": "https://andriiponomarenko.vercel.app",
+    "role": "Frontend Developer | React, Vue, Typescript",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Vue",
+      "TypeScript"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 215,
+    "name": "Angkon Kar",
+    "url": "https://angkonkar.netlify.app",
+    "role": "‍Frontend Engineer | 👨🏽‍💻 Computer Engineering Student",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Student"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 216,
+    "name": "Anh Duong",
+    "url": "https://dhlananh-dev-portfolio.vercel.app",
+    "role": "‍Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 222,
+    "name": "Anil Peter",
+    "url": "https://anilpeter.vercel.app",
+    "role": "[‍Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 263,
+    "name": "Arctan2",
+    "url": "https://arctan2.github.io",
+    "role": "Full Stack | Frontend Heavy | Software Generalist",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 280,
+    "name": "Artur Bień",
+    "url": "https://expensive.toys",
+    "role": "Ui & Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 283,
+    "name": "Aryan Hooda",
+    "url": "https://personal-portfolio-gamma-gold-55.vercel.app",
+    "role": "Full Stack Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "AH",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 290,
+    "name": "Asfakur Nariz",
+    "url": "https://asfakur-portfolio-nextjs.vercel.app",
+    "role": "Front-end Developer || UI/UX Designer || Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "AN",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 336,
+    "name": "Ayodele Ayoola",
+    "url": "https://www.ayodeleayoola.com",
+    "role": "Software Developer | Frontend Heavy Full Stack",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 365,
+    "name": "Bechir Lahoueg",
+    "url": "https://www.bechirlahoueg.tech",
+    "role": "Full Stack Developer | React & Node.js",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack",
+      "TypeScript"
+    ],
+    "initials": "BL",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 366,
+    "name": "Befikir Shimelis",
+    "url": "https://squidwardcodes.web.app",
+    "role": "Full Stack Developer | Software Engineering Student",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Student",
+      "Full Stack"
+    ],
+    "initials": "BS",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 369,
+    "name": "Ben Oldham",
+    "url": "https://www.benoldham.dev",
+    "role": "Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "BO",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 387,
+    "name": "Bhushan Zade",
+    "url": "https://bhushanz.netlify.app",
+    "role": "Senior Full Stack Developer (Angular, React, NodeJS)",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Senior",
+      "Full Stack"
+    ],
+    "initials": "BZ",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 393,
+    "name": "Bishnu Pokhrel",
+    "url": "https://bishnupokhrel.netlify.app",
+    "role": "Full Stack Laravel Vue Developer",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Vue",
+      "Full Stack"
+    ],
+    "initials": "BP",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 418,
+    "name": "Bryan Elliott",
+    "url": "https://elliottprogrammer.com",
+    "role": "Senior/Staff Frontend Leaning Full Stack Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Senior",
+      "Full Stack"
+    ],
+    "initials": "BE",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 423,
+    "name": "Camel Djoulako",
+    "url": "https://cameldjoulako.com",
+    "role": "Software Architect | Java, Spring Boot, Angular & Cloud/DevOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "CD",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 424,
+    "name": "Camil Bradea",
+    "url": "https://bradeac.dev",
+    "role": "Senior Full Stack Engineer | TypeScript, React, Laravel, Docker, AWS",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Senior",
+      "Full Stack"
+    ],
+    "initials": "CB",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 437,
+    "name": "Chamindu Wn",
+    "url": "https://chamindu-wn.vercel.app",
+    "role": "Mern Stack Developer | Mobile App Developer (Flutter/ Kotlin/ React Native)| Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Flutter",
+      "Full Stack"
+    ],
+    "initials": "CW",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 441,
+    "name": "Charles Ouimet",
+    "url": "https://ouimet.info",
+    "role": "Backend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Backend"
+    ],
+    "initials": "CO",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 452,
+    "name": "Chosensoul",
+    "url": "https://chosensoul.kesug.com",
+    "role": "Frontend\\Embedded Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "CH",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 473,
+    "name": "Conor Crutchley",
+    "url": "https://portfolio-for-conor-crutchley.vercel.app",
+    "role": "Front-End Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "CC",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 474,
+    "name": "Constance Souville",
+    "url": "https://constancesouville.com",
+    "role": "Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "CS",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 475,
+    "name": "Cornelius Weidmann",
+    "url": "https://caweidmann.dev",
+    "role": "Senior Front-End / Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Senior",
+      "Full Stack"
+    ],
+    "initials": "CW",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 481,
+    "name": "Cui Ding",
+    "url": "https://cuierd.github.io",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "CD",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 495,
+    "name": "Daniel Peace",
+    "url": "https://concrete.codes",
+    "role": "Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "DP",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 509,
+    "name": "Daven Alajid",
+    "url": "https://www.garlicbread.space",
+    "role": "Web & Mobile Developer | Laravel | React | TypeScript | Flutter",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Flutter",
+      "TypeScript"
+    ],
+    "initials": "DA",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 513,
+    "name": "Dax",
+    "url": "https://daolanx.com",
+    "role": "Front-End Developer | Freelancer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Freelance"
+    ],
+    "initials": "DA",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 517,
+    "name": "Declan Chidlow",
+    "url": "https://vale.rocks/portfolio",
+    "role": "Front-End Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "DC",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 526,
+    "name": "Denis Borovets",
+    "url": "https://borove4ik.vercel.app/",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "DB",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 544,
+    "name": "Dhiraj Bhawsar Dhirajtsx Portfolioo 2.O",
+    "url": "https://dhirajbhawsar.in",
+    "role": "Full Stack Web Developer & Freelancer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Freelance",
+      "Full Stack"
+    ],
+    "initials": "D2",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 546,
+    "name": "Dhruv Mali",
+    "url": "https://dhruvmali.netlify.app",
+    "role": "React And Node Devloper",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "TypeScript"
+    ],
+    "initials": "DM",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 551,
+    "name": "Dhyey Bhandari",
+    "url": "https://dhyeybhandari.vercel.app",
+    "role": "Full Stack Developer & Ui/Ux Designer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "DB",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 552,
+    "name": "Diana Kit",
+    "url": "https://winehoused.github.io/my-portfolio",
+    "role": "Front-End Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "DK",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 557,
+    "name": "Dilip Kumar Maurya",
+    "url": "https://www.dilipmaurya.in",
+    "role": "Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "DM",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 568,
+    "name": "Ditom Baroi Antu",
+    "url": "https://xtditom.github.io",
+    "role": "Web Developer | Open-Source Contributor",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "DA",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 569,
+    "name": "Divij Shrivastava",
+    "url": "https://divij.tech",
+    "role": "Full Stack . Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "DS",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 579,
+    "name": "Dustin VanKrimpen",
+    "url": "https://dustinvk.com",
+    "role": "Full Stack Web Developer | Platform | Backend",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "DV",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 606,
+    "name": "Eren Aygün",
+    "url": "https://www.erenaygun.com",
+    "role": "Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "EA",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 633,
+    "name": "Felipe Schmidt",
+    "url": "https://felipeschmidt.me",
+    "role": "Front-End Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "FS",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 636,
+    "name": "Ferhat Ölmez",
+    "url": "https://ferhatolmez.vercel.app",
+    "role": "Full Stack Developer | React & Node",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack",
+      "TypeScript"
+    ],
+    "initials": "FÖ",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 645,
+    "name": "Forhad_Khan",
+    "url": "https://forhadkhandev.vercel.app",
+    "role": "Front-End Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "FO",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 649,
+    "name": "Franco Ruiz",
+    "url": "https://francoruiz.dev",
+    "role": "Staff Frontend Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "FR",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 652,
+    "name": "Franklin Huichi Contreras",
+    "url": "https://franh20.github.io",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "FC",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 691,
+    "name": "Gil Itzhaky Gilitz",
+    "url": "https://gilitz.com",
+    "role": "Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "GG",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 722,
+    "name": "Haris Priantury",
+    "url": "https://harispriantury.netlify.app",
+    "role": "Web Developer",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "HP",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 730,
+    "name": "Harshendra Prajapati",
+    "url": "https://harshendra.web.app",
+    "role": "Creative Developer | MERN Stack & React Native",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React"
+    ],
+    "initials": "HP",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 736,
+    "name": "Hasan",
+    "url": "https://hasansiddiqui.netlify.app",
+    "role": "Software Developer",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "HA",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 737,
+    "name": "Hasnat Amir",
+    "url": "https://hasnatdev.com",
+    "role": "Full Stack Developer | Node.js/React.js/Next.js/Typescript",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "HA",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 741,
+    "name": "Hassan Tech",
+    "url": "https://hassanx.tech",
+    "role": "Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "HT",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 749,
+    "name": "Himanshu Kumar Mishra",
+    "url": "https://hemanshu-mishra.vercel.app",
+    "role": "Full Stack Developer | Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "HM",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 751,
+    "name": "Hisami Kurita",
+    "url": "https://hsmkrt1996.com",
+    "role": "Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "HK",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 752,
+    "name": "Hitesh Sahu",
+    "url": "https://hiteshsahu.com",
+    "role": "Full Stack Developer | Frontend/Mobile | Backend | Cloud Infra",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "HS",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 757,
+    "name": "Hugo Calmels",
+    "url": "https://hugo-calmels.fr",
+    "role": "Web Developper | React/Next.js/SpringBoot",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js"
+    ],
+    "initials": "HC",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 764,
+    "name": "Ian Lunn",
+    "url": "https://ianlunn.co.uk",
+    "role": "Frontend Developer | Responsive Web Specialist",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "IL",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 770,
+    "name": "Ilija Korodic",
+    "url": "https://ilijakorodic.com",
+    "role": "Frontend & Webflow Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "IK",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 772,
+    "name": "Ilya Dyomin",
+    "url": "https://sskd.tech",
+    "role": "Front-End Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "ID",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 788,
+    "name": "Istiuqe Ahmed",
+    "url": "https://istiuqeahmed.vercel.app",
+    "role": "Front-End Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "IA",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 798,
+    "name": "Jahir Fiquitiva",
+    "url": "https://jahir.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "JF",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 816,
+    "name": "Jatin",
+    "url": "https://jating07925.vercel.app",
+    "role": "Full Stack Developer | .Net + React",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "initials": "JA",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 820,
+    "name": "Jay",
+    "url": "https://jay-65.netlify.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "JA",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 844,
+    "name": "Jithin Vijayan",
+    "url": "https://jithin.dev",
+    "role": "Lead Software Engineer / Full Stack Developer (React / Node / Angular / Vue)",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Vue",
+      "Senior"
+    ],
+    "initials": "JV",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 846,
+    "name": "Joaquín Méndez",
+    "url": "https://joaquin-mendez.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "JM",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 849,
+    "name": "John Kimeu",
+    "url": "https://kimeu-johnn.vercel.app",
+    "role": "Front-End Developer & Creative",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "JK",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 855,
+    "name": "Johnny Gérard",
+    "url": "https://www.jgerard.dev",
+    "role": "Frontend Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "JG",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 859,
+    "name": "Jooeun Lee",
+    "url": "https://jooeunlee.com",
+    "role": "Web Developer | UI/UX Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "JL",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 860,
+    "name": "Joop Munguia",
+    "url": "https://my-portfolio1-nine-sage.vercel.app",
+    "role": "Full Stack Developer | cybersecurity Enthusiast",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "JM",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 869,
+    "name": "Juan Benito",
+    "url": "https://juanbenito.vercel.app",
+    "role": "Full Stack Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "JB",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 873,
+    "name": "Juan Pablo Jimenez",
+    "url": "https://juanpablojimenez.dev",
+    "role": "Front-End Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "JJ",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 879,
+    "name": "Juon Kawakami @Evesquare",
+    "url": "https://me.evesq.com",
+    "role": "Full Stack Developer | Ui/Ux Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "J@",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 890,
+    "name": "Karrar Nazim",
+    "url": "https://karrarnazim.space",
+    "role": "Full Stack Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "KN",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 897,
+    "name": "Katey Philip",
+    "url": "https://portfolio-katey.vercel.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KP",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 900,
+    "name": "Kaung Myat",
+    "url": "https://kgmyat.vercel.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KM",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 903,
+    "name": "Kavan Bhavsar",
+    "url": "https://kavan-bhavsar.vercel.app",
+    "role": "Full Stack Web Developer | Ui/Ux Designer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "KB",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 908,
+    "name": "Kavin",
+    "url": "https://devekavin.github.io/Portfolio",
+    "role": "Web Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KA",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 910,
+    "name": "Keita Yamada",
+    "url": "https://p5aholic.me",
+    "role": "Designer & Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KY",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 921,
+    "name": "Kevin Oliveira",
+    "url": "https://kevinoliveira.com.br",
+    "role": "Front-end | UI Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KO",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 932,
+    "name": "Konan Serge",
+    "url": "https://serge07cloud.github.io/portfolio/",
+    "role": "Web Developer | PERN",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KS",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 938,
+    "name": "Krupal Fataniya",
+    "url": "https://krupal.vercel.app",
+    "role": "Full Stack Developer | Python, Django & React Specialist",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack",
+      "Python"
+    ],
+    "initials": "KF",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 940,
+    "name": "Krushna Rathod",
+    "url": "https://krushna.gridly.xyz",
+    "role": "UI/UX Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KR",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 944,
+    "name": "Kuldeep Rajput",
+    "url": "https://macos-kuldeeprajput.vercel.app",
+    "role": "Software Engineer | Full Stack Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "KR",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 952,
+    "name": "Kushwinth Kumar",
+    "url": "https://iamkushwidev.vercel.app",
+    "role": "Software Developer | Frontend Engineer | Mern Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "KK",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 966,
+    "name": "Le Duong Hung Thinh",
+    "url": "https://thinh.io.vn",
+    "role": "Front-End Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "LT",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 967,
+    "name": "Leandro Qazuor Asrilevich",
+    "url": "https://qazuor.com",
+    "role": "Full Stack Developer (Frontend-Focused)",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "LA",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 971,
+    "name": "Leo Ashcraft",
+    "url": "https://leoashcraft.com",
+    "role": "Full Stack Software Developer | PHP, React, Astro",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "initials": "LA",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 973,
+    "name": "Leonardo Glorioso",
+    "url": "https://crllect.dev",
+    "role": "Full Stack Developer | React, TS, Astro, Node, UI/UX",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack",
+      "TypeScript"
+    ],
+    "initials": "LG",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 978,
+    "name": "Lewis Hadden",
+    "url": "https://portfolio.lewishadden.com",
+    "role": "Senior Full Stack Engineer | React, Typescript, Node",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Senior",
+      "Full Stack"
+    ],
+    "initials": "LH",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 995,
+    "name": "Luis Cacho",
+    "url": "https://luiscachog.io",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "LC",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 996,
+    "name": "Luiz Gustavo Alves",
+    "url": "https://www.luizgustavoalves.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "LA",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 1002,
+    "name": "Madalina-Eleonora Gheorghe",
+    "url": "https://madalinaeleonorag.github.io",
+    "role": "Frontend Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MG",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1012,
+    "name": "Mahin Hasan",
+    "url": "https://mahin527.vercel.app",
+    "role": "Shopify Expert | Full Stack Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "MH",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1021,
+    "name": "Mamoon Siddiqui",
+    "url": "https://mamoon-siddiqui.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MS",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1031,
+    "name": "Manjunath Bhandari",
+    "url": "https://manjunathbhandari.vercel.app",
+    "role": "Full Stack Developer | React | Spring Boot",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "initials": "MB",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1061,
+    "name": "Matheus Almeida",
+    "url": "https://almeida-matheus.com",
+    "role": "Frontend | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1080,
+    "name": "Md Nuruzzaman",
+    "url": "https://mdnuruzzamandev.web.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MN",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1088,
+    "name": "Mehedi Hasan",
+    "url": "https://m-hasan.vercel.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MH",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1098,
+    "name": "Michael King",
+    "url": "https://www.mikeking.dev",
+    "role": "Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1109,
+    "name": "Min Khant Kyaw",
+    "url": "https://min-khant-kyaw-portfolio.vercel.app",
+    "role": "Front-End Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1111,
+    "name": "Missael Rangel",
+    "url": "https://missaelr.com/en",
+    "role": "Frontend Developer | React/Typescript",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "TypeScript"
+    ],
+    "initials": "MR",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1124,
+    "name": "Mohammad Siddique Sakib",
+    "url": "https://ssakib-portfolio.vercel.app",
+    "role": "Frontend Developer | React, Nextjs, TypeScript",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "TypeScript"
+    ],
+    "initials": "MS",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1125,
+    "name": "Mohammed Abdullah Khan",
+    "url": "https://www.mohammedabdullahkhan.com",
+    "role": "React Native Developer | Full Stack Developer | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1142,
+    "name": "Mufida Andi",
+    "url": "https://heymufi.com",
+    "role": "Software Engineer | Frontend",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1146,
+    "name": "Muhammad Faheem Iqbal Faheem506Pk",
+    "url": "https://faheem506pk.vercel.app",
+    "role": "Frontend Developer | Mern Stack Developer | Iot Enthusiast",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MF",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1150,
+    "name": "Muhammad Jahanzeb",
+    "url": "https://jahanzeb.dev",
+    "role": "Mobile App Developer | React Native | Expo | Kotlin | NodeJS",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "TypeScript"
+    ],
+    "initials": "MJ",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1153,
+    "name": "Muhammad Mustafiz Rahman",
+    "url": "https://mustafizrahman.vercel.app",
+    "role": "Frontend Developer | Mern Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MR",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1162,
+    "name": "Mukesh",
+    "url": "https://themukesh.com",
+    "role": "Java,React, next.js, Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "MU",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1165,
+    "name": "Mustafa Yalçın",
+    "url": "https://mylcin.vercel.app",
+    "role": "Front-End Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "MY",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1179,
+    "name": "Naseem Khan",
+    "url": "https://naseemkhan.dev",
+    "role": "Full Stack Developer | SaaS Builder | Freelancer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Freelance",
+      "Full Stack"
+    ],
+    "initials": "NK",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1180,
+    "name": "Natasha Pierre-Louis",
+    "url": "https://www.natashasfolio.com",
+    "role": "Front-End Developer | Design Technologist | Ui/Ux Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "NP",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1193,
+    "name": "Nemanja Pavlovic",
+    "url": "https://nemanja.works",
+    "role": "Frontend Developer | Full Stack Developer | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "NP",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1204,
+    "name": "Nihir Praful Shah",
+    "url": "https://nihir-mobile-portfolio.vercel.app",
+    "role": "Frontend Developer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "NS",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1227,
+    "name": "Nitin Sahu",
+    "url": "https://flawlessnitin.com",
+    "role": "Full Stack Engineer | Backend | Frontend",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "NS",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1234,
+    "name": "Nyamboga Hezron",
+    "url": "https://www.nyambogahezron.dev",
+    "role": "Full Stack Developer | React, Node.js, TypeScript",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack",
+      "TypeScript"
+    ],
+    "initials": "NH",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1241,
+    "name": "Omar Ashraf",
+    "url": "https://portfollio-five-nu.vercel.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "OA",
+    "firstLetter": "O",
+    "featured": false
+  },
+  {
+    "id": 1269,
+    "name": "Parish Khan",
+    "url": "https://parish.cv",
+    "role": "Senior Software Developer | React, TypeScript, Frontend Architecture",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Senior",
+      "TypeScript"
+    ],
+    "initials": "PK",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1270,
+    "name": "Paritosh Khubchandani",
+    "url": "https://paritosh-dev.vercel.app",
+    "role": "Full Stack Developer | React, Next.js, Django, FastAPI",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "PK",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1275,
+    "name": "Parth Sharma",
+    "url": "https://parthh.in",
+    "role": "Full Stack & Ui/Ux Designer • Founder @ Rune",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "PS",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1295,
+    "name": "Phat Tran Tan",
+    "url": "https://portfolio-ttp.vercel.app",
+    "role": "Software Engineer | Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "PT",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1301,
+    "name": "Pierre Nel",
+    "url": "https://pierre.io",
+    "role": "Full Stack Developer | Ux/Ui Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "PN",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1304,
+    "name": "Poluianov Ivan",
+    "url": "https://poluianov.com",
+    "role": "Senior Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Senior"
+    ],
+    "initials": "PI",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1320,
+    "name": "Praveen Kumar Purushothaman",
+    "url": "https://praveen.science",
+    "role": "Full Stack React Js Developer | Director Of Engineering",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "initials": "PP",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1328,
+    "name": "Pritam Debnath",
+    "url": "https://pridebnath.github.io/portfolio-v2",
+    "role": "Frontend Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "PD",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1331,
+    "name": "Priyabrata Singh",
+    "url": "https://pmanifestoo.vercel.app",
+    "role": "Full Stack Developer | Ux/Ui Designer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "PS",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1333,
+    "name": "Priyanshu Singh",
+    "url": "https://built-by-priyanshu.netlify.app",
+    "role": "Software Developer",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "PS",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1335,
+    "name": "Puja Sridhar",
+    "url": "https://pujasridhar.github.io",
+    "role": "Interactive Rag-Powered Terminal And Gui Portfolio.",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Animated",
+      "Senior"
+    ],
+    "initials": "PS",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1336,
+    "name": "Purnank Jadhav",
+    "url": "https://purnankjadhav-portfolio.vercel.app",
+    "role": "Front-End Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "PJ",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1343,
+    "name": "Qui Nguyen",
+    "url": "https://www.lexnguyen.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "QN",
+    "firstLetter": "Q",
+    "featured": false
+  },
+  {
+    "id": 1344,
+    "name": "Quint Wessels",
+    "url": "https://quintwessels.com",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "QW",
+    "firstLetter": "Q",
+    "featured": false
+  },
+  {
+    "id": 1388,
+    "name": "Remco Stoeten",
+    "url": "https://remcostoeten.nl",
+    "role": "Frontend Engineer | Graphic Design Degree",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1390,
+    "name": "Remy Jouni",
+    "url": "https://remyjouni.dev",
+    "role": "Frontend Developer & Ui/Ux Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "RJ",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1394,
+    "name": "Revan Azra",
+    "url": "https://portoku0091.dpdns.org",
+    "role": "Frontend Dev",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "RA",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1398,
+    "name": "Richard Porter",
+    "url": "https://richardporter.dev",
+    "role": "Full Stack Developer | Laravel | Vue | React",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Vue",
+      "Full Stack"
+    ],
+    "initials": "RP",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1400,
+    "name": "Ricky Serrano",
+    "url": "https://rickyserrano.dev",
+    "role": "Help Desk Grunt | Next.js, React, SpringBoot, Full Stack",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1402,
+    "name": "Ridwan Ajanaku",
+    "url": "https://olakunle.dev",
+    "role": "Frontend Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "RA",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1404,
+    "name": "Rifqisakha",
+    "url": "https://www.rifqisakha.my.id",
+    "role": "Frontend Developer, Designer, Ui/Ux",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "RI",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1415,
+    "name": "Robin Mastromari",
+    "url": "http://robinmastromarino.com",
+    "role": "Ui/Ux Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "RM",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1421,
+    "name": "Rohit Singh",
+    "url": "https://rohitsinghworks.vercel.app",
+    "role": "Software & Web Developer | Next.js, MERN & Full Stack",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1424,
+    "name": "Rohit Soni",
+    "url": "https://rohitsoni007.github.io/portfolio",
+    "role": "Full Stack, Mern, Reactnative",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1440,
+    "name": "Ryan Aguiar",
+    "url": "https://my-portfolio-rho-indol-29.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "RA",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1466,
+    "name": "Sagar Gupta",
+    "url": "https://sagargupta.online/portfolio-react/",
+    "role": "Cloud Consultant at AWS | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "initials": "SG",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1504,
+    "name": "Samrin Jaji",
+    "url": "https://samrinjaji.github.io/my-portfolio/",
+    "role": "Frontend Developer | Web Applications",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SJ",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1528,
+    "name": "Sarthak Bhushan",
+    "url": "https://portfolio-ten-gules-teouuqn2p2.vercel.app",
+    "role": "Backend Developer | Spring Boot | React",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Backend"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1550,
+    "name": "Sayed Anowar",
+    "url": "https://sayedanowar.netlify.app",
+    "role": "Freelance Web Developer",
+    "hostPlatform": "Netlify",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Freelance"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1551,
+    "name": "Sayeed Joy",
+    "url": "https://sayeedjoy.com",
+    "role": "Software Engineer | .NET Core, React, Next.js",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js"
+    ],
+    "initials": "SJ",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1552,
+    "name": "Sayeed Shorif",
+    "url": "https://sayeeed-shorif.vercel.app",
+    "role": "FrontEnd Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1564,
+    "name": "Serhii Nazarov",
+    "url": "https://www.serhii-nazarov.com",
+    "role": "Senior Front-End | Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Senior",
+      "Full Stack"
+    ],
+    "initials": "SN",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1571,
+    "name": "Shafiuzzaman",
+    "url": "https://shafisma.me",
+    "role": "Full Stack Developer | UI/UX",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "SH",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1573,
+    "name": "Shaheen Amjed",
+    "url": "https://shaheen-amjed.vercel.app",
+    "role": "Full Stack Web Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1587,
+    "name": "Sharon Yi",
+    "url": "https://sharon-yi.com",
+    "role": "Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SY",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1588,
+    "name": "Sharuk Sayyed",
+    "url": "https://sayyed-sharuk-portfolio.vercel.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1612,
+    "name": "Shreya Saraswat",
+    "url": "https://shreya-saraswat-portfolio.vercel.app",
+    "role": "Frontend Developer | ReactJs",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1638,
+    "name": "Soham Sarkar",
+    "url": "https://sohamsarkar.com",
+    "role": "Builder | Tech | Product",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1644,
+    "name": "Souilah Moncef",
+    "url": "https://moncef37i.github.io/portfolio/",
+    "role": "Full Stack Web Developer | Algeria",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "SM",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1676,
+    "name": "Sunil Band",
+    "url": "https://www.sunilband.com",
+    "role": "Frontend Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1679,
+    "name": "Supreet Mohapatra",
+    "url": "https://supreet-psi.vercel.app",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SM",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1688,
+    "name": "Syed Aashiq Ahamed",
+    "url": "https://www.syedahamed.in",
+    "role": "Software Development Engineer | Frontend Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1700,
+    "name": "Talha Kılıç",
+    "url": "https://talhakilic.com.tr",
+    "role": "Junior Frontend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "TK",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1704,
+    "name": "Tariqul Islam",
+    "url": "https://tariqulislamrc.vercel.app",
+    "role": "Technical Project Manager and Tech Lead | Agile/Scrum delivery | SaaS, ERP and multi-tenant platforms | Cross-functional team leadership | Laravel, Node.js, React | Open to remote",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Senior",
+      "TypeScript"
+    ],
+    "initials": "TI",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1737,
+    "name": "Truong Thanh Long",
+    "url": "https://portfolio-thanhlong.vercel.app/en",
+    "role": "Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "TL",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1746,
+    "name": "Uday Ahire",
+    "url": "https://udayahireexe.vercel.app",
+    "role": "Design Engineer | Frontend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend"
+    ],
+    "initials": "UA",
+    "firstLetter": "U",
+    "featured": false
+  },
+  {
+    "id": 1751,
+    "name": "Ujjwal Shukla",
+    "url": "https://ujjwalportfolio2.vercel.app",
+    "role": "Full Stack Developer | Ui/Ux Designer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "US",
+    "firstLetter": "U",
+    "featured": false
+  },
+  {
+    "id": 1773,
+    "name": "Vallarasu",
+    "url": "https://vallarasuk.com",
+    "role": "React, Next.Js Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Next.js",
+      "Full Stack"
+    ],
+    "initials": "VA",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1825,
+    "name": "Vivek Ghodadra",
+    "url": "https://vivek-ghodadra.web.app",
+    "role": "React Native, ReactJs, NodeJs Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "TypeScript"
+    ],
+    "initials": "VG",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1835,
+    "name": "Wadi3 El-Wardy",
+    "url": "https://wadi3.codes",
+    "role": "Full Stack Developer | Typescript, React.js, Python",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack",
+      "Python"
+    ],
+    "initials": "WE",
+    "firstLetter": "W",
+    "featured": false
+  },
+  {
+    "id": 1837,
+    "name": "Wajahat Ali Mir",
+    "url": "https://wajahat-ali-mir-dev.vercel.app",
+    "role": "React Native Developer",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React"
+    ],
+    "initials": "WM",
+    "firstLetter": "W",
+    "featured": false
+  },
+  {
+    "id": 1861,
+    "name": "Yassine Ben Zriouil",
+    "url": "https://ybz.vercel.app",
+    "role": "Full Stack-Dev",
+    "hostPlatform": "Vercel",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "YZ",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1878,
+    "name": "Yuji Sato",
+    "url": "https://yujisatojr.github.io/react-portfolio-template",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "React"
+    ],
+    "initials": "YS",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1897,
+    "name": "Zuned Aalim",
+    "url": "https://zunedaalim.com",
+    "role": "Full Stack Web Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Frontend",
+    "tags": [
+      "Frontend",
+      "Full Stack"
+    ],
+    "initials": "ZA",
+    "firstLetter": "Z",
+    "featured": false
+  }
+]

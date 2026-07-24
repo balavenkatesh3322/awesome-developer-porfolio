@@ -1,0 +1,318 @@
+[
+  {
+    "id": 8,
+    "name": "Aakash Rajbanshi",
+    "url": "https://aakashrajbanshi.com.np",
+    "role": "Flutter Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Flutter"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 31,
+    "name": "Abdelrahman Saed",
+    "url": "https://bnsaed.com",
+    "role": "Senior Mobile Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Senior"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 42,
+    "name": "Abdul Wahab Khan",
+    "url": "https://wahab-khan.github.io/Abdul-Wahab-Khan",
+    "role": "Mobile Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 111,
+    "name": "Afaq Awan",
+    "url": "https://afaq35202.github.io",
+    "role": "Mobile App Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 114,
+    "name": "Aggelos Ladas",
+    "url": "https://aggelosladas.com",
+    "role": "Spring Boot Backend | Android Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Backend"
+    ],
+    "initials": "AL",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 265,
+    "name": "Aref Shalchi",
+    "url": "https://arefshalchi.com",
+    "role": "iOS Developer | Mobile Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 389,
+    "name": "Binay Shaw",
+    "url": "https://binay-shaw.onrender.com",
+    "role": "Mobile Developer",
+    "hostPlatform": "Render",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "BS",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 447,
+    "name": "ChickyHuynh",
+    "url": "https://chickyhuynhprojects.xo.je",
+    "role": "Junior Flutter Dev",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Flutter"
+    ],
+    "initials": "CH",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 601,
+    "name": "Emre Akçadağ",
+    "url": "https://akcadag.dev",
+    "role": "Mobile Developer | Android & Flutter",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Flutter"
+    ],
+    "initials": "EA",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 761,
+    "name": "Hungry Bear Studio",
+    "url": "https://www.hungrybearstudios.com",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "HS",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 776,
+    "name": "Indra Mahkota",
+    "url": "https://indramahkota.info",
+    "role": "Mobile Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "IM",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 839,
+    "name": "Jhal Albert Berioso",
+    "url": "https://portfolio.dwnppo.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "JB",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 898,
+    "name": "Katie Amberg-Johnson",
+    "url": "https://kambergjohnson.com",
+    "role": "`made with TechFolios`",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "KA",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 1045,
+    "name": "Marios Sofokleous",
+    "url": "https://msof.me",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "MS",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1055,
+    "name": "Maruf Hasan",
+    "url": "https://itsmaruf.me",
+    "role": "Mobile Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "MH",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1128,
+    "name": "Mohan Reddy",
+    "url": "https://mohanreddy0909.github.io/MyPortfolio",
+    "role": "Mobile Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "MR",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1294,
+    "name": "Petros Dhespollari",
+    "url": "https://peterdsp.dev",
+    "role": "iOS Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "PD",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1337,
+    "name": "Purnendu Samanta",
+    "url": "https://purnendusamanta.github.io/MyPortfolio/",
+    "role": "Android Application Developer | Flutter Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Flutter"
+    ],
+    "initials": "PS",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1456,
+    "name": "Sabin Ranabhat",
+    "url": "https://sawin.com.np",
+    "role": "Senior Mobile Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Senior"
+    ],
+    "initials": "SR",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1677,
+    "name": "Sunil Mahato",
+    "url": "https://mahatosunil.com.np",
+    "role": "Android Developer | Kotlin",
+    "hostPlatform": "Custom Domain",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "SM",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1706,
+    "name": "Techfolios",
+    "url": "https://techfolios.github.io",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev"
+    ],
+    "initials": "TE",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1889,
+    "name": "Zeel Bhanderi",
+    "url": "https://zeelbhanderi.netlify.app",
+    "role": "Expert Flutter Developer & FlutterFlow",
+    "hostPlatform": "Netlify",
+    "category": "Mobile App Dev",
+    "tags": [
+      "Mobile App Dev",
+      "Flutter"
+    ],
+    "initials": "ZB",
+    "firstLetter": "Z",
+    "featured": false
+  }
+]

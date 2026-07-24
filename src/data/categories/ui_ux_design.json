@@ -1,0 +1,201 @@
+[
+  {
+    "id": 12,
+    "name": "Aanand Madhav",
+    "url": "https://aanandmadhav.com",
+    "role": "Senior PM | UX",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design",
+      "Senior"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 84,
+    "name": "Adina Hawaldar",
+    "url": "https://www.adinaa.me",
+    "role": "Web Designer & Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "AH",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 214,
+    "name": "Aneeth Kumaar",
+    "url": "https://akwastaken.github.io",
+    "role": "Graphic Designer | Programmer",
+    "hostPlatform": "GitHub Pages",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 360,
+    "name": "Bastian Asmussen",
+    "url": "https://asmussen.tech",
+    "role": "Systems Programmer | Rust, Nix & Linux",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "BA",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 603,
+    "name": "Enea",
+    "url": "https://eneawork.it",
+    "role": "Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "EN",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 613,
+    "name": "Ethan Lanting",
+    "url": "https://ethanlanting.dev/#home",
+    "role": "Developer, Designer, And Creator",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "EL",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 661,
+    "name": "Gabriel Maggioni",
+    "url": "https://maggioni.dev",
+    "role": "Programmer as a hobby - enjoys Linux, Blender, and GameDev.",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "GM",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 768,
+    "name": "Ilan Lenzner",
+    "url": "https://ilans.net",
+    "role": "Creative Technologist & Design Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "IL",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 990,
+    "name": "Luca Félix",
+    "url": "https://luca-felix.com",
+    "role": "Design System Engineer | Digital Product Designer & Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "LF",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 1226,
+    "name": "Nitika",
+    "url": "https://my-portfolio-beryl-xi-81.vercel.app",
+    "role": "Graphic designer | Backend developer",
+    "hostPlatform": "Vercel",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design",
+      "Backend"
+    ],
+    "initials": "NI",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1397,
+    "name": "Richard Hill",
+    "url": "https://www.rhdigital.co.uk",
+    "role": "Digital Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "RH",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1565,
+    "name": "Seth Hall",
+    "url": "https://sethhallcreative.com",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "SH",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1661,
+    "name": "Stimmie Web Portfolio",
+    "url": "https://web.stimmie.dev",
+    "role": "Freelance Developer | Nuxt",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design",
+      "Freelance"
+    ],
+    "initials": "SP",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1732,
+    "name": "Torben Korb",
+    "url": "https://www.digital-creative.de",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "UI/UX & Design",
+    "tags": [
+      "UI/UX & Design"
+    ],
+    "initials": "TK",
+    "firstLetter": "T",
+    "featured": false
+  }
+]

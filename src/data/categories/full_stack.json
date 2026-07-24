@@ -1,0 +1,5913 @@
+[
+  {
+    "id": 1,
+    "name": "Aaaabad Ahmed",
+    "url": "https://sawad.framer.website",
+    "role": "Software Engineer",
+    "hostPlatform": "Framer",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "Aahana Bobade",
+    "url": "https://aahanabobade.com",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 11,
+    "name": "Aaleksa Janjic",
+    "url": "https://akkila.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AJ",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 13,
+    "name": "Aarab Nishchal",
+    "url": "https://aarab.vercel.app",
+    "role": "Engineering Student | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "AN",
+    "firstLetter": "A",
+    "featured": true
+  },
+  {
+    "id": 29,
+    "name": "Abdalwahed Aldaghir",
+    "url": "https://awrs.me/en",
+    "role": "Software Engineer | Flutter Developer | Mobile Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Flutter"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 36,
+    "name": "Abdul Momin",
+    "url": "https://abdulmomin.dev",
+    "role": "Software Engineer | Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 40,
+    "name": "Abdul Rehman Waseem",
+    "url": "https://abdulrehmanwaseem.me",
+    "role": "Full Stack Developer | 3D Web Specialist",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AW",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 41,
+    "name": "Abdul Samad",
+    "url": "https://samadd.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 43,
+    "name": "Abdullah Ahmed",
+    "url": "https://abdallaahmed.icu",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 44,
+    "name": "Abdullah Al Monir",
+    "url": "https://abdullahalmonir.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 46,
+    "name": "Abdullah Bozdağ",
+    "url": "https://abdullahbozdag.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 47,
+    "name": "Abdullah Iqbal",
+    "url": "https://abdullah-portfolio-dev.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AI",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 52,
+    "name": "Abhay Rana",
+    "url": "https://abhayrana.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 53,
+    "name": "Abhijeet Bhale",
+    "url": "https://abhijeetbhale.github.io/Portfolio",
+    "role": "Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 54,
+    "name": "Abhijeet Singh Parihar",
+    "url": "https://abhijeet-singh-parihar-portfolio.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 63,
+    "name": "Abhishek Agrawal",
+    "url": "https://abhish0.github.io/My-Portfolio/",
+    "role": "Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 64,
+    "name": "Abhishek Anand",
+    "url": "https://abhishekdev-portfolio.vercel.app",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 66,
+    "name": "Abhishek Ganvir",
+    "url": "https://abhishekganvir.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AG",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 67,
+    "name": "Abhishek Ghimire",
+    "url": "https://www.abhishekg.com.np",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AG",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 71,
+    "name": "Abhishek Sah",
+    "url": "https://www.abhisheksah.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 72,
+    "name": "Abhishek Singh",
+    "url": "https://www.abhishekworks.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 80,
+    "name": "Adarsh Kumar",
+    "url": "https://portfolio-e7gt.onrender.com",
+    "role": "Full Stack Developer | Software Developer",
+    "hostPlatform": "Render",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 81,
+    "name": "Adarsh Singh",
+    "url": "https://adarshsinghh.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 86,
+    "name": "Aditi Arya",
+    "url": "https://aditiarya.netlify.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 88,
+    "name": "Aditya Chauhan",
+    "url": "https://aditya-chauhan.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AC",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 93,
+    "name": "Aditya Kumar Srivastava",
+    "url": "https://adityasri.in",
+    "role": "Full Stack Developer (Mern & Java Springboot Developer)",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 98,
+    "name": "Aditya Poojary",
+    "url": "https://adityapoojary.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 99,
+    "name": "Aditya Punmiya",
+    "url": "https://adityapunmiya.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 100,
+    "name": "Aditya Rahmad",
+    "url": "https://adxxya30.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 101,
+    "name": "Aditya Raj Srivastava",
+    "url": "https://portfolio-lilac-eight-33.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 102,
+    "name": "Aditya Seth",
+    "url": "https://adityaseth.in",
+    "role": "Software Developer & DevOps Architect",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 103,
+    "name": "Aditya Thakur",
+    "url": "https://adityathakur.me",
+    "role": "Software Engineer | Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AT",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 105,
+    "name": "Aditya",
+    "url": "https://aditya-a-portfolio.vercel.app",
+    "role": "Full Stack Developer | Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 107,
+    "name": "Adrian Hansen",
+    "url": "https://adrian-hansen-dev.github.io/portfolio/",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AH",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 110,
+    "name": "Afam Olie",
+    "url": "https://afamolie.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AO",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 117,
+    "name": "Ahamed Kabeer",
+    "url": "https://aktech27.github.io",
+    "role": "Mern Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 121,
+    "name": "Ahmad Faraz",
+    "url": "https://theahmadfaraz.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AF",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 129,
+    "name": "Ajay Pawar",
+    "url": "https://ajay-pawar.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 131,
+    "name": "Ajvad Laseen",
+    "url": "https://ajvadlaseen.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AL",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 135,
+    "name": "Akash Samanta",
+    "url": "https://akashcraft.ca",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 137,
+    "name": "Akashkumar Jadav",
+    "url": "https://akashjadav.com",
+    "role": "Founder & Senior Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AJ",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 138,
+    "name": "Akhil Pillay",
+    "url": "https://akhil-devs-portfolio.vercel.app",
+    "role": "Full Stack Dev | Agentic Systems Architect",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 139,
+    "name": "Akhileswar Kamale",
+    "url": "https://akhileswar6.github.io/Portfolio/",
+    "role": "Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 140,
+    "name": "Akhshy Ganesh",
+    "url": "https://akhshyganesh.github.io",
+    "role": "Full Stack Developer | Solution Architect",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AG",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 142,
+    "name": "Akli Massinissa Sadek",
+    "url": "https://sadoukas.com",
+    "role": "Full Stack Developer | Freelance Services",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Freelance"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 144,
+    "name": "Akshat Kotpalliwar Alias Integeralex",
+    "url": "https://realtalkportfolio.vercel.app",
+    "role": "Full Stack Developer | Old School Portfolio",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AI",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 146,
+    "name": "Akshay Santhoshkumar",
+    "url": "https://akshaysanthoshkumar.vercel.app",
+    "role": "Full Stack 3D Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 148,
+    "name": "Al Amin",
+    "url": "https://alamin-portfolio-site.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 153,
+    "name": "Aleksandar Pajić",
+    "url": "https://www.aleksandarpajic.co",
+    "role": "Software Developer & Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 154,
+    "name": "Aleksei Ross",
+    "url": "https://ross.aleksei.digital/98?ref=emmabostian",
+    "role": "Tech Lead & Sr. Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 160,
+    "name": "Alexis De Jesus",
+    "url": "https://www.aalexis.fr",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AJ",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 165,
+    "name": "Alif Jobaer",
+    "url": "https://alifjobaer12.vercel.app",
+    "role": "Full Stack MERN & Next.js Developer | IoT & Algorithmic Problem Solving",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Next.js"
+    ],
+    "initials": "AJ",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 167,
+    "name": "Allan Im",
+    "url": "https://allanim.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AI",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 176,
+    "name": "Aman Bam",
+    "url": "https://my-portfolio-d7jf.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 187,
+    "name": "Amit Kumar Raj",
+    "url": "https://amitkumarraj.vercel.app",
+    "role": "Full Stack Developer | MERN",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 192,
+    "name": "Anadi Sharma",
+    "url": "https://asharma.tech",
+    "role": "Software Engineer | Cse'25 Iit Jodhpur",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 193,
+    "name": "Anamuddin Ahmad",
+    "url": "https://github.com/AnamuddinAhmad/Portfolio_1",
+    "role": "Software Engineer & Freelancer",
+    "hostPlatform": "GitHub Profile",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Freelance"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 194,
+    "name": "Anand Thakkar",
+    "url": "https://www.anandthakkar.com",
+    "role": "Software Developer & Tech Creator",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AT",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 203,
+    "name": "Andrew Demarest",
+    "url": "https://portfolio-sweandrew.vercel.app",
+    "role": "Senior Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 213,
+    "name": "Andy Wong",
+    "url": "https://www.andy-hk.com",
+    "role": "Full Stack Developer | Mobile App Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AW",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 217,
+    "name": "Anh Nguyen",
+    "url": "https://anhnq15.github.io",
+    "role": "Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AN",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 224,
+    "name": "Anish Biswas",
+    "url": "https://anish7.me",
+    "role": "Full Stack Dev",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 228,
+    "name": "Ankit Mohanty",
+    "url": "https://ankitmohanty.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 229,
+    "name": "Ankit Raj",
+    "url": "https://neokit.app",
+    "role": "Full Stack Developer | Web & App | DevOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 233,
+    "name": "Ankush Rathour",
+    "url": "https://ankushrathour.com",
+    "role": "Software Engineer | Full Stack Specialist",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 234,
+    "name": "Anshul Chauhan",
+    "url": "https://anshulchauhan.dev",
+    "role": "Full Stack Developer | Ios-Style Portfolio",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AC",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 235,
+    "name": "Anshul Dev",
+    "url": "https://github.com/AnshulGora/portfolio_template_v1",
+    "role": "Software Developer | Web Solutions",
+    "hostPlatform": "GitHub Profile",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 248,
+    "name": "Anubhav Singh",
+    "url": "https://mylivecv.com/mylivecv/pf-anubhav",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 249,
+    "name": "Anuj Magar",
+    "url": "https://anujmagar.com.np",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 251,
+    "name": "Anup Pradhan",
+    "url": "https://www.anuppradhan.in",
+    "role": "Full Stack Developer | Terminal Portfolio",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 253,
+    "name": "Anurag Zete",
+    "url": "https://portfolio-anuragzete.web.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AZ",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 255,
+    "name": "Anuvab Das",
+    "url": "https://anvv.tech",
+    "role": "Full Stack App/Web and Embedded Systems Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 256,
+    "name": "Anzhelika Kostyuk",
+    "url": "https://a-coderr.github.io/portfolio-website",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 257,
+    "name": "Aprameya Kannan",
+    "url": "https://aprameyak.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 260,
+    "name": "Arafat Hossan",
+    "url": "https://arafat.com.bd",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AH",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 266,
+    "name": "Arhaan Siddiquee",
+    "url": "https://arhaan-dev.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 268,
+    "name": "Aries Chang",
+    "url": "https://ariesjchang.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AC",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 269,
+    "name": "Arjad Gohar",
+    "url": "https://arjad-portfolio.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AG",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 273,
+    "name": "Arne Jacob",
+    "url": "https://dudeldups.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AJ",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 275,
+    "name": "Arshad Mq",
+    "url": "https://arshadmq.com",
+    "role": "Sr. Full Stack Developer And Freelancer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior",
+      "Freelance"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 279,
+    "name": "Arthur Rasera",
+    "url": "https://raseraa0.github.io",
+    "role": "Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 284,
+    "name": "Aryan Maurya",
+    "url": "https://amsrportfolio.netlify.app",
+    "role": "Full Stack Web + App + Game Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 286,
+    "name": "Aryan Rajguru",
+    "url": "https://aryan-r-pfp.netlify.app",
+    "role": "Full Stack Developer (Python + MERN)",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Python"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 287,
+    "name": "Asad Saeed",
+    "url": "https://asad-saeed-portfolio.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 293,
+    "name": "Ashar Kamran",
+    "url": "https://asharkamran.netlify.app",
+    "role": "Full Stack & Cms Developer | Content Creator",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 294,
+    "name": "Ashif E.K",
+    "url": "https://ashifek.in",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AE",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 295,
+    "name": "Ashik Saleem",
+    "url": "https://ashik.ie",
+    "role": "Full Stack Developer | Data + DevOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 298,
+    "name": "Ashish Madan",
+    "url": "https://ashishmadan.netlify.app",
+    "role": "Senior Software Engineer | Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AM",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 301,
+    "name": "Ashlok Chaudhary",
+    "url": "https://ashlok.dev",
+    "role": "Full Stack Developer || DevOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AC",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 302,
+    "name": "Ashmit Borawake",
+    "url": "https://ashmit-borawake.vercel.app",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 303,
+    "name": "Ashutosh Dhakre",
+    "url": "https://thecodehead.com",
+    "role": "Senior Software Engineer | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 305,
+    "name": "Ashwin Hariharan",
+    "url": "https://ashwinhariharan.com/software-engineering",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AH",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 306,
+    "name": "Asif Javed",
+    "url": "https://asifjaved.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AJ",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 307,
+    "name": "Asmaa Abdul-Amin",
+    "url": "https://asmaa.dev",
+    "role": "Software Engineering Student | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 310,
+    "name": "Aswin",
+    "url": "https://www.aswincloud.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 315,
+    "name": "Atharva Kote",
+    "url": "https://atharvakote.netlify.app",
+    "role": "Full Stack Developer | DevOps",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 316,
+    "name": "Atul Gupta",
+    "url": "https://atul-portfolio-work.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AG",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 318,
+    "name": "Augusto Polonio",
+    "url": "https://augustopolonio.vercel.app",
+    "role": "Game Developer | Senior Full Stack Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 322,
+    "name": "Austin Serb",
+    "url": "https://www.austinserb.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 323,
+    "name": "Avilash Bharti",
+    "url": "https://avilashbharti.in?src=gir",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "AB",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 325,
+    "name": "Avinash Singh",
+    "url": "https://www.avinash-singh.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 326,
+    "name": "Avinash Suthar",
+    "url": "https://avinashsuthar.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AS",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 328,
+    "name": "Avisek Ray",
+    "url": "https://avisek.codeltix.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AR",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 329,
+    "name": "Avnish Kumar",
+    "url": "https://theavnishkumar.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AK",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 330,
+    "name": "Axel Lönnby Wesselgren",
+    "url": "https://axelwesselgren.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AW",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 338,
+    "name": "Ayush Acharya",
+    "url": "https://ayushacharya.vercel.app",
+    "role": "Passionate - Full Stack Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AA",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 339,
+    "name": "Ayush Das",
+    "url": "https://ayushdas.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AD",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 340,
+    "name": "Ayush Kumar Gupta",
+    "url": "https://ayyush08.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AG",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 344,
+    "name": "Ayush Pradhan",
+    "url": "https://ayushpradhan29.netlify.app",
+    "role": "Full Stack Developer | Computer Vision Engineer | Well-versed in modern tech stacks",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AP",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 346,
+    "name": "Azel",
+    "url": "https://https:omargpax.vercel.app",
+    "role": "Software Developer - Full Stack",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "AZ",
+    "firstLetter": "A",
+    "featured": false
+  },
+  {
+    "id": 357,
+    "name": "Barthélémy Pousset",
+    "url": "https://barthelemypousset.com",
+    "role": "Full Stack Developer | DevOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BP",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 361,
+    "name": "Batuhan Eroğlu",
+    "url": "https://batuhan.tech",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BE",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 384,
+    "name": "Bhumika Patil",
+    "url": "https://portfolio-psi-lovat-25.vercel.app",
+    "role": "Computer Science Student | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "BP",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 388,
+    "name": "Bimql",
+    "url": "https://bimql.link",
+    "role": "Indie Developer | Full Stack & Mobile",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BI",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 405,
+    "name": "Brady Macdonald",
+    "url": "https://bradymacdonald.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BM",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 406,
+    "name": "Brandon Mitchell",
+    "url": "https://juncie.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BM",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 408,
+    "name": "Brendon Van Zanten",
+    "url": "https://brendonvanzanten.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BZ",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 410,
+    "name": "Brian Kabbo",
+    "url": "https://briankabbo.vercel.app",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BK",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 411,
+    "name": "Brian Kamau",
+    "url": "https://brian-portfolio-two.vercel.app",
+    "role": "Full Stack Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BK",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 412,
+    "name": "Brianna Brockington",
+    "url": "https://briannab1997.github.io/BBPortfolio/",
+    "role": "Software Engineer | QA & Support",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BB",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 413,
+    "name": "Brihadeesh",
+    "url": "https://briha.xyz",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "BR",
+    "firstLetter": "B",
+    "featured": false
+  },
+  {
+    "id": 425,
+    "name": "Capt Michael",
+    "url": "https://captmichael.dev",
+    "role": "Mern Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CM",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 427,
+    "name": "Carlos Gutierrez",
+    "url": "https://cargdev.io",
+    "role": "Senior Full Stack Engineer | Python, Typescript, Distributed Systems",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior",
+      "Python",
+      "TypeScript"
+    ],
+    "initials": "CG",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 428,
+    "name": "Carlos Rojas",
+    "url": "https://carlos-rojas-portfolio.vercel.app",
+    "role": "Full Stack Developer | Aspiring Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CR",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 435,
+    "name": "Chalwe Chisela",
+    "url": "https://chalwe.com",
+    "role": "Senior Software Engineer | Flutter & Go",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Flutter",
+      "Senior"
+    ],
+    "initials": "CC",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 439,
+    "name": "Chandrakant Sharma",
+    "url": "https://ichandrasharma.vercel.app",
+    "role": "Software Engineer | Remote Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CS",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 451,
+    "name": "Chiragchrg",
+    "url": "https://chiragchrg.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CH",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 457,
+    "name": "Christian Eckardt",
+    "url": "https://eckeecke.github.io",
+    "role": "Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CE",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 458,
+    "name": "Christian Jöcker",
+    "url": "https://jocker.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CJ",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 464,
+    "name": "Cian Goon",
+    "url": "https://ciangoon.dev",
+    "role": "Software Engineer, Quant Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CG",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 476,
+    "name": "Crisbelo Neto",
+    "url": "https://crisbeloneto.github.io",
+    "role": "Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "CN",
+    "firstLetter": "C",
+    "featured": false
+  },
+  {
+    "id": 490,
+    "name": "Daniel Andrés Rodríguez",
+    "url": "https://danrodd.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DR",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 494,
+    "name": "Daniel Ortiz",
+    "url": "https://danielortiz.web.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DO",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 496,
+    "name": "Daniel Steele",
+    "url": "https://www.danielsteele.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DS",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 500,
+    "name": "Daniyal Javadia",
+    "url": "https://daniyal-works-portfolio.vercel.app",
+    "role": "Full Stack Developer | Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DJ",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 504,
+    "name": "Darshan Bhuva",
+    "url": "https://darshanbhuva.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DB",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 533,
+    "name": "Devansh Baghel",
+    "url": "https://baghel.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DB",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 542,
+    "name": "Dhilip",
+    "url": "https://dhilipmpms.github.io/pf/",
+    "role": "Software Engineer | Foss Activist",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DH",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 548,
+    "name": "Dhruv Sathe",
+    "url": "https://dhruv-alpha.vercel.app",
+    "role": "Software Engineer & Freelancer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Freelance"
+    ],
+    "initials": "DS",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 550,
+    "name": "Dhvanit Monpara",
+    "url": "https://dhvanitmonpara.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DM",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 553,
+    "name": "Diana Pontes",
+    "url": "https://martineoficial-portfolio.vercel.app",
+    "role": "Software Engineering Analyst | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DP",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 555,
+    "name": "Digbijaya Lenka",
+    "url": "https://digbijayalenka.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DL",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 563,
+    "name": "Dino Kupinic",
+    "url": "https://dino-kupinic.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DK",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 565,
+    "name": "Dipak Mourya",
+    "url": "https://dipakdev.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DM",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 567,
+    "name": "Dipin Yadav",
+    "url": "https://dipin-yadav.github.io/dipin/",
+    "role": "Software Engineer | Backend Engineering & Cloud",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "DY",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 571,
+    "name": "Divyasree",
+    "url": "https://portfolio-vert-one-18.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DI",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 572,
+    "name": "Dongsub Kim",
+    "url": "https://dongsubkim.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "DK",
+    "firstLetter": "D",
+    "featured": false
+  },
+  {
+    "id": 583,
+    "name": "Edikan Bassey",
+    "url": "https://edikan-bassey.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "EB",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 589,
+    "name": "Elgratio",
+    "url": "https://elgratiofc.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "EL",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 599,
+    "name": "Emmanuel Alabi",
+    "url": "https://emjjkk.tech",
+    "role": "CS Student | Full Stack Web/App",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "EA",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 617,
+    "name": "Eyad Ahmed",
+    "url": "https://fezex.vercel.app",
+    "role": "Full Stack Web Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "EA",
+    "firstLetter": "E",
+    "featured": false
+  },
+  {
+    "id": 620,
+    "name": "Fabian Letsch",
+    "url": "https://fabianletsch.de",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FL",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 621,
+    "name": "Fabian Lugo",
+    "url": "https://lugotech.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FL",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 622,
+    "name": "Fabien Laurence",
+    "url": "https://fabienlaurence.com",
+    "role": "Full Stack Developer | TypeScript / Python / C#",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Python",
+      "TypeScript"
+    ],
+    "initials": "FL",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 625,
+    "name": "Fahim Ahmed",
+    "url": "https://fahim-cloud.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FA",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 631,
+    "name": "Fayed Ishtar Chowdhury",
+    "url": "https://portfolio-fayed.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FC",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 637,
+    "name": "Fernando Andres Raggio",
+    "url": "https://raggiodev.vercel.app",
+    "role": "Full Stack Developer & Cibersecurity",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FR",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 642,
+    "name": "Fikri Rozan",
+    "url": "https://fikrirozan.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FR",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 643,
+    "name": "Florian Giacinti",
+    "url": "https://florian.giacinti.me",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FG",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 647,
+    "name": "Francisco Salido",
+    "url": "https://paco.fyi?utm_source=gh",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FS",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 648,
+    "name": "Franck Galliod",
+    "url": "https://www.franckwebpro.com",
+    "role": "Full Stack & Webflow Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "FG",
+    "firstLetter": "F",
+    "featured": false
+  },
+  {
+    "id": 658,
+    "name": "Gabriel Jordan",
+    "url": "https://jrdan.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "GJ",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 664,
+    "name": "Gambhir.Dev",
+    "url": "https://gambhir.dev",
+    "role": "Full Stack | DevOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "GA",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 677,
+    "name": "Geet Trivedi",
+    "url": "https://www.geettrivedi.com",
+    "role": "Full Stack Developer | MEAN/MERN",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "GT",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 693,
+    "name": "Glen Elric Fernandes",
+    "url": "https://www.glenelric.space",
+    "role": "Full Stack SDE| Data Science Researcher| Student",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "GF",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 696,
+    "name": "Gokhul",
+    "url": "https://gokhul.dev",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "GO",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 705,
+    "name": "Gunjan Ghate",
+    "url": "http://techggdev.vercel.app",
+    "role": "Full Stack Web2/Web3 Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "GG",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 707,
+    "name": "Guyon Emeric",
+    "url": "https://emericguyon.com",
+    "role": "Freelance Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Freelance"
+    ],
+    "initials": "GE",
+    "firstLetter": "G",
+    "featured": false
+  },
+  {
+    "id": 710,
+    "name": "Hafiq Iqmal",
+    "url": "https://hafiq.dev",
+    "role": "Software Engineer | Backend & API Engineering | DevSecOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "HI",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 714,
+    "name": "Hanan Bhatti",
+    "url": "https://hanan-bhatti.site",
+    "role": "Full Stack Developer | Creator",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HB",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 715,
+    "name": "Hangga Aji Sayekti",
+    "url": "https://hangga.web.id",
+    "role": "Software Engineer · Security Researcher · Tech Author",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HS",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 720,
+    "name": "Hareesh Bhittam",
+    "url": "https://hareesh.is-a.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "is-a.dev",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HB",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 724,
+    "name": "Haroon Khalid",
+    "url": "https://haronkhalid.github.io/portfolio",
+    "role": "Software Engineer & Digital Creator",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HK",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 726,
+    "name": "Harsh Doshi",
+    "url": "https://iamharshdoshi.com",
+    "role": "Cloud Architect | Software Engineer | Agile Certified | Photographer | Entrepreneur",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HD",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 729,
+    "name": "Harsh Vardhan Singh",
+    "url": "https://hvsingh.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HS",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 732,
+    "name": "Harshith Raj",
+    "url": "https://harshithrajbangera.github.io/Portfolio/",
+    "role": "Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HR",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 743,
+    "name": "Hemanth Chakravarthy Kancharla",
+    "url": "https://hemanth-chakravarthy.netlify.app",
+    "role": "Engineering Student | Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "HK",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 746,
+    "name": "Herve Mbilo",
+    "url": "https://diliwo.github.io",
+    "role": "Cloud-Native Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HM",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 747,
+    "name": "Hesbon Angwenyi",
+    "url": "https://hezy.netlify.app",
+    "role": "Full Stack Developer | DevOps Engineer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HA",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 748,
+    "name": "Hien Dao",
+    "url": "https://hiendao.dev",
+    "role": "Software Engineer | Backend",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "HD",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 750,
+    "name": "Himavanth Kumar Perni",
+    "url": "http://himavanth-kumar-perni-portfolio.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HP",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 753,
+    "name": "Ho Van Hoa",
+    "url": "https://hovanhoa.net",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HH",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 754,
+    "name": "Houssam Bouzid",
+    "url": "https://houssambouzid.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "HB",
+    "firstLetter": "H",
+    "featured": false
+  },
+  {
+    "id": 767,
+    "name": "Igor Clauss",
+    "url": "https://igorclauss.de",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "IC",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 769,
+    "name": "Ilham Riski Wibowo",
+    "url": "http://ilhamriski.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "IW",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 773,
+    "name": "Ilya Glebov",
+    "url": "https://ilyaglebov.dev",
+    "role": "Software Engineer | Tech Lead",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "IG",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 778,
+    "name": "Indrayudh Dhara",
+    "url": "https://my-portfolio-ba1h.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "ID",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 780,
+    "name": "Ioannis Jone-Magalhaes",
+    "url": "https://ioannisjonemagalhaes.com",
+    "role": "Software Engineer | Cloud & IoT",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "IJ",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 789,
+    "name": "Ivin Titus",
+    "url": "https://ivin.site",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "IT",
+    "firstLetter": "I",
+    "featured": false
+  },
+  {
+    "id": 792,
+    "name": "Jack Phát",
+    "url": "https://jackphat.vercel.app",
+    "role": "Full Stack Developer | Vibe coding",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JP",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 796,
+    "name": "Jahidul Islam Jihad",
+    "url": "https://jahiduljihad.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JJ",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 811,
+    "name": "Jatin Jadon",
+    "url": "https://portfolio-jatin-two.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JJ",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 818,
+    "name": "Jay Gaha",
+    "url": "https://jaygaha.com.np",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JG",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 824,
+    "name": "Jayanth Donavalli",
+    "url": "https://djayanth.site",
+    "role": "Full Stack Developer | Designer | Photographer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JD",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 828,
+    "name": "Jeevaprakash",
+    "url": "https://c1ph3rj.in",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JE",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 829,
+    "name": "Jeff Cardinal",
+    "url": "https://jeffcardinal.com",
+    "role": "Software Engineer | Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JC",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 837,
+    "name": "Jeslor Ssozi",
+    "url": "https://www.jeslor.com",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JS",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 843,
+    "name": "Jiru Gutema",
+    "url": "https://jirugutema.vercel.app",
+    "role": "Full Stack Developer, Software Engineer, Backend Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "JG",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 847,
+    "name": "Joel Johnson",
+    "url": "https://www.joelcjohnson.me",
+    "role": "Full Stack Developer, Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JJ",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 854,
+    "name": "Johnny Dang",
+    "url": "https://dnh2703.work",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JD",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 861,
+    "name": "Jorge Cortés",
+    "url": "https://jorgecortes.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JC",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 865,
+    "name": "Joshua Prini",
+    "url": "https://joshuaprini.com",
+    "role": "Full Stack Developer | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JP",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 868,
+    "name": "Jozsef Pallagi",
+    "url": "https://jozsefpallagi.com",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "JP",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 872,
+    "name": "Juan Gomes Macario",
+    "url": "https://crashunix.nl",
+    "role": "Senior Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "JM",
+    "firstLetter": "J",
+    "featured": false
+  },
+  {
+    "id": 888,
+    "name": "Kamran Mushtaq",
+    "url": "https://kamipresents.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KM",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 892,
+    "name": "Karthik Shetty",
+    "url": "http://karthikshetty.info",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KS",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 896,
+    "name": "Kashif Ali",
+    "url": "https://kashifalirajper.vercel.app",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KA",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 901,
+    "name": "Kaushal Raj Gupta",
+    "url": "https://kaushalrajgupta.is-a.dev",
+    "role": "Full Stack Developer | Cybersecurity Expert",
+    "hostPlatform": "is-a.dev",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KG",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 905,
+    "name": "Kaveh Taheri",
+    "url": "https://kav3.com",
+    "role": "🥷 JS Ninja - Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KT",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 913,
+    "name": "Kelvin Juma",
+    "url": "https://kelvin-site.vercel.app",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KJ",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 914,
+    "name": "Kenneth Sunjaya",
+    "url": "https://kennethsunjaya.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KS",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 916,
+    "name": "Kenzy Codex",
+    "url": "https://kenzycodex.vercel.app",
+    "role": "Software Developer | Backend Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "KC",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 918,
+    "name": "Kevin Bogagne",
+    "url": "https://kevinbg.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KB",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 927,
+    "name": "Khulile Nzimande",
+    "url": "https://khulilen.github.io/Portfolio-Website/",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KN",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 937,
+    "name": "Kritan Shrestha",
+    "url": "https://kritan560.github.io/portfolio/",
+    "role": "Senior Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "KS",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 939,
+    "name": "Krupal Sanchaniya",
+    "url": "https://krupal-portfolio.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KS",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 943,
+    "name": "Kuei Poch Kuei",
+    "url": "http://kueiyiee-portfolio.vercel.app",
+    "role": "Full Stack Dev and Creative Thinker",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KK",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 945,
+    "name": "Kuldeepsinh Jadeja",
+    "url": "https://kuldeepjadeja.dev",
+    "role": "Full Stack Developer | MERN Stack",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KJ",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 951,
+    "name": "Kushan Devarajegowda",
+    "url": "https://ikushdev.github.io",
+    "role": "Software Developer | Software Engineer | Sde | Swe",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KD",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 955,
+    "name": "kenTom",
+    "url": "https://kentom.co.ke",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "KE",
+    "firstLetter": "K",
+    "featured": false
+  },
+  {
+    "id": 956,
+    "name": "Laercio Rios",
+    "url": "https://laerciorios.com",
+    "role": "Full Stack Developer | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "LR",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 962,
+    "name": "Lamine Neggazi",
+    "url": "https://lamine.cc",
+    "role": "Full Stack Developer | Algiers",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "LN",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 979,
+    "name": "Lina Brihoum",
+    "url": "https://www.linabrihoum.com",
+    "role": "Cloud Architect & Manager | Full Stack",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "LB",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 993,
+    "name": "Lucas De Moraes",
+    "url": "https://devlucas.website",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "LM",
+    "firstLetter": "L",
+    "featured": false
+  },
+  {
+    "id": 1000,
+    "name": "Maame Yaa Twumasi",
+    "url": "https://maameyaa.vercel.app",
+    "role": "Full Stack Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MT",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1001,
+    "name": "Maciej Pulikowski",
+    "url": "https://pulik.dev",
+    "role": "Software Engineer & Security Researcher | 8 X Google Hall Of Fame",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MP",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1009,
+    "name": "Mahdi Hasan",
+    "url": "https://mahdihasan.space",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MH",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1011,
+    "name": "Mahesh Darapureddy",
+    "url": "https://maheshdarapureddy.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MD",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1018,
+    "name": "Malay Patra",
+    "url": "https://malaypatrav2.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MP",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1022,
+    "name": "Manan Kanani",
+    "url": "https://manankanani.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1023,
+    "name": "Manan Narwal",
+    "url": "https://manannarwal.vercel.app",
+    "role": "Full Stack | App | Web",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MN",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1024,
+    "name": "Manav Chudasama",
+    "url": "https://manav-chudasama.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MC",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1025,
+    "name": "Mandip Umretiya",
+    "url": "https://mandip-dev-portfolio.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MU",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1026,
+    "name": "Manikandan Ramar",
+    "url": "https://manikandanramar.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MR",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1028,
+    "name": "Manish Kumar",
+    "url": "https://manixh.vercel.app",
+    "role": "Full-Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1032,
+    "name": "Mann Patel",
+    "url": "https://patelmann.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MP",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1043,
+    "name": "Marin Takanov",
+    "url": "https://www.takanov.com",
+    "role": "Senior Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "MT",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1047,
+    "name": "Mariya Jebastin",
+    "url": "https://mariyajebastin.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MJ",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1048,
+    "name": "Mark Ernst",
+    "url": "https://cyntax.dev",
+    "role": "Freelance Senior Full Stack Software Engineer at Cyntax | .NET/PHP/TS",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior",
+      "Freelance"
+    ],
+    "initials": "ME",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1053,
+    "name": "Martin Lefebvre",
+    "url": "https://martinlefebvre.com",
+    "role": "Senior Full Stack Developer | Tech Lead",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "ML",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1056,
+    "name": "Masab Qurban",
+    "url": "https://www.masabqurban.com",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MQ",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1067,
+    "name": "Matteo Mumoli",
+    "url": "https://matteomumoli.dev",
+    "role": "Full Stack | Web | App | Game Dev & Freelancer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Freelance"
+    ],
+    "initials": "MM",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1072,
+    "name": "Maxwel Khadambi",
+    "url": "https://maxwel-khadambi.vercel.app",
+    "role": "Software Developer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1081,
+    "name": "Md Rakib Ali",
+    "url": "https://rakibislam22.github.io",
+    "role": "Full Stack Developer & Problem Solver",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1082,
+    "name": "Md Rashid",
+    "url": "https://md-rashid.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MR",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1087,
+    "name": "Mehedi Hasan Janny",
+    "url": "https://mhjanny.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MJ",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1089,
+    "name": "Meicloudie",
+    "url": "https://thucvan-portfolio.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "ME",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1091,
+    "name": "Melih Arık",
+    "url": "https://meliharik.dev",
+    "role": "Software Engineer | Mobile Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1092,
+    "name": "Melvin Biju",
+    "url": "https://melvinbiju.vercel.app",
+    "role": "Full Stack Dev | Graphic Designer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MB",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1099,
+    "name": "Michael Ongaro",
+    "url": "https://www.michaelongaro.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MO",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1102,
+    "name": "Michal Dziuba",
+    "url": "https://michaldziuba.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MD",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1116,
+    "name": "Mohammad Ahmad",
+    "url": "https://3d-portfolio-orpin-one.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1117,
+    "name": "Mohammad Ahmad",
+    "url": "https://ahmad-netflix-portfolio-ujir.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1118,
+    "name": "Mohammad Araf",
+    "url": "https://araf-portfolio.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1119,
+    "name": "Mohammad Gauhar",
+    "url": "https://www.iamgauhar.in",
+    "role": "Full Stack Engineer | Next.js & MERN",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Next.js"
+    ],
+    "initials": "MG",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1120,
+    "name": "Mohammad Goli Khatir",
+    "url": "https://github.com/mgolikhatir",
+    "role": "Software Engineer | Backend Developer | .Net, Python, Rest Api",
+    "hostPlatform": "GitHub Profile",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend",
+      "Python"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1122,
+    "name": "Mohammad Hadi Siavashi",
+    "url": "https://mhsiavashi.com",
+    "role": "Software Engineer | Backend Developer | .Net, Python, Rest Api",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend",
+      "Python"
+    ],
+    "initials": "MS",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1126,
+    "name": "Mohammed Atef",
+    "url": "https://mohammedatefportfolio.vercel.app",
+    "role": ".Net Full Stack Developer | Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1131,
+    "name": "Mohit Kumar",
+    "url": "https://mohit1r.github.io/Portfolio",
+    "role": "Cloud Native Software Engineer | Java | Spring Boot | Azure | DevOps",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MK",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1133,
+    "name": "Mohit Shrivastava",
+    "url": "https://iamohit.com",
+    "role": "Senior Full Stack Engineer | Next.js Specialist",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Next.js",
+      "Senior"
+    ],
+    "initials": "MS",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1136,
+    "name": "Moteeullah Azmi",
+    "url": "https://moteeullahazmi.com",
+    "role": "Full Stack Developer & Freelancer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Freelance"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1140,
+    "name": "Mudassir Ali",
+    "url": "https://mudassirali.com",
+    "role": "Full Stack Developer | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1143,
+    "name": "Muhammad Aamir Malik",
+    "url": "https://www.muhammadaamirmalik.com",
+    "role": "Full Stack Hybride App Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MM",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1144,
+    "name": "Muhammad Adnan",
+    "url": "https://portfolio-orpin-nu-27.vercel.app",
+    "role": "Full Stack Developer | MERN, Nextjs, Nestjs",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Next.js"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1149,
+    "name": "Muhammad Iqbal Nazulis",
+    "url": "https://iqbalnzls.github.io/portfolio/",
+    "role": "Software Engineer | Backend",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "MN",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1157,
+    "name": "Muhammad Tayyab",
+    "url": "https://iamtayyab.com",
+    "role": "Full Stack Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MT",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1166,
+    "name": "Mustapha El Alamy",
+    "url": "https://alamy.vercel.app",
+    "role": "Full Stack Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "MA",
+    "firstLetter": "M",
+    "featured": false
+  },
+  {
+    "id": 1182,
+    "name": "Navdeep Singh",
+    "url": "https://navdeep.site",
+    "role": "Full Stack Dev | Student at NITJ",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "NS",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1186,
+    "name": "Naveen Kumar",
+    "url": "https://naveenweb.site",
+    "role": "Full Stack Developer | MERN Stack",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NK",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1187,
+    "name": "NaveenKumar",
+    "url": "https://naveenkumarm.space",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NA",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1194,
+    "name": "Newton Yuan",
+    "url": "https://newtonyuan.com",
+    "role": "Software Engineer | Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NY",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1203,
+    "name": "Nigam Prasad Sahoo",
+    "url": "https://nigam-portfolio-2026.web.app",
+    "role": "Android & Full Stack Systems Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NS",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1205,
+    "name": "Nikhil Kumar",
+    "url": "https://routesguard.lovable.app/r/portfolio",
+    "role": "Full Stack Developer | Backend Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "NK",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1206,
+    "name": "Nikhil Madaravena",
+    "url": "https://www.nikhilmadaravena.me",
+    "role": "Full Stack Developer and Systems Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NM",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1207,
+    "name": "Nikhil Yadav",
+    "url": "https://niksoriginals.in",
+    "role": "Software Developer & Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NY",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1208,
+    "name": "Nikhila Koneru",
+    "url": "https://nikhilakoneru.com",
+    "role": "Full Stack Developer | DevOps Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NK",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1215,
+    "name": "Nimit Trevadiya",
+    "url": "https://nimit-trevadiya.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NT",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1223,
+    "name": "Nishmika Ekanayaka",
+    "url": "https://nishmika-dev.vercel.app",
+    "role": "Full Stack Developer | Junior",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "NE",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1230,
+    "name": "Noel Young",
+    "url": "https://noeljyoung.github.io/portfolio/",
+    "role": "Senior Software Engineer | Laravel Developer | Go Enthusiast",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "NY",
+    "firstLetter": "N",
+    "featured": false
+  },
+  {
+    "id": 1235,
+    "name": "Ohk Soe Htet",
+    "url": "https://www.ohksoehtet.dev",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "OH",
+    "firstLetter": "O",
+    "featured": false
+  },
+  {
+    "id": 1266,
+    "name": "Pankaj Kumar",
+    "url": "https://pankaj-kumar-techie.github.io",
+    "role": "Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PK",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1280,
+    "name": "Patrick Müller",
+    "url": "https://p-mueller.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PM",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1283,
+    "name": "Paul Henry Atienza",
+    "url": "https://www.paulatienza.dev",
+    "role": "Software Engineer | Enterprise Java Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PA",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1287,
+    "name": "Pavan Srivatsav Valluru",
+    "url": "https://pavansrivatsav.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "PV",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1290,
+    "name": "Pep Alonso",
+    "url": "https://pepalonso.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PA",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1292,
+    "name": "Peter Oravec",
+    "url": "https://peteroravec.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PO",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1298,
+    "name": "Philippe Fanaro",
+    "url": "https://aquarifolio.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PF",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1308,
+    "name": "Prakash Jha",
+    "url": "https://prakashjha.com",
+    "role": "Full Stack Dev.",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PJ",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1309,
+    "name": "Prakash Pun",
+    "url": "https://prakashpun.me",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PP",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1311,
+    "name": "Prakhar Patel",
+    "url": "https://prakharpatel.vercel.app",
+    "role": "Full Stack Developer | Technical Lead",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "PP",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1312,
+    "name": "Prakhar Yadav",
+    "url": "https://prakharyxdev.vercel.app",
+    "role": "Full Stack Developer | Tech Content Creator",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PY",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1314,
+    "name": "Pranav Arya",
+    "url": "https://pranavarya.in",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PA",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1325,
+    "name": "Prem Kumar Rajbhar",
+    "url": "https://premkrrajbhar.github.io/prem_kumar_rajbhar/",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PR",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1327,
+    "name": "Prince Bhayani",
+    "url": "https://princeb.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PB",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1332,
+    "name": "Priyanshu Chauhan",
+    "url": "https://priyanshuportfolioo.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "PC",
+    "firstLetter": "P",
+    "featured": false
+  },
+  {
+    "id": 1351,
+    "name": "Rahul Gulabaji",
+    "url": "https://rahulgulabaji.github.io",
+    "role": "Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RG",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1352,
+    "name": "Rahul Gurujala",
+    "url": "https://rahulgurujala.is-a.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "is-a.dev",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RG",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1353,
+    "name": "Rahul Khatwani",
+    "url": "https://rahulkhatwani.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RK",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1355,
+    "name": "Rahul Kushwaha",
+    "url": "https://raahullkushwaha.dev",
+    "role": "Full Stack Developer | Java | Spring Boot",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RK",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1361,
+    "name": "Raj Sharma",
+    "url": "https://www.rajsh.in",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1365,
+    "name": "Rajiv Mahto",
+    "url": "https://rajiv-portfolio-dev.vercel.app",
+    "role": "Software Engineer | Python, Django, Automation",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Python"
+    ],
+    "initials": "RM",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1375,
+    "name": "Rameshwar Bhagwat",
+    "url": "https://www.rameshwarbhagwat.me",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RB",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1381,
+    "name": "Ravi Bhushan Kumar",
+    "url": "https://ravibhushan-portfolio.vercel.app",
+    "role": "Full Stack Developer | Mern",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RK",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1385,
+    "name": "Reagan Hsu",
+    "url": "https://reaganhsu.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RH",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1387,
+    "name": "Reeya Gupta",
+    "url": "https://reeyadev.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RG",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1391,
+    "name": "Renan Silva",
+    "url": "https://devrenansilva.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1409,
+    "name": "Rishav Kumar Singh",
+    "url": "https://rishavkumar-portfolio.vercel.app",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1411,
+    "name": "Ritesh Bucha",
+    "url": "https://bucharitesh.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RB",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1413,
+    "name": "Rizan Bhandari",
+    "url": "https://acchyut.com.np",
+    "role": "Researcher & Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RB",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1422,
+    "name": "Rohit Singh",
+    "url": "https://rohitwork.vercel.app",
+    "role": "Software Engineer | Next.js, MERN",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Next.js"
+    ],
+    "initials": "RS",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1438,
+    "name": "Rutansh Chawla",
+    "url": "https://rutansh.is-a.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "is-a.dev",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "RC",
+    "firstLetter": "R",
+    "featured": false
+  },
+  {
+    "id": 1447,
+    "name": "SE Jihad",
+    "url": "https://sejihad.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SJ",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1448,
+    "name": "Saad Mehmood",
+    "url": "https://iamsaadmehmood.com",
+    "role": "Full Stack Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SM",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1451,
+    "name": "Saaketh Jella",
+    "url": "https://www.saakethj.in",
+    "role": "Associate Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SJ",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1452,
+    "name": "Saavan Gajjar",
+    "url": "https://www.saavangajjardev.in",
+    "role": "Software Engineer | Full Stack",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SG",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1454,
+    "name": "Sabbir Ahmed Shawon",
+    "url": "https://sabbirshawon.com",
+    "role": "Full Stack Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1455,
+    "name": "Sabbir Ahmed",
+    "url": "https://sabbirahmed.net",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1469,
+    "name": "Sahib Hernández",
+    "url": "https://www.presoftcore.com",
+    "role": "Software Engineer & Music Producer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SH",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1470,
+    "name": "Sahil Bajaj",
+    "url": "https://sahilbajajportfolio.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1473,
+    "name": "Sahil Khan",
+    "url": "https://sahil-site-chi.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SK",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1488,
+    "name": "Sajid Alam",
+    "url": "https://sajidalam.pages.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1490,
+    "name": "Sakib Rahman",
+    "url": "https://rsakib.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SR",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1495,
+    "name": "Samarth Batra",
+    "url": "https://batrasamarth.com",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1502,
+    "name": "Sammeyak Wankhade",
+    "url": "https://sammeyak-portfolio.netlify.app",
+    "role": "Software Engineer | Solution Architect",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SW",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1507,
+    "name": "Samuel Ezra",
+    "url": "https://www.samuelezranas.codes",
+    "role": "Full Stack & Mobile Developer | Tech Student & Enthusiast",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Student"
+    ],
+    "initials": "SE",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1508,
+    "name": "Samvesh",
+    "url": "https://portfolio-site-two-virid.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1512,
+    "name": "Sandeep Singh",
+    "url": "https://portfolio-seven-bice-pdn04n7l52.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1518,
+    "name": "Sanskar Suryawanshi",
+    "url": "https://010101-sans.is-a.dev",
+    "role": "Full Stack Architect",
+    "hostPlatform": "is-a.dev",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1524,
+    "name": "Sarker Mohammad Riduan",
+    "url": "https://devfolio-riduan.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SR",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1531,
+    "name": "Sathwik Yellapragada",
+    "url": "https://www.sathwiky.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SY",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1540,
+    "name": "Saurabh Talele",
+    "url": "https://saurabhtalele.com",
+    "role": "Full Stack developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "ST",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1541,
+    "name": "Saurabh Verma",
+    "url": "https://saurabhv749.github.io",
+    "role": "Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SV",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1546,
+    "name": "Sayan Adhikary",
+    "url": "https://www.sayanadhikary.me",
+    "role": "Full Stack Mern",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1548,
+    "name": "Sayandeep Majumdar",
+    "url": "https://sayandeepmajumdar.github.io",
+    "role": "Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SM",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1553,
+    "name": "Sayyed",
+    "url": "https://sayyedrabeeh.github.io/portfoliyo/",
+    "role": "Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1560,
+    "name": "Seif Osman",
+    "url": "https://seifosman.com",
+    "role": "IT Store Technology Engineer | Full Stack & Security",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SO",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1572,
+    "name": "Shahan Arshad",
+    "url": "https://shahan-arshad.github.io",
+    "role": "Full Stack Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1575,
+    "name": "Shahmeer Rizwan",
+    "url": "https://shahmeerrizwan.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SR",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1576,
+    "name": "Shahrukh Anwar",
+    "url": "https://shahrukhanwar.vercel.app",
+    "role": "Senior Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1579,
+    "name": "Shakir Ali",
+    "url": "https://shakiraliswe.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1580,
+    "name": "Shalon Fernando",
+    "url": "https://shalon.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SF",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1584,
+    "name": "Shanto Joseph",
+    "url": "https://shantojoseph.com",
+    "role": "Full Stack | Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SJ",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1585,
+    "name": "Sharif Rahat",
+    "url": "https://sharifrahat.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SR",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1586,
+    "name": "Sharif",
+    "url": "https://developersharif.github.io/me/",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SH",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1591,
+    "name": "Shashi Kant",
+    "url": "https://shashikantportfolio.web.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SK",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1594,
+    "name": "Shawn Kurtnelle Lewis",
+    "url": "https://shawnklewis.com",
+    "role": "Augmented Software Engineer | Systems Architect",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SL",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1595,
+    "name": "Shawn Osborne",
+    "url": "https://shawnosborne.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SO",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1598,
+    "name": "Shihablabs",
+    "url": "https://shihablabs.vercel.app",
+    "role": "Full Stack Developer / Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SH",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1606,
+    "name": "Shivy Patel",
+    "url": "https://shivypatel.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SP",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1609,
+    "name": "Shrestha Mishra",
+    "url": "https://shresthamishra.vercel.app",
+    "role": "Software Engineer | CS @ University Of Texas At Austin",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SM",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1611,
+    "name": "Shrey Varshney",
+    "url": "https://shreyvarshney.pages.dev",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SV",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1613,
+    "name": "Shreyas Raviprakash",
+    "url": "https://portfolio-vfee.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SR",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1619,
+    "name": "Shubham Gupta",
+    "url": "https://www.shubhamgupta.dev",
+    "role": "Senior Software Engineer | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "SG",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1621,
+    "name": "Shubham Vandara",
+    "url": "https://shubhamvandara.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SV",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1624,
+    "name": "Siddharth Chattoraj",
+    "url": "https://siddharthchattoraj.com",
+    "role": "Full Stack Developer | Production Designer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SC",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1627,
+    "name": "Siem Van Bree",
+    "url": "https://siemvanbree.nl",
+    "role": "Siem Van Bree - Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1630,
+    "name": "Simon Fereshetyan",
+    "url": "https://fereshetyan.space",
+    "role": "Software Engineer / DevOps",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SF",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1632,
+    "name": "Siraj AL Zahran",
+    "url": "https://sirajalzahran.com",
+    "role": "Software Engineer | Tech Artisan",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SZ",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1642,
+    "name": "Sonu Hansda",
+    "url": "https://sonu-hansda.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SH",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1643,
+    "name": "Soufiane El Hamri",
+    "url": "https://www.soufiane-elhamri.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SH",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1646,
+    "name": "Soumyajit Basak",
+    "url": "https://soumyajitbasak.netlify.app",
+    "role": "Software Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1656,
+    "name": "Srijan Baniyal",
+    "url": "https://srijanbaniyal.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1662,
+    "name": "Stimmie",
+    "url": "https://www.stimmie.dev",
+    "role": "Software Engineer | Next.js",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Next.js"
+    ],
+    "initials": "ST",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1663,
+    "name": "Stuart Blackler",
+    "url": "https://codewithstu.tv",
+    "role": "Principal Software Engineer | AWS | .NET",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1665,
+    "name": "Subhajit Kar",
+    "url": "https://next-portfolio-tan-ten.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Next.js"
+    ],
+    "initials": "SK",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1668,
+    "name": "Subrat Dwivedi",
+    "url": "https://subratdwivedi.dev",
+    "role": "Software Engineer | Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SD",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1674,
+    "name": "Sumeet",
+    "url": "https://full-stack-liard-eight.vercel.app",
+    "role": "Software Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SU",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1681,
+    "name": "Suraj Savle",
+    "url": "https://surajsavle.in",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1682,
+    "name": "Suraj Yadav",
+    "url": "https://suraj-yadav0.github.io/terminal-portfolio/",
+    "role": "Software Engineer | Ubuntu Touch Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SY",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1685,
+    "name": "Swaroop Vyawahare",
+    "url": "https://swaroop.codes",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SV",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1691,
+    "name": "Syed Muhammad Saad Bukhari",
+    "url": "https://saadbukhari.vercel.app",
+    "role": "Software Developer | Polygot Programmer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SB",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1692,
+    "name": "Syed Omer Ali",
+    "url": "https://syedomer.me",
+    "role": "Software Engineer | DevSecOps Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SA",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1693,
+    "name": "Syed Saad",
+    "url": "https://syedsaad.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "SS",
+    "firstLetter": "S",
+    "featured": false
+  },
+  {
+    "id": 1710,
+    "name": "Thanh Tran",
+    "url": "https://thanhtran-portfolio.vercel.app",
+    "role": "Software Engineer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TT",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1714,
+    "name": "Thiago Sousa",
+    "url": "https://github.com/ThiagoSousa81",
+    "role": "Cryptographer - Full Stack Developer",
+    "hostPlatform": "GitHub Profile",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TS",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1716,
+    "name": "Thierry Bungaroo",
+    "url": "https://crackedontiti.github.io",
+    "role": "Software Developer & Software Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TB",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1722,
+    "name": "Tibor Ignéczi",
+    "url": "https://igneczitibor.hu",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TI",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1723,
+    "name": "Tien Truong Mars Truong",
+    "url": "https://marstruong.com",
+    "role": "Flutter Developer |Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Flutter"
+    ],
+    "initials": "TT",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1725,
+    "name": "Tim Maes",
+    "url": "https://www.tim-maes.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TM",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1727,
+    "name": "Timmy O'Mahony",
+    "url": "https://timmyomahony.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TO",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1728,
+    "name": "Tinotenda Mhedziso",
+    "url": "https://tinotenda-mhedziso.pages.dev",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TM",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1731,
+    "name": "Tomáš Đinh",
+    "url": "https://tomasdinh.cz",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TĐ",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1735,
+    "name": "Trisha Darure",
+    "url": "https://trishadar.github.io/Portfolio/#about",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TD",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1740,
+    "name": "Tushar Kanjariya",
+    "url": "https://tusharkanjariya.me",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "TK",
+    "firstLetter": "T",
+    "featured": false
+  },
+  {
+    "id": 1752,
+    "name": "Ujjwal Soni",
+    "url": "https://ujjwalsoni-portfolio.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "US",
+    "firstLetter": "U",
+    "featured": false
+  },
+  {
+    "id": 1757,
+    "name": "Utkarsh Satav",
+    "url": "https://utkarshsatav.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "US",
+    "firstLetter": "U",
+    "featured": false
+  },
+  {
+    "id": 1758,
+    "name": "Utsav Adhikari",
+    "url": "https://utsavadhikari07.com.np",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "UA",
+    "firstLetter": "U",
+    "featured": false
+  },
+  {
+    "id": 1761,
+    "name": "Uygar Polat",
+    "url": "https://uygarpolat.com",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "UP",
+    "firstLetter": "U",
+    "featured": false
+  },
+  {
+    "id": 1772,
+    "name": "Valentin Lefrançois",
+    "url": "https://valentinlefrancois.dev",
+    "role": "Senior Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "VL",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1774,
+    "name": "Valter Negreiros",
+    "url": "https://valternegreiros.com",
+    "role": "Senior Mobile Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Senior"
+    ],
+    "initials": "VN",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1775,
+    "name": "Vamshi Kumar",
+    "url": "https://thvvamshi-dev.onrender.com",
+    "role": "Software Engineer | Backend & Full Stack Developer",
+    "hostPlatform": "Render",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "VK",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1784,
+    "name": "Vasudev Katariya",
+    "url": "https://vasudev7891.github.io/Portfolio/",
+    "role": "Software Engineer | Java & DSA | Full Stack (MERN)",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VK",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1795,
+    "name": "Victor Vento",
+    "url": "https://victorvento.net",
+    "role": "Software Developer | .NET and JavaScript",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VV",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1802,
+    "name": "Vikas Uniyal",
+    "url": "https://vikasdev-in.vercel.app/",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VU",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1803,
+    "name": "Vinay Kumar",
+    "url": "https://n4ryn.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VK",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1810,
+    "name": "Vishal Bhosle",
+    "url": "https://vishalb.dev",
+    "role": "Expert Full Stack Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VB",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1811,
+    "name": "Vishal Kumar Singh",
+    "url": "https://vishalvoid.com",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VS",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1814,
+    "name": "Vishal Singh",
+    "url": "https://vi5hal.vercel.app",
+    "role": "Full Stack Developer (Mern)",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VS",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1815,
+    "name": "Vishnu Rohith",
+    "url": "https://vishnurohithb.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VR",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1831,
+    "name": "Vladyslav Shtatskyi",
+    "url": "https://www.techinz.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "VS",
+    "firstLetter": "V",
+    "featured": false
+  },
+  {
+    "id": 1841,
+    "name": "Wesker Shek",
+    "url": "https://weskershek.com",
+    "role": "Full Stack/Creative Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "WS",
+    "firstLetter": "W",
+    "featured": false
+  },
+  {
+    "id": 1842,
+    "name": "Whilmar Bitoco",
+    "url": "https://whilmarbitoco.vercel.app",
+    "role": "Software Developer | Web & Cloud",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "WB",
+    "firstLetter": "W",
+    "featured": false
+  },
+  {
+    "id": 1844,
+    "name": "Wilson Costa",
+    "url": "https://wilsoncosta-portfolio.vercel.app",
+    "role": "Backend Engineer | Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Backend"
+    ],
+    "initials": "WC",
+    "firstLetter": "W",
+    "featured": false
+  },
+  {
+    "id": 1849,
+    "name": "Xqyet",
+    "url": "https://xqyet.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "XQ",
+    "firstLetter": "X",
+    "featured": false
+  },
+  {
+    "id": 1851,
+    "name": "Yaksh Bambhroliya",
+    "url": "https://yakshcore.vercel.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YB",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1856,
+    "name": "Yash Nandvana",
+    "url": "https://yashnandvana.in",
+    "role": "Full Stack Developer | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YN",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1857,
+    "name": "Yash Palav",
+    "url": "https://yashpalav.vercel.app",
+    "role": "Full Stack Dev",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YP",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1867,
+    "name": "Yeshwanth Krishna",
+    "url": "https://yeshwanth-kr.github.io",
+    "role": "Full Stack Dev",
+    "hostPlatform": "GitHub Pages",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YK",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1869,
+    "name": "Yocrrz/Aditya",
+    "url": "https://yocrrz.is-a.dev",
+    "role": "Js | Cybersecurity | Full Stack dev",
+    "hostPlatform": "is-a.dev",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YO",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1873,
+    "name": "Yogi Arif Widodo",
+    "url": "https://yogiveloper.com",
+    "role": "Full Stack Software Engineer | Newbie Hacker",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YW",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1874,
+    "name": "Yohannes Getachew",
+    "url": "https://johngech.netlify.app",
+    "role": "Full Stack Developer | Software Engineer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YG",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1875,
+    "name": "Younes Megaache",
+    "url": "https://younes-megaache.com",
+    "role": "Software Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YM",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1877,
+    "name": "Yuelin Liu",
+    "url": "https://www.liuyuelin.dev",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "YL",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1880,
+    "name": "Yush Bharti",
+    "url": "https://aayushbharti.vercel.app",
+    "role": "Full Stack Developer | Freelancer",
+    "hostPlatform": "Vercel",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack",
+      "Freelance"
+    ],
+    "initials": "YB",
+    "firstLetter": "Y",
+    "featured": false
+  },
+  {
+    "id": 1887,
+    "name": "Zaryab Mahmood",
+    "url": "https://zubbihawk.netlify.app",
+    "role": "Full Stack Developer",
+    "hostPlatform": "Netlify",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "ZM",
+    "firstLetter": "Z",
+    "featured": false
+  },
+  {
+    "id": 1888,
+    "name": "Zayar Shein",
+    "url": "https://zayarshein.com",
+    "role": "Full Stack Developer | Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "ZS",
+    "firstLetter": "Z",
+    "featured": false
+  },
+  {
+    "id": 1891,
+    "name": "Zion Emond",
+    "url": "https://zionemond.dev",
+    "role": "Software Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "initials": "ZE",
+    "firstLetter": "Z",
+    "featured": false
+  }
+]
