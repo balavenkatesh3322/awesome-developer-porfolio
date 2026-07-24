@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://balavenkatesh3322.github.io/awesome-developer-porfolio/">
-    <img src="public/banners.png" alt="Awesome Developer Portfolios Banner" width="100%" style="border-radius: 16px;" />
+    <img src="https://raw.githubusercontent.com/balavenkatesh3322/awesome-developer-porfolio/main/public/demo.gif" alt="Awesome Developer Portfolios Live Demo" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
   </a>
 </p>
 
