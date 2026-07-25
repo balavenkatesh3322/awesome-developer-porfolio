@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { FlyingEasternBluebird } from './FlyingEasternBluebird';
 import {
-  ArrowDown,
   Layers,
   Award,
   CheckCircle2,
@@ -90,6 +90,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_65%_55%_at_50%_0%,#000_70%,transparent_100%)] opacity-35" />
       </div>
 
+      {/* Real-Time Flying Eastern Bluebird displaying 'Explore Portfolio' */}
+      <FlyingEasternBluebird onExploreClick={onExploreClick} />
+
       <div className="max-w-7xl mx-auto space-y-10">
         
         {/* Headline & Action Hero Section */}
@@ -155,18 +158,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Previews</span>
               </div>
             </motion.div>
-
-            {/* Primary Magnetic CTA Button */}
-            <motion.button
-              whileHover={{ scale: 1.04, y: -2 }}
-              whileTap={{ scale: 0.96 }}
-              onClick={onExploreClick}
-              className="relative group/btn w-full sm:w-auto px-7 py-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-700 to-violet-700 hover:from-indigo-700 hover:to-violet-800 text-white text-sm font-black flex items-center justify-center gap-3 shadow-lg shadow-indigo-500/25 transition-all cursor-pointer overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300" />
-              <span className="relative z-10">Explore Directory Catalog</span>
-              <ArrowDown className="w-4 h-4 relative z-10 animate-bounce text-indigo-100" />
-            </motion.button>
 
           </motion.div>
 
