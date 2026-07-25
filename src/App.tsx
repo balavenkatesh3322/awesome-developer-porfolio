@@ -18,6 +18,7 @@ import { PreviewModal } from './components/PreviewModal';
 import { GitHubPagesModal } from './components/GitHubPagesModal';
 import { SubmitPortfolioModal } from './components/SubmitPortfolioModal';
 import { ActivityHubModal } from './components/ActivityHubModal';
+import { SocialShareSection } from './components/SocialShareSection';
 import { Sparkles, RefreshCw, Bookmark, Search, Code2, Heart, ArrowUp, MessageSquare, Github } from 'lucide-react';
 
 const INITIAL_PAGE_SIZE = 36;
@@ -373,6 +374,9 @@ export default function App() {
             </p>
           </div>
         )}
+
+        {/* Social Media Share Section */}
+        <SocialShareSection />
 
       </main>
 
