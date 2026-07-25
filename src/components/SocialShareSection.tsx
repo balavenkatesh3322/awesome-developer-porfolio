@@ -155,21 +155,56 @@ export const SocialShareSection: React.FC = () => {
           <div className="bg-slate-950 border border-slate-800/90 rounded-xl overflow-hidden shadow-lg group/card hover:border-indigo-500/50 transition-all">
             
             {/* Banner Thumbnail */}
-            <div className="relative aspect-[16/9] bg-slate-900 overflow-hidden border-b border-slate-800">
+            <div className="relative aspect-[16/9] bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 overflow-hidden border-b border-slate-800 flex flex-col justify-between p-5">
+              
+              {/* Background Glows & Pattern */}
+              <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/20 rounded-full blur-2xl" />
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/20 rounded-full blur-2xl" />
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-10" />
+              </div>
+
+              {/* Image Overlay */}
               <img
                 src="/og-image.png"
                 alt="Social Media Preview Banner"
-                className="w-full h-full object-cover group-hover/card:scale-102 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover z-10 group-hover/card:scale-102 transition-transform duration-500"
                 onError={(e) => {
-                  // Fallback visual if image load fails
-                  (e.target as HTMLElement).style.display = 'none';
+                  // If image fails to load, gracefully hide img element so stylized fallback canvas displays
+                  (e.target as HTMLElement).style.opacity = '0';
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-3 bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-black px-2.5 py-1 rounded-md flex items-center gap-1 shadow-sm">
-                <Share2 className="w-3 h-3 text-amber-300" />
-                <span>Verified Social Card Preview</span>
+
+              {/* Fallback Rich Visual Canvas (renders seamlessly behind or if image fails) */}
+              <div className="relative z-0 space-y-2">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-extrabold text-sm shadow-md">
+                    &lt;/&gt;
+                  </div>
+                  <span className="text-xs font-black text-indigo-300 tracking-wider uppercase bg-indigo-500/20 px-2.5 py-0.5 rounded-full border border-indigo-400/30">
+                    Developer Showcase
+                  </span>
+                </div>
+                <h3 className="text-lg font-black text-white leading-tight">
+                  Awesome Developer Portfolios
+                </h3>
+                <p className="text-xs text-slate-300 font-medium">
+                  Showcase Your Work &amp; Get Discovered
+                </p>
               </div>
+
+              {/* Verified Badge Overlay */}
+              <div className="relative z-20 flex items-center justify-between">
+                <div className="bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-black px-2.5 py-1 rounded-md flex items-center gap-1 shadow-sm border border-indigo-400/30">
+                  <Share2 className="w-3 h-3 text-amber-300" />
+                  <span>Verified Social Card Preview</span>
+                </div>
+                <div className="flex gap-1.5 text-[10px] font-bold text-slate-300">
+                  <span className="bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">Full Stack</span>
+                  <span className="bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">AI / ML</span>
+                </div>
+              </div>
+
             </div>
 
             {/* Social Card Content */}
