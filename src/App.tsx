@@ -238,7 +238,7 @@ export default function App() {
         onOpenSubmitModal={() => setIsSubmitModalOpen(true)}
       />
 
-      {/* Hero Showcase Banner Header (100% Marketing & Engagement Focus) */}
+      {/* Hero Showcase Banner Header */}
       <HeroSection
         totalCount={ALL_PORTFOLIOS.length}
         filteredCount={filteredPortfolios.length}
@@ -247,138 +247,140 @@ export default function App() {
         }}
       />
 
-      {/* Directory Showcase Catalog Section */}
-      <div id="catalog-section" className="bg-slate-50/40 border-t border-slate-200/80">
-        
-        {/* Filter & View Mode Controls */}
-        <FilterBar
-          filters={filters}
-          onUpdateFilters={handleUpdateFilters}
-          viewMode={viewMode}
-          onViewModeChange={setViewMode}
-          filteredCount={filteredPortfolios.length}
-          totalCount={ALL_PORTFOLIOS.length}
-          onResetFilters={handleResetFilters}
-          onTriggerJump={triggerRandomJump}
-          autoJumpEnabled={autoJumpEnabled}
-          onToggleAutoJump={() => setAutoJumpEnabled(!autoJumpEnabled)}
-        />
-
-        {/* Alphabet Quick Jump Bar - Starts inside Catalog Section */}
-        <AlphabetBar
-          selectedLetter={filters.letter}
-          onSelectLetter={(letter) => handleUpdateFilters({ letter })}
-        />
-
-      </div>
-
-      {/* Main Showcase Stage */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 relative">
-        
-        {/* Curated Weekly Spotlight Showcase Reel */}
-        {!filters.onlyBookmarks && filters.category === 'All' && !filters.searchQuery && filters.letter === '' && (
-          <SpotlightSection
-            portfolios={ALL_PORTFOLIOS}
-            onSelectPortfolio={setSelectedPortfolio}
+      {/* Floating Texty Dashboard Showcase Container */}
+      <div id="catalog-section" className="max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 my-6 relative">
+        <div className="bg-white/95 backdrop-blur-xl border border-slate-200/90 rounded-3xl shadow-2xl shadow-blue-500/10 p-4 sm:p-8 space-y-6">
+          
+          {/* Filter & View Mode Controls */}
+          <FilterBar
+            filters={filters}
+            onUpdateFilters={handleUpdateFilters}
+            viewMode={viewMode}
+            onViewModeChange={setViewMode}
+            filteredCount={filteredPortfolios.length}
+            totalCount={ALL_PORTFOLIOS.length}
+            onResetFilters={handleResetFilters}
+            onTriggerJump={triggerRandomJump}
+            autoJumpEnabled={autoJumpEnabled}
+            onToggleAutoJump={() => setAutoJumpEnabled(!autoJumpEnabled)}
           />
-        )}
 
-        {/* Active Filters Summary Banner */}
-        {filters.onlyBookmarks && (
-          <div className="mb-6 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 flex items-center justify-between shadow-sm">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-100 border border-amber-300 flex items-center justify-center shrink-0">
-                <Bookmark className="w-5 h-5 fill-amber-500 text-amber-600" />
+          {/* Alphabet Quick Jump Bar */}
+          <AlphabetBar
+            selectedLetter={filters.letter}
+            onSelectLetter={(letter) => handleUpdateFilters({ letter })}
+          />
+
+          {/* Main Showcase Stage */}
+          <main className="relative pt-2">
+            
+            {/* Curated Weekly Spotlight Showcase Reel */}
+            {!filters.onlyBookmarks && filters.category === 'All' && !filters.searchQuery && filters.letter === '' && (
+              <SpotlightSection
+                portfolios={ALL_PORTFOLIOS}
+                onSelectPortfolio={setSelectedPortfolio}
+              />
+            )}
+
+            {/* Active Filters Summary Banner */}
+            {filters.onlyBookmarks && (
+              <div className="mb-6 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 flex items-center justify-between shadow-sm">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-amber-100 border border-amber-300 flex items-center justify-center shrink-0">
+                    <Bookmark className="w-5 h-5 fill-amber-500 text-amber-600" />
+                  </div>
+                  <div>
+                    <h2 className="text-sm font-extrabold text-amber-900">Viewing Saved Portfolios ({bookmarks.length})</h2>
+                    <p className="text-xs text-amber-700 font-medium">Showing developer portfolios you bookmarked for design inspiration.</p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => handleUpdateFilters({ onlyBookmarks: false })}
+                  className="text-xs font-bold px-3.5 py-2 rounded-full bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 transition-all shadow-xs cursor-pointer"
+                >
+                  Show All Portfolios
+                </button>
               </div>
-              <div>
-                <h2 className="text-sm font-extrabold text-amber-900">Viewing Saved Portfolios ({bookmarks.length})</h2>
-                <p className="text-xs text-amber-700 font-medium">Showing developer portfolios you bookmarked for design inspiration.</p>
+            )}
+
+            {/* Portfolio Showcase Grid / List */}
+            {visiblePortfolios.length > 0 ? (
+              <motion.div
+                layout
+                className={
+                  viewMode === 'grid'
+                    ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5.5'
+                    : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5'
+                }
+              >
+                <AnimatePresence mode="popLayout">
+                  {visiblePortfolios.map((portfolio, idx) => (
+                    <PortfolioCard
+                      key={portfolio.id}
+                      index={idx}
+                      portfolio={portfolio}
+                      isHighlighted={highlightedCardId === portfolio.id}
+                      isBookmarked={bookmarks.includes(portfolio.id)}
+                      onToggleBookmark={handleToggleBookmark}
+                      onSelectPortfolio={setSelectedPortfolio}
+                      userRating={ratings[portfolio.id]}
+                      viewMode={viewMode}
+                      likesCount={socialData.likes[portfolio.id] || 0}
+                      isLiked={!!socialData.userLikes[portfolio.id]}
+                      onToggleLike={handleToggleLike}
+                      commentsCount={(socialData.comments[portfolio.id] || []).length}
+                    />
+                  ))}
+                </AnimatePresence>
+              </motion.div>
+            ) : (
+              /* Empty Search State */
+              <div className="py-20 text-center max-w-md mx-auto space-y-4 bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
+                <div className="w-16 h-16 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center mx-auto text-blue-600 shadow-sm">
+                  <Search className="w-8 h-8" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-extrabold text-slate-900">No portfolios match your filters</h3>
+                  <p className="text-xs text-slate-500 mt-1.5 leading-relaxed font-medium">
+                    Try searching for broader keywords, clearing specific skills/tags, or resetting all filters.
+                  </p>
+                </div>
+                <button
+                  onClick={handleResetFilters}
+                  className="px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all shadow-sm cursor-pointer"
+                >
+                  Reset All Filters
+                </button>
               </div>
-            </div>
-            <button
-              onClick={() => handleUpdateFilters({ onlyBookmarks: false })}
-              className="text-xs font-bold px-3.5 py-2 rounded-xl bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 transition-all shadow-xs"
-            >
-              Show All Portfolios
-            </button>
-          </div>
-        )}
+            )}
 
-        {/* Portfolio Showcase Grid / List */}
-        {visiblePortfolios.length > 0 ? (
-          <motion.div
-            layout
-            className={
-              viewMode === 'grid'
-                ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5.5'
-                : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5'
-            }
-          >
-            <AnimatePresence mode="popLayout">
-              {visiblePortfolios.map((portfolio, idx) => (
-                <PortfolioCard
-                  key={portfolio.id}
-                  index={idx}
-                  portfolio={portfolio}
-                  isHighlighted={highlightedCardId === portfolio.id}
-                  isBookmarked={bookmarks.includes(portfolio.id)}
-                  onToggleBookmark={handleToggleBookmark}
-                  onSelectPortfolio={setSelectedPortfolio}
-                  userRating={ratings[portfolio.id]}
-                  viewMode={viewMode}
-                  likesCount={socialData.likes[portfolio.id] || 0}
-                  isLiked={!!socialData.userLikes[portfolio.id]}
-                  onToggleLike={handleToggleLike}
-                  commentsCount={(socialData.comments[portfolio.id] || []).length}
-                />
-              ))}
-            </AnimatePresence>
-          </motion.div>
-        ) : (
-          /* Empty Search State */
-          <div className="py-20 text-center max-w-md mx-auto space-y-4 bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
-            <div className="w-16 h-16 rounded-2xl bg-indigo-50 border border-indigo-200 flex items-center justify-center mx-auto text-indigo-600 shadow-sm">
-              <Search className="w-8 h-8" />
-            </div>
-            <div>
-              <h3 className="text-lg font-extrabold text-slate-900">No portfolios match your filters</h3>
-              <p className="text-xs text-slate-500 mt-1.5 leading-relaxed font-medium">
-                Try searching for broader keywords, clearing specific skills/tags, or resetting all filters.
-              </p>
-            </div>
-            <button
-              onClick={handleResetFilters}
-              className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold transition-all shadow-sm"
-            >
-              Reset All Filters
-            </button>
-          </div>
-        )}
+            {/* Load More Button */}
+            {visibleCount < filteredPortfolios.length && (
+              <div className="mt-12 mb-8 text-center space-y-2.5">
+                <button
+                  onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE_INCREMENT)}
+                  className="px-8 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 text-xs font-extrabold transition-all hover:border-blue-600 shadow-sm hover:shadow-md group cursor-pointer"
+                >
+                  <span className="flex items-center gap-2">
+                    <span>Load More Portfolios</span>
+                    <span className="px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold border border-blue-200">
+                      {filteredPortfolios.length - visibleCount} left
+                    </span>
+                  </span>
+                </button>
+                <p className="text-[11px] font-medium text-slate-500">
+                  Showing {visibleCount} of {filteredPortfolios.length} items
+                </p>
+              </div>
+            )}
 
-        {/* Load More Button */}
-        {visibleCount < filteredPortfolios.length && (
-          <div className="mt-12 mb-8 text-center space-y-2.5">
-            <button
-              onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE_INCREMENT)}
-              className="px-8 py-3.5 rounded-2xl bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 text-xs font-extrabold transition-all hover:border-indigo-600 shadow-sm hover:shadow-md group"
-            >
-              <span className="flex items-center gap-2">
-                <span>Load More Portfolios</span>
-                <span className="px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 text-[10px] font-bold border border-indigo-200">
-                  {filteredPortfolios.length - visibleCount} left
-                </span>
-              </span>
-            </button>
-            <p className="text-[11px] font-medium text-slate-500">
-              Showing {visibleCount} of {filteredPortfolios.length} items
-            </p>
-          </div>
-        )}
+            {/* Social Media Share Section */}
+            <SocialShareSection />
 
-        {/* Social Media Share Section */}
-        <SocialShareSection />
+          </main>
 
-      </main>
+        </div>
+      </div>
 
       {/* Floating Scroll To Top Button */}
       {showScrollTop && (

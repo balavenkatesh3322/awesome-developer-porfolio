@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FlyingEasternBluebird } from './FlyingEasternBluebird';
 import {
-  Layers,
-  Award,
-  CheckCircle2,
   Sparkles,
-  TrendingUp,
-  Globe
+  ArrowRight,
+  GitFork,
+  Globe,
+  Award,
+  Layers,
+  CheckCircle2
 } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -29,7 +30,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreClick
 }) => {
   const [roleIndex, setRoleIndex] = useState(0);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const FORK_REPO_URL = "https://github.com/balavenkatesh3322/awesome-developer-porfolio/fork";
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -38,200 +39,133 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     return () => clearInterval(timer);
   }, []);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { clientX, clientY, currentTarget } = e;
-    const { left, top, width, height } = currentTarget.getBoundingClientRect();
-    const x = (clientX - left) / width - 0.5;
-    const y = (clientY - top) / height - 0.5;
-    setMousePos({ x, y });
-  };
-
   return (
-    <section 
-      onMouseMove={handleMouseMove}
-      className="relative overflow-hidden bg-white border-b border-slate-200/80 pt-8 sm:pt-14 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 shadow-2xs group"
-    >
+    <section className="relative overflow-hidden pt-8 sm:pt-14 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 text-center group">
       
-      {/* Interactive Ambient Gradient Glow Mesh with Parallax */}
+      {/* Soft Blue Studio Backlight / Radial Glow Beam (Texty Design Backdrop) */}
       <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
-        {/* Parallax Gradient Blob 1 */}
-        <motion.div
-          animate={{
-            x: [mousePos.x * 30, mousePos.x * -20, mousePos.x * 30],
-            y: [mousePos.y * 30, mousePos.y * -20, mousePos.y * 30],
-            scale: [1, 1.15, 1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            repeatType: 'mirror',
-            ease: "easeInOut"
-          }}
-          className="absolute -top-32 left-1/4 w-[550px] h-[380px] bg-gradient-to-r from-indigo-300/30 via-purple-300/25 to-sky-200/30 rounded-full blur-3xl opacity-75"
-        />
-
-        {/* Parallax Gradient Blob 2 */}
-        <motion.div
-          animate={{
-            x: [mousePos.x * -40, mousePos.x * 25, mousePos.x * -40],
-            y: [mousePos.y * -40, mousePos.y * 25, mousePos.y * -40],
-            scale: [1, 0.9, 1],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            repeatType: 'mirror',
-            ease: "easeInOut"
-          }}
-          className="absolute -top-20 right-1/4 w-[480px] h-[320px] bg-gradient-to-r from-violet-300/30 via-pink-300/25 to-amber-200/25 rounded-full blur-3xl opacity-65"
-        />
-
-        {/* Fine Architectural Grid Pattern with Radial Gradient Mask */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_65%_55%_at_50%_0%,#000_70%,transparent_100%)] opacity-35" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[520px] bg-gradient-to-b from-blue-200/50 via-indigo-100/30 to-transparent rounded-full blur-3xl opacity-80" />
+        <div className="absolute top-10 left-1/3 w-[450px] h-[300px] bg-gradient-to-r from-sky-200/40 to-blue-300/30 rounded-full blur-2xl opacity-60" />
       </div>
 
-      {/* Real-Time Flying Eastern Bluebird displaying 'Explore Portfolio' */}
+      {/* Flying Eastern Bluebird displaying 'Explore Portfolio' */}
       <FlyingEasternBluebird onExploreClick={onExploreClick} />
 
-      <div className="max-w-7xl mx-auto space-y-10">
+      <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
         
-        {/* Headline & Action Hero Section */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="space-y-4 max-w-2xl"
-          >
-            {/* Title with Animated Rotating Role Pill & Dynamic Gradient Sweep */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.12]">
-              Showcase Your Work &amp; Get Discovered <br className="hidden sm:inline" />
-              <span className="inline-block relative mt-1">
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={roleIndex}
-                    initial={{ opacity: 0, y: 16, filter: 'blur(6px)', scale: 0.98 }}
-                    animate={{ opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 }}
-                    exit={{ opacity: 0, y: -16, filter: 'blur(6px)', scale: 0.98 }}
-                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                    className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-700 bg-clip-text text-transparent block sm:inline font-black"
-                  >
-                    {HIGHLIGHT_ROLES[roleIndex]}
-                  </motion.span>
-                </AnimatePresence>
-              </span>
-            </h1>
-
-            {/* Description with Clean Typographic Hierarchy */}
-            <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-xl">
-              Submit your developer portfolio to reach thousands of tech recruiters, founders, and fellow engineers. Get featured, stand out from the crowd, and level up your career.
-            </p>
-          </motion.div>
-
-          {/* Marketing Metrics & Primary CTA */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-end justify-center gap-4 shrink-0"
-          >
-            
-            {/* Live Metrics Card with Animated Glass Frame */}
-            <motion.div 
-              whileHover={{ y: -2 }}
-              className="grid grid-cols-3 gap-3 bg-white/80 backdrop-blur-md border border-slate-200/90 rounded-2xl p-3.5 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all text-center w-full sm:w-auto min-w-[295px] relative overflow-hidden group/metrics"
-            >
-              {/* Shimmer Light Beam Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-100/30 to-transparent -translate-x-full group-hover/metrics:animate-[shimmer_1.5s_ease-in-out]" />
-
-              <div className="px-3 py-1">
-                <span className="text-lg font-black text-slate-900 block tracking-tight">{totalCount.toLocaleString()}</span>
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Live Sites</span>
-              </div>
-              <div className="px-3 py-1 border-x border-slate-200/80">
-                <span className="text-lg font-black text-indigo-600 block tracking-tight">100%</span>
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Curated</span>
-              </div>
-              <div className="px-3 py-1">
-                <span className="text-lg font-black text-emerald-600 block tracking-tight">Instant</span>
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Previews</span>
-              </div>
-            </motion.div>
-
-          </motion.div>
-
-        </div>
-
-        {/* Interactive Trust Value Proposition Grid with Hover Lift & Accent Glows */}
+        {/* Top Centered Capsule Pill Badge (Texty Design Spec) */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-slate-200/60"
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xs shadow-slate-200/60 text-xs font-semibold text-slate-700 mx-auto"
         >
-          {/* Card 1 */}
-          <motion.div
-            whileHover={{ y: -4, scale: 1.01 }}
-            transition={{ duration: 0.2 }}
-            className="group/card flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-indigo-300/80 hover:shadow-md hover:shadow-indigo-500/5 transition-all duration-200 cursor-default"
-          >
-            <div className="w-10 h-10 rounded-xl bg-indigo-100 border border-indigo-200/90 flex items-center justify-center text-indigo-700 shrink-0 group-hover/card:bg-indigo-600 group-hover/card:text-white transition-colors duration-200 shadow-2xs">
-              <Award className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="text-xs font-black text-slate-900 group-hover/card:text-indigo-600 transition-colors">
-                100% Curated Websites
-              </h3>
-              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">
-                Hand-evaluated by senior engineers &amp; designers for quality, UI polish, and speed.
-              </p>
-            </div>
-          </motion.div>
+          <span className="px-2.5 py-0.5 rounded-full bg-blue-500 text-white text-[10px] font-extrabold uppercase tracking-wide">
+            Curated
+          </span>
+          <span className="text-slate-600 font-bold">{totalCount.toLocaleString()}+ Developer Websites</span>
+        </motion.div>
 
-          {/* Card 2 */}
-          <motion.div
-            whileHover={{ y: -4, scale: 1.01 }}
-            transition={{ duration: 0.2 }}
-            className="group/card flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-purple-300/80 hover:shadow-md hover:shadow-purple-500/5 transition-all duration-200 cursor-default"
-          >
-            <div className="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200/90 flex items-center justify-center text-purple-700 shrink-0 group-hover/card:bg-purple-600 group-hover/card:text-white transition-colors duration-200 shadow-2xs">
-              <Layers className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="text-xs font-black text-slate-900 group-hover/card:text-purple-600 transition-colors">
-                Multi-Device Live Previews
-              </h3>
-              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">
-                Test real-time desktop, tablet, and mobile layouts in an interactive frame.
-              </p>
-            </div>
-          </motion.div>
+        {/* Main Hero Headline (Texty Design Typography) */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="space-y-3"
+        >
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-slate-900 leading-[1.08]">
+            The Fastest Way to <br />
+            <span className="inline-block relative">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={roleIndex}
+                  initial={{ opacity: 0, y: 14, filter: 'blur(4px)' }}
+                  animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                  exit={{ opacity: 0, y: -14, filter: 'blur(4px)' }}
+                  transition={{ duration: 0.35 }}
+                  className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 bg-clip-text text-transparent font-black"
+                >
+                  Showcase Your Work
+                </motion.span>
+              </AnimatePresence>
+            </span>
+          </h1>
 
-          {/* Card 3 */}
-          <motion.div
-            whileHover={{ y: -4, scale: 1.01 }}
-            transition={{ duration: 0.2 }}
-            className="group/card flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-emerald-300/80 hover:shadow-md hover:shadow-emerald-500/5 transition-all duration-200 cursor-default"
+          {/* Subtitle */}
+          <p className="text-sm sm:text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto pt-2">
+            Submit your developer portfolio to reach thousands of tech recruiters, founders, and fellow engineers. Get featured, stand out from the crowd, and level up your career.
+          </p>
+        </motion.div>
+
+        {/* Primary Glowing Electric Blue Action Button (Texty Pill Spec) */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2"
+        >
+          <a
+            href={FORK_REPO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white text-sm font-extrabold shadow-[0_10px_28px_-6px_rgba(59,130,246,0.5)] hover:shadow-[0_14px_32px_-4px_rgba(59,130,246,0.6)] transition-all hover:scale-[1.03] active:scale-98 flex items-center justify-center gap-2 group cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-xl bg-emerald-100 border border-emerald-200/90 flex items-center justify-center text-emerald-700 shrink-0 group-hover/card:bg-emerald-600 group-hover/card:text-white transition-colors duration-200 shadow-2xs">
-              <CheckCircle2 className="w-5 h-5" />
+            <GitFork className="w-4 h-4" />
+            <span>Share Your Portfolio</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+
+          <button
+            onClick={onExploreClick}
+            className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/90 text-sm font-bold shadow-xs hover:shadow-md transition-all hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center gap-2"
+          >
+            <span>Explore Catalog ↓</span>
+          </button>
+        </motion.div>
+
+        {/* Feature Highlights Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-8 text-left max-w-3xl mx-auto"
+        >
+          <div className="p-3.5 rounded-2xl bg-white/80 border border-slate-200/80 shadow-xs flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center shrink-0">
+              <Award className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="text-xs font-black text-slate-900 group-hover/card:text-emerald-600 transition-colors">
-                Social Proof &amp; Benchmarking
-              </h3>
-              <p className="text-[11px] text-slate-500 font-medium leading-snug mt-0.5">
-                Like, bookmark, review, and comment on standout developer portfolios.
-              </p>
+              <span className="text-xs font-bold text-slate-900 block">100% Curated</span>
+              <span className="text-[11px] text-slate-500 font-medium">Hand-picked developer sites</span>
             </div>
-          </motion.div>
+          </div>
+
+          <div className="p-3.5 rounded-2xl bg-white/80 border border-slate-200/80 shadow-xs flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-indigo-50 border border-indigo-200 text-indigo-600 flex items-center justify-center shrink-0">
+              <Layers className="w-4 h-4" />
+            </div>
+            <div>
+              <span className="text-xs font-bold text-slate-900 block">Multi-Device Previews</span>
+              <span className="text-[11px] text-slate-500 font-medium">Interactive frame testing</span>
+            </div>
+          </div>
+
+          <div className="p-3.5 rounded-2xl bg-white/80 border border-slate-200/80 shadow-xs flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center shrink-0">
+              <CheckCircle2 className="w-4 h-4" />
+            </div>
+            <div>
+              <span className="text-xs font-bold text-slate-900 block">Instant Slide UX</span>
+              <span className="text-[11px] text-slate-500 font-medium">Slide-to-visit controls</span>
+            </div>
+          </div>
         </motion.div>
 
       </div>
     </section>
   );
 };
+
 
 
 
