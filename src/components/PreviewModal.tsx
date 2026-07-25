@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Portfolio, DeviceType, CommentItem } from '../types';
 import { getRatings, saveRating, getFaviconUrl } from '../lib/portfolios';
+import { IPhoneSlideToOpen } from './IPhoneSlideToOpen';
 import {
   X,
   ExternalLink,
@@ -660,13 +661,14 @@ export const PreviewModal: React.FC<PreviewModalProps> = ({
 
             </div>
 
-            {/* Direct Visit Link Footer */}
-            <div className="pt-3 border-t border-slate-200 hidden lg:block">
+            {/* Direct Visit Link & iPhone Slide Footer */}
+            <div className="pt-3 border-t border-slate-200 hidden lg:block space-y-2">
+              <IPhoneSlideToOpen url={portfolio.url} label="SLIDE TO VISIT" />
               <a
                 href={portfolio.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold flex items-center justify-center gap-2 transition-colors border border-slate-200/80"
+                className="w-full py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold flex items-center justify-center gap-2 transition-colors border border-slate-200/80"
               >
                 <span>Open Full Site in New Tab</span>
                 <ExternalLink className="w-3.5 h-3.5" />

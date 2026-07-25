@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Portfolio, ViewMode } from '../types';
 import { getFaviconUrl, getScreenshotFallbackSources } from '../lib/portfolios';
 import { ExternalLink, Bookmark, Eye, Star, Heart, MessageSquare, Sparkles, Flame } from 'lucide-react';
+import { IPhoneSlideToOpen } from './IPhoneSlideToOpen';
 
 interface PortfolioCardProps {
   portfolio: Portfolio;
@@ -420,43 +421,9 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
           )}
         </div>
 
-        {/* Social Actions Row */}
-        <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                if (onToggleLike) onToggleLike(portfolio.id);
-              }}
-              className={`px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1 transition-all border cursor-pointer ${
-                isLiked
-                  ? 'bg-pink-50 text-pink-700 border-pink-200 shadow-2xs'
-                  : 'bg-slate-50 hover:bg-pink-50 text-slate-600 hover:text-pink-600 border-slate-200'
-              }`}
-              title="Like Portfolio"
-            >
-              <Heart className={`w-3.5 h-3.5 ${isLiked ? 'fill-pink-500 text-pink-500' : ''}`} />
-              <span>{likesCount}</span>
-            </button>
-
-            <button
-              onClick={() => onSelectPortfolio(portfolio)}
-              className="px-2.5 py-1.5 rounded-xl bg-slate-50 hover:bg-indigo-50 text-slate-600 hover:text-indigo-600 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-all cursor-pointer"
-              title="View & Post Comments"
-            >
-              <MessageSquare className="w-3.5 h-3.5 text-indigo-600" />
-              <span>{commentsCount}</span>
-            </button>
-          </div>
-
-          <button
-            onClick={() => onSelectPortfolio(portfolio)}
-            className="text-indigo-600 hover:text-indigo-700 font-extrabold flex items-center gap-1 transition-colors bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-xl border border-indigo-100 cursor-pointer"
-            title="Open website preview modal"
-          >
-            <Eye className="w-3.5 h-3.5" />
-            <span>Preview</span>
-          </button>
+        {/* iPhone Slide to Visit UX Control */}
+        <div className="pt-2 border-t border-slate-100">
+          <IPhoneSlideToOpen url={portfolio.url} label="SLIDE TO VISIT" />
         </div>
 
       </div>

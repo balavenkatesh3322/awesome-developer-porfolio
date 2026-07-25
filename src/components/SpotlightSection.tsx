@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Portfolio } from '../types';
 import { getScreenshotUrl } from '../lib/portfolios';
 import { Flame, Sparkles, ExternalLink, Eye, ArrowRight, Star } from 'lucide-react';
+import { IPhoneSlideToOpen } from './IPhoneSlideToOpen';
 
 interface SpotlightSectionProps {
   portfolios: Portfolio[];
@@ -86,12 +87,9 @@ export const SpotlightSection: React.FC<SpotlightSectionProps> = ({
                 </div>
               </div>
 
-              {/* Action Link Footer */}
-              <div className="pt-2.5 mt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] font-extrabold text-slate-600 group-hover:text-indigo-600">
-                <span className="flex items-center gap-1">
-                  <Eye className="w-3 h-3 text-indigo-600" /> Live Preview
-                </span>
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+              {/* iPhone Slide to Visit Slider */}
+              <div className="pt-2 mt-2 border-t border-slate-100">
+                <IPhoneSlideToOpen url={portfolio.url} label="SLIDE TO VISIT" compact={true} />
               </div>
             </motion.div>
           );
@@ -101,4 +99,5 @@ export const SpotlightSection: React.FC<SpotlightSectionProps> = ({
     </motion.section>
   );
 };
+
 
