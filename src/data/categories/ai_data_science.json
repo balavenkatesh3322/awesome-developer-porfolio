@@ -82,7 +82,7 @@
   },
   {
     "id": 22,
-    "name": "Aaweł Szostak",
+    "name": "Aawe\u0142 Szostak",
     "url": "https://pawelszostak.vercel.app",
     "role": "Full Stack Dev | Freelancer | AI & ML Student",
     "hostPlatform": "Vercel",
@@ -1479,7 +1479,7 @@
     "id": 467,
     "name": "Cleo Balaranjith",
     "url": "https://cleof.us",
-    "role": "SITE bearly wOrKs DONT OPEN it🐺✌️🪫 | brainde*d developer",
+    "role": "SITE bearly wOrKs DONT OPEN it\ud83d\udc3a\u270c\ufe0f\ud83e\udeab | brainde*d developer",
     "hostPlatform": "Custom Domain",
     "category": "AI / Data Science",
     "tags": [
@@ -1631,7 +1631,7 @@
     "id": 566,
     "name": "Dipanshu Singh",
     "url": "https://dipanshusingh.vercel.app",
-    "role": "Full Stack · AI Engineer",
+    "role": "Full Stack \u00b7 AI Engineer",
     "hostPlatform": "Vercel",
     "category": "AI / Data Science",
     "tags": [
@@ -1690,7 +1690,7 @@
   },
   {
     "id": 615,
-    "name": "Evandro Antônio Da Costa De Paula",
+    "name": "Evandro Ant\u00f4nio Da Costa De Paula",
     "url": "https://eacp.dev",
     "role": "Software Engineer | Full Stack | Applied AI Engineer",
     "hostPlatform": "Custom Domain",
@@ -1708,7 +1708,7 @@
     "id": 616,
     "name": "Evangelos Pappas",
     "url": "https://hyperautomation.substack.com",
-    "role": "Distributed Systems Engineer — Data & AI Platforms, MLOps, SRE",
+    "role": "Distributed Systems Engineer \u2014 Data & AI Platforms, MLOps, SRE",
     "hostPlatform": "Custom Domain",
     "category": "AI / Data Science",
     "tags": [
@@ -2340,7 +2340,7 @@
   },
   {
     "id": 881,
-    "name": "Kaic Salomão",
+    "name": "Kaic Salom\u00e3o",
     "url": "https://kaicsm.dev",
     "role": "Full Stack Developer",
     "hostPlatform": "Custom Domain",
@@ -2389,7 +2389,7 @@
     "id": 886,
     "name": "Kalp Senghani",
     "url": "https://kalpsenghani.com",
-    "role": "‍ Full Stack Developer || Ai Engineer",
+    "role": "\u200d Full Stack Developer || Ai Engineer",
     "hostPlatform": "Custom Domain",
     "category": "AI / Data Science",
     "tags": [
@@ -2420,7 +2420,7 @@
     "id": 893,
     "name": "Kartik Jain",
     "url": "https://jkartik.in",
-    "role": "‍ Backend Developer | Cybersecurity Enthusiast",
+    "role": "\u200d Backend Developer | Cybersecurity Enthusiast",
     "hostPlatform": "Custom Domain",
     "category": "AI / Data Science",
     "tags": [
@@ -2538,7 +2538,7 @@
   },
   {
     "id": 934,
-    "name": "Koushik Goud Shaganti 💻",
+    "name": "Koushik Goud Shaganti \ud83d\udcbb",
     "url": "https://koushik1133.github.io/portfolio1",
     "role": "Software Engineer Co-op | AI & Full Stack Dev",
     "hostPlatform": "GitHub Pages",
@@ -2815,7 +2815,7 @@
   },
   {
     "id": 1042,
-    "name": "Marcus Sánchez",
+    "name": "Marcus S\u00e1nchez",
     "url": "https://marcuss.pro",
     "role": "Staff Backend Engineer | Distributed Systems | AI",
     "hostPlatform": "Custom Domain",
@@ -3118,7 +3118,7 @@
     "id": 1156,
     "name": "Muhammad Taha Nawab",
     "url": "https://taha-nawab-portfolio.vercel.app",
-    "role": "Full Stack Developer · AI/ML Engineer",
+    "role": "Full Stack Developer \u00b7 AI/ML Engineer",
     "hostPlatform": "Vercel",
     "category": "AI / Data Science",
     "tags": [
@@ -3610,7 +3610,7 @@
   },
   {
     "id": 1372,
-    "name": "Ralf Müller",
+    "name": "Ralf M\u00fcller",
     "url": "https://fiveandahalfstars.ninja/rdmueller.html",
     "role": "Software Developer",
     "hostPlatform": "Custom Domain",
@@ -3641,7 +3641,7 @@
   },
   {
     "id": 1380,
-    "name": "Raphaël Giraud",
+    "name": "Rapha\u00ebl Giraud",
     "url": "https://toukoum.fr",
     "role": "AI Sofware Engineer",
     "hostPlatform": "Custom Domain",
@@ -3656,7 +3656,7 @@
   },
   {
     "id": 1382,
-    "name": "Raymond Valdepeñas",
+    "name": "Raymond Valdepe\u00f1as",
     "url": "https://raymondvaldepenas-dev.vercel.app",
     "role": "Full Stack Developer | Aiot & Embedded Systems | Junior Software Engineer",
     "hostPlatform": "Vercel",
@@ -4524,7 +4524,7 @@
     "id": 1701,
     "name": "Tanay Shah",
     "url": "https://tanayshah.dev",
-    "role": "AI Engineer | Agent Infrastructure · Founding-Engineer Reps · NYC",
+    "role": "AI Engineer | Agent Infrastructure \u00b7 Founding-Engineer Reps \u00b7 NYC",
     "hostPlatform": "Custom Domain",
     "category": "AI / Data Science",
     "tags": [
@@ -5154,5 +5154,29 @@
     "initials": "ZP",
     "firstLetter": "Z",
     "featured": false
+  },
+  {
+    "id": 2000,
+    "name": "Mehedi Hasan Abir",
+    "url": "https://mehedi-hasan-abir.github.io",
+    "role": "Senior AI/ML Engineer",
+    "hostPlatform": "GitHub Pages",
+    "category": "AI / Data Science",
+    "tags": [
+      "AI / Data Science",
+      "Python",
+      "PyTorch",
+      "LangChain",
+      "FastAPI",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "RAG",
+      "LLMs",
+      "Computer Vision"
+    ],
+    "initials": "MHA",
+    "firstLetter": "M",
+    "featured": true
   }
 ]
