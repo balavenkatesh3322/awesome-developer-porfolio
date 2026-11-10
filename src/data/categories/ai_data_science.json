@@ -5154,5 +5154,21 @@
     "initials": "ZP",
     "firstLetter": "Z",
     "featured": false
+  },
+  {
+    "id": 1900,
+    "name": "Korey Wang Tianru",
+    "url": "https://korey2028.tech",
+    "role": "AI Product Manager",
+    "hostPlatform": "Custom Domain",
+    "category": "AI / Data Science",
+    "tags": [
+      "AI / Data Science",
+      "AI Product",
+      "Case Studies"
+    ],
+    "initials": "KW",
+    "firstLetter": "K",
+    "featured": false
   }
 ]
