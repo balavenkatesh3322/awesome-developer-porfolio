@@ -12487,5 +12487,19 @@
     "initials": "ZP",
     "firstLetter": "Z",
     "featured": false
+  },
+  {
+    "id": 1900,
+    "name": "Chill-Astro Software",
+    "url": "https://chill-astro.github.io/",
+    "role": "Software Developer",
+    "hostPlatform": "GitHub Pages",
+    "category": "Software Engineer",
+    "tags": [
+      "Software Engineer"
+    ],
+    "initials": "CA",
+    "firstLetter": "C",
+    "featured": false
   }
 ]
