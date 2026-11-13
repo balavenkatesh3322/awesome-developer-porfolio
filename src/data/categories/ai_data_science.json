@@ -5154,5 +5154,22 @@
     "initials": "ZP",
     "firstLetter": "Z",
     "featured": false
+  },
+  {
+    "id": 1900,
+    "name": "Prarit Sidana",
+    "url": "https://praritsidana.com/",
+    "role": "AI Engineer & Full-Stack Developer",
+    "hostPlatform": "Custom Domain",
+    "category": "AI / Data Science",
+    "tags": [
+      "AI/ML",
+      "Python",
+      "Django",
+      "React"
+    ],
+    "initials": "PS",
+    "firstLetter": "P",
+    "featured": false
   }
 ]
