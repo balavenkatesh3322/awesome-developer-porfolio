@@ -5909,5 +5909,21 @@
     "initials": "ZE",
     "firstLetter": "Z",
     "featured": false
+  },
+  {
+    "id": 1892,
+    "name": "Phemelo Secwalo",
+    "url": "https://phemelosecwalo.is-a.dev",
+    "role": "Full Stack Engineer",
+    "hostPlatform": "Custom Domain",
+    "category": "Full Stack",
+    "tags": [
+      "Full Stack"
+    ],
+    "email": "sekozal150@gmail.com",
+    "initials": "PS",
+    "firstLetter": "P",
+    "featured": false
   }
+  
 ]
